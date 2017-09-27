@@ -1,0 +1,50 @@
+USE [Inventory]
+GO
+/****** Object:  Table [dbo].[ACCOUNT_RECEIVABLE]    Script Date: 07/23/2014 15:11:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ACCOUNT_RECEIVABLE](
+	[ACCR_ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[INVOICE_ID] [bigint] NULL,
+	[CUST_ID] [bigint] NULL,
+	[KHR_AMOUNT] [decimal](18, 2) NULL,
+	[THB_AMOUNT] [decimal](18, 2) NULL,
+	[USD_AMOUNT] [decimal](18, 2) NULL,
+	[KHR_PAID] [decimal](18, 2) NULL,
+	[THB_PAID] [decimal](18, 2) NULL,
+	[USD_PAID] [decimal](18, 2) NULL,
+	[ACCR_NOTE] [nvarchar](250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[COMPLETED] [int] NULL,
+ CONSTRAINT [PK_ACCOUNT_RECEIVABLE] PRIMARY KEY CLUSTERED 
+(
+	[ACCR_ID] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+
+
+
+USE [Inventory]
+GO
+/****** Object:  Table [dbo].[AR_PAYMENT]    Script Date: 07/23/2014 15:12:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[AR_PAYMENT](
+	[PAYMENT_ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[ACCR_ID] [bigint] NULL,
+	[KHR_AMOUNT] [decimal](18, 2) NULL,
+	[USD_AMOUNT] [decimal](18, 2) NULL,
+	[THB_AMOUNT] [decimal](18, 2) NULL,
+	[PAYMENT_DATE] [datetime] NULL,
+	[PAYMENT_NOTE] [nvarchar](500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[USER_ID] [int] NULL,
+ CONSTRAINT [PK_AC_PAYMENT] PRIMARY KEY CLUSTERED 
+(
+	[PAYMENT_ID] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]

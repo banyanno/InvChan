@@ -1,0 +1,207 @@
+USE [Inventory]
+GO
+
+/****** Object:  Table [dbo].[INVOICE]    Script Date: 10/21/2016 18:06:57 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[INVOICE](
+	[INVOICE_ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[INVOICE_NO] [bigint] NULL,
+	[CUST_ID] [bigint] NULL,
+	[CUST_NAME] [nvarchar](50) NULL,
+	[KHR_AMOUNT] [decimal](18, 2) NULL,
+	[USD_AMOUNT] [decimal](18, 2) NULL,
+	[THB_AMOUNT] [decimal](18, 2) NULL,
+	[DISCOUNT_AMOUNT] [decimal](18, 2) NULL,
+	[DISCOUNT_CURR_CODE] [varchar](50) NULL,
+	[KHR_TOTAL] [decimal](18, 2) NULL,
+	[USD_TOTAL] [decimal](18, 2) NULL,
+	[THB_TOTAL] [decimal](18, 2) NULL,
+	[USER_ID] [int] NULL,
+	[INVOICE_DATE] [datetime] NULL,
+	[VOIDE] [int] NULL,
+	[YEARS] [int] NULL,
+	[IS_DELL] [int] NULL,
+	[RATE] [int] NULL,
+	[MONEY_RECEIVED] [decimal](18, 2) NULL,
+	[RETURN_KHR] [numeric](18, 0) NULL,
+	[RETURN_USD] [numeric](18, 2) NULL,
+ CONSTRAINT [PK_INVOICE] PRIMARY KEY CLUSTERED 
+(
+	[INVOICE_ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[INVOICE] ADD  CONSTRAINT [DF_INVOICE_IS_DELL]  DEFAULT ((0)) FOR [IS_DELL]
+GO
+
+
+
+USE [Inventory]
+GO
+
+/****** Object:  View [dbo].[ViewInvoice]    Script Date: 10/21/2016 18:06:06 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE VIEW [dbo].[ViewInvoice]
+AS
+SELECT     dbo.INVOICE.INVOICE_ID, dbo.INVOICE.INVOICE_NO, dbo.INVOICE.CUST_ID, dbo.INVOICE.CUST_NAME, dbo.INVOICE.USD_AMOUNT, dbo.INVOICE.USD_TOTAL, 
+                      dbo.INVOICE.INVOICE_DATE, dbo.INVOICE.RATE, dbo.INVOICE.MONEY_RECEIVED, dbo.INVOICE.RETURN_KHR, dbo.INVOICE.RETURN_USD, 
+                      dbo.INVOICE_DETAILS.DETAIL_ID, dbo.INVOICE_DETAILS.ITEM_ID, dbo.INVOICE_DETAILS.QTY, dbo.INVOICE_DETAILS.PRICE, 
+                      dbo.INVOICE_DETAILS.USD_AMOUNT AS USD_SUPTOTAL
+FROM         dbo.INVOICE INNER JOIN
+                      dbo.INVOICE_DETAILS ON dbo.INVOICE.INVOICE_ID = dbo.INVOICE_DETAILS.INVOICE_ID
+
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPane1', @value=N'[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
+Begin DesignProperties = 
+   Begin PaneConfigurations = 
+      Begin PaneConfiguration = 0
+         NumPanes = 4
+         Configuration = "(H (1[37] 4[24] 2[5] 3) )"
+      End
+      Begin PaneConfiguration = 1
+         NumPanes = 3
+         Configuration = "(H (1 [50] 4 [25] 3))"
+      End
+      Begin PaneConfiguration = 2
+         NumPanes = 3
+         Configuration = "(H (1 [50] 2 [25] 3))"
+      End
+      Begin PaneConfiguration = 3
+         NumPanes = 3
+         Configuration = "(H (4 [30] 2 [40] 3))"
+      End
+      Begin PaneConfiguration = 4
+         NumPanes = 2
+         Configuration = "(H (1 [56] 3))"
+      End
+      Begin PaneConfiguration = 5
+         NumPanes = 2
+         Configuration = "(H (2 [66] 3))"
+      End
+      Begin PaneConfiguration = 6
+         NumPanes = 2
+         Configuration = "(H (4 [50] 3))"
+      End
+      Begin PaneConfiguration = 7
+         NumPanes = 1
+         Configuration = "(V (3))"
+      End
+      Begin PaneConfiguration = 8
+         NumPanes = 3
+         Configuration = "(H (1[56] 4[18] 2) )"
+      End
+      Begin PaneConfiguration = 9
+         NumPanes = 2
+         Configuration = "(H (1 [75] 4))"
+      End
+      Begin PaneConfiguration = 10
+         NumPanes = 2
+         Configuration = "(H (1[66] 2) )"
+      End
+      Begin PaneConfiguration = 11
+         NumPanes = 2
+         Configuration = "(H (4 [60] 2))"
+      End
+      Begin PaneConfiguration = 12
+         NumPanes = 1
+         Configuration = "(H (1) )"
+      End
+      Begin PaneConfiguration = 13
+         NumPanes = 1
+         Configuration = "(V (4))"
+      End
+      Begin PaneConfiguration = 14
+         NumPanes = 1
+         Configuration = "(V (2))"
+      End
+      ActivePaneConfig = 0
+   End
+   Begin DiagramPane = 
+      Begin Origin = 
+         Top = -96
+         Left = 0
+      End
+      Begin Tables = 
+         Begin Table = "INVOICE"
+            Begin Extent = 
+               Top = 6
+               Left = 38
+               Bottom = 385
+               Right = 247
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "INVOICE_DETAILS"
+            Begin Extent = 
+               Top = 6
+               Left = 285
+               Bottom = 317
+               Right = 530
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+      End
+   End
+   Begin SQLPane = 
+   End
+   Begin DataPane = 
+      Begin ParameterDefaults = ""
+      End
+      Begin ColumnWidths = 10
+         Width = 284
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+      End
+   End
+   Begin CriteriaPane = 
+      Begin ColumnWidths = 11
+         Column = 3120
+         Alias = 2100
+         Table = 1170
+         Output = 720
+         Append = 1400
+         NewValue = 1170
+         SortType = 1350
+         SortOrder = 1410
+         GroupBy = 1350
+         Filter = 1350
+         Or = 1350
+         Or = 1350
+         Or = 1350
+      End
+   End
+End
+' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'ViewInvoice'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPaneCount', @value=1 , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'ViewInvoice'
+GO
+
