@@ -1,0 +1,15 @@
+SELECT        TRAN_ID, STORE_ID,
+                             (SELECT        ITEM_NAME
+                               FROM            ITEMS AS I
+                               WHERE        (ITEM_ID = T.ITEM_ID)) AS ITEM_NAME, ITEM_ID,
+                             (SELECT        UNIT_NAME
+                               FROM            ITEM_BALANCE AS B
+                               WHERE        (STORE_ID = T.STORE_ID)) AS UNIT_NAME, CASE T .TRAN_TYPE WHEN 'ISSUE' THEN
+                             (SELECT        ISSUE_TYPE
+                               FROM            STOCK_ISSUE AS U
+                               WHERE        U.ISSUE_ID = T .REF_NO) ELSE
+                             (SELECT        RECEIVE_TYPE
+                               FROM            STOCK_RECEIVE AS R
+                               WHERE        R.RECEIVE_ID = T .REF_NO) END AS TDESC, REF_NO, TRAN_TYPE, BEGIN_QTY, TRAN_QTY, END_QTY, TRAN_DATE, USER_ID
+FROM            STOCK_TRANSACTION AS T
+ORDER BY STORE_ID, TRAN_ID

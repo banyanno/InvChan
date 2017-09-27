@@ -1,0 +1,111 @@
+﻿BtnSale
+BtnProductOrder
+BtnCustomer
+BtnSupplyer
+BtnTransact
+BtnRevenue
+BtnProducts
+BtnMeaser
+BtnCategory
+BtnAccessRight
+btnuser
+BtnAccReAble
+BtnPayAble
+
+អ្នកគិតលុយ:
+របាយការណ៍ លក់
+មុខទំនិញ
+ចំនួន លក់
+ថ្លៃដើម
+តំលៃលក់ដុំ
+តំលៃលក់រាយ
+សរុប​ លក់ដុំ
+សរុប​ លក់រាយ
+ចាប់ពីថ្ងៃទី រហូតដល់
+ប្រាក់​ ចំណេញ
+ប្រាក់ សរុប:
+តំលៃចំណេញ
+អត្រាប្តូរប្រាក 1$=4,100៛
+លេខ Code
+
+ចំណុះ
+
+Dev By : KTG Team
+Tel        : 012 238 738
+Email    : Ban.Yanno@gmail.com
+All right reserved copyright BAN YANNO
+អាជ្ញាប័ណ្ណ Software ជូន
+
+លោក. គឹម ហាក់
+មានលក់ ភេសជ្ជៈ គ្រឿងអគ្គិសនី លីហួរវេរលុយ នឹង វីងវេរលុយ
+មុខក្លោងទ្វា រោងចក្រកាត់ដេរសម្លៀកបំពាក់ ស្រុកក្រគរ
+License មិនអនុញ្ញាតអោយប្រើប្រាស់ជាមួយនិង
+
+truncate table [RECEIVE]
+truncate table  INVOICE
+truncate table INVOICE_DETAILS
+truncate table ITEM_BALANCE
+truncate table ITEM_COSTS
+truncate table ITEM_PRICES
+truncate table ITEM_SALE_PRICE
+truncate table ITEM_STORE
+truncate table ITEMS
+truncate table PRE_ISSUE
+truncate table  PRE_ORDER
+truncate table  PRE_RECEIVE
+truncate table RECEIVE
+truncate table STOCK_ADJUSTMENT
+truncate table STOCK_ISSUE
+truncate table STOCK_ISSUE_DETAIL
+truncate table STOCK_RECEIVE
+truncate table STOCK_RECEIVE_DETAIL
+truncate table STOCK_TRANSACTION
+truncate table ACC_PAY_ABLE_DETAIL
+truncate table ACC_PAYABLE
+truncate table ACCOUNT_RECEIVABLE
+truncate table ADJUSTMENT
+truncate table AR_PAYMENT
+truncate table CUSTOMER
+truncate table ITEM_STORE
+truncate table ACC_PAY_ABLE_DETAIL
+truncate table CATEGORIES
+truncate table [RECEIVE]
+truncate table  INVOICE
+truncate table INVOICE_DETAILS
+truncate table ITEM_BALANCE
+truncate table ITEM_COSTS
+truncate table ITEM_PRICES
+truncate table ITEM_SALE_PRICE
+truncate table ITEM_STORE
+truncate table ITEMS
+truncate table PRE_ISSUE
+truncate table  PRE_ORDER
+truncate table  PRE_RECEIVE
+truncate table RECEIVE
+truncate table STOCK_ADJUSTMENT
+truncate table STOCK_ISSUE
+truncate table STOCK_ISSUE_DETAIL
+truncate table STOCK_RECEIVE
+truncate table STOCK_RECEIVE_DETAIL
+truncate table STOCK_TRANSACTION
+truncate table ACC_PAY_ABLE_DETAIL
+truncate table ACC_PAYABLE
+truncate table ACCOUNT_RECEIVABLE
+truncate table ADJUSTMENT
+truncate table AR_PAYMENT
+truncate table CUSTOMER
+truncate table ITEM_STORE
+truncate table ACC_PAY_ABLE_DETAIL
+truncate table CATEGORIES
+truncate table SUPPLIER
+
+166
+thea pri 16,25,11,12
+kunthea
+1
+
+
+
+
+
+

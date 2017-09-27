@@ -1,0 +1,1154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSReport" targetNamespace="http://tempuri.org/DSReport.xsd" xmlns:mstns="http://tempuri.org/DSReport.xsd" xmlns="http://tempuri.org/DSReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="INV_Database" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="INV_Database (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Asia_Garden_Inventory_Management_System.My.MySettings.GlobalReference.Default.INV_Database" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TRANSACTIONTableAdapter" GeneratorDataComponentClassName="TRANSACTIONTableAdapter" Name="TRANSACTION" UserDataComponentName="TRANSACTIONTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectName="Inventory.dbo.[TRANSACTION]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT T.TRAN_ID, T.STOR_ID,(SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE I.ITEM_ID=S.ITEM_ID) AS ITEM_NAME,(SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE U.UNIT_ID=S.UNIT_ID) AS UNIT_NAME,(SELECT LOCA_NAME FROM LOCATION AS L WHERE L.LOCA_ID=T.LOCA_ID) AS LOCA_NAME,(SELECT TYPE_NAME FROM [TRANSACTION_TYPE] AS P WHERE P.TYPE_ID=T.TYPE_ID) AS TYPE_NAME,T.TRAN_OLD_QTY,T.TRAN_QTY,T.TRAN_NEW_QTY,T.TRAN_DATE FROM [TRANSACTION] AS T INNER JOIN ITEM_STORE AS S ON T.STOR_ID=S.STOR_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TRAN_ID" DataSetColumn="TRAN_ID" />
+              <Mapping SourceColumn="STOR_ID" DataSetColumn="STOR_ID" />
+              <Mapping SourceColumn="TRAN_OLD_QTY" DataSetColumn="TRAN_OLD_QTY" />
+              <Mapping SourceColumn="TRAN_QTY" DataSetColumn="TRAN_QTY" />
+              <Mapping SourceColumn="TRAN_NEW_QTY" DataSetColumn="TRAN_NEW_QTY" />
+              <Mapping SourceColumn="TRAN_DATE" DataSetColumn="TRAN_DATE" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="TYPE_NAME" DataSetColumn="TYPE_NAME" />
+              <Mapping SourceColumn="LOCA_NAME" DataSetColumn="LOCA_NAME" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RECEIVETableAdapter" GeneratorDataComponentClassName="RECEIVETableAdapter" Name="RECEIVE" UserDataComponentName="RECEIVETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT R.RECE_ID, R.STOR_ID,S.CATE_NAME,S.LAST_COST,(SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE I.ITEM_ID=S.ITEM_ID) AS ITEM_NAME,(SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE U.UNIT_ID=S.UNIT_ID) AS UNIT_NAME,L.LOCA_NAME, R.LOCA_ID, R.RECE_QTY, R.RECE_REASON, R.RECE_DATE, R.USER_ID FROM (dbo.RECEIVE AS R INNER JOIN ITEM_STORE AS S ON R.STOR_ID=S.STOR_ID) INNER JOIN LOCATION AS L ON L.LOCA_ID=R.LOCA_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RECE_ID" DataSetColumn="RECE_ID" />
+              <Mapping SourceColumn="STOR_ID" DataSetColumn="STOR_ID" />
+              <Mapping SourceColumn="LOCA_ID" DataSetColumn="LOCA_ID" />
+              <Mapping SourceColumn="RECE_QTY" DataSetColumn="RECE_QTY" />
+              <Mapping SourceColumn="RECE_REASON" DataSetColumn="RECE_REASON" />
+              <Mapping SourceColumn="RECE_DATE" DataSetColumn="RECE_DATE" />
+              <Mapping SourceColumn="USER_ID" DataSetColumn="USER_ID" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="LOCA_NAME" DataSetColumn="LOCA_NAME" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="LAST_COST" DataSetColumn="LAST_COST" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ISSUETableAdapter" GeneratorDataComponentClassName="ISSUETableAdapter" Name="ISSUE" UserDataComponentName="ISSUETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT E.ISSU_ID, S.CATE_NAME,S.LAST_COST,E.STOR_ID,(SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE I.ITEM_ID=S.ITEM_ID) AS ITEM_NAME,(SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE U.UNIT_ID=S.UNIT_ID) AS UNIT_NAME,L.LOCA_NAME, E.LOCA_ID, E.ISSU_QTY, E.ISSU_REASON, E.ISSU_DATE,E.USER_ID FROM (dbo.ISSUE AS E INNER JOIN ITEM_STORE AS S ON E.STOR_ID=S.STOR_ID) INNER JOIN LOCATION AS L ON L.LOCA_ID=E.LOCA_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ISSU_ID" DataSetColumn="ISSU_ID" />
+              <Mapping SourceColumn="STOR_ID" DataSetColumn="STOR_ID" />
+              <Mapping SourceColumn="LOCA_ID" DataSetColumn="LOCA_ID" />
+              <Mapping SourceColumn="ISSU_QTY" DataSetColumn="ISSU_QTY" />
+              <Mapping SourceColumn="ISSU_REASON" DataSetColumn="ISSU_REASON" />
+              <Mapping SourceColumn="ISSU_DATE" DataSetColumn="ISSU_DATE" />
+              <Mapping SourceColumn="USER_ID" DataSetColumn="USER_ID" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="LOCA_NAME" DataSetColumn="LOCA_NAME" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="LAST_COST" DataSetColumn="LAST_COST" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ITEM_STORETableAdapter" GeneratorDataComponentClassName="ITEM_STORETableAdapter" Name="ITEM_STORE" UserDataComponentName="ITEM_STORETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT S.STOR_ID, S.ITEM_ID,I.ITEM_NAME,I.ITEM_NAME_CHN,S.UNIT_ID, U.UNIT_NAME,U.UNIT_NAME_CHN,S.CATE_NAME, S.RATIO_QTY, S.LAST_COST, ITEM_BALANCE FROM (dbo.ITEM_STORE AS S INNER JOIN ITEM AS I ON S.ITEM_ID=I.ITEM_ID) INNER JOIN UNIT AS U ON U.UNIT_ID=S.UNIT_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="STOR_ID" DataSetColumn="STOR_ID" />
+              <Mapping SourceColumn="ITEM_ID" DataSetColumn="ITEM_ID" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="UNIT_ID" DataSetColumn="UNIT_ID" />
+              <Mapping SourceColumn="RATIO_QTY" DataSetColumn="RATIO_QTY" />
+              <Mapping SourceColumn="LAST_COST" DataSetColumn="LAST_COST" />
+              <Mapping SourceColumn="ITEM_BALANCE" DataSetColumn="ITEM_BALANCE" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="ITEM_NAME_CHN" DataSetColumn="ITEM_NAME_CHN" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="UNIT_NAME_CHN" DataSetColumn="UNIT_NAME_CHN" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ITEMTableAdapter" GeneratorDataComponentClassName="ITEMTableAdapter" Name="ITEM" UserDataComponentName="ITEMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT I. ITEM_ID, I.ID, I.ITEM_BARCODE, I.ITEM_NAME, ITEM_NAME_CHN,I.CATE_ID,C.CATE_NAME,C.CATE_NAME_CHN, I.ITEM_IMAGE FROM dbo.ITEM AS I INNER JOIN dbo.CATEGORY AS C ON C.CATE_ID=I.CATE_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ITEM_ID" DataSetColumn="ITEM_ID" />
+              <Mapping SourceColumn="ITEM_BARCODE" DataSetColumn="ITEM_BARCODE" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="ITEM_NAME_CHN" DataSetColumn="ITEM_NAME_CHN" />
+              <Mapping SourceColumn="CATE_ID" DataSetColumn="CATE_ID" />
+              <Mapping SourceColumn="ITEM_IMAGE" DataSetColumn="ITEM_IMAGE" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="CATE_NAME_CHN" DataSetColumn="CATE_NAME_CHN" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PRE_ISSUETableAdapter" GeneratorDataComponentClassName="PRE_ISSUETableAdapter" Name="PRE_ISSUE" UserDataComponentName="PRE_ISSUETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillAll" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="SelectByUserID" GeneratorSourceName="FillAll" GetMethodModifier="Public" GetMethodName="SelectByUserID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="SelectByUserID" UserSourceName="FillAll">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT E.ISSU_ID,S.CATE_NAME,E.ISSU_COST, E.STOR_ID,(SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE I.ITEM_ID=S.ITEM_ID) AS ITEM_NAME,(SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE U.UNIT_ID=S.UNIT_ID) AS UNIT_NAME,L.LOCA_NAME, E.LOCA_ID, E.ISSU_QTY, E.ISSU_REASON, E.ISSU_DATE,E.USER_ID FROM (dbo.PRE_ISSUE AS E INNER JOIN ITEM_STORE AS S ON E.STOR_ID=S.STOR_ID) INNER JOIN LOCATION AS L ON L.LOCA_ID=E.LOCA_ID WHERE E.USER_ID=@USERID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="USERID" ColumnName="USER_ID" DataSourceName="Inventory.dbo.PRE_ISSUE" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@USERID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="USER_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ISSU_ID" DataSetColumn="ISSU_ID" />
+              <Mapping SourceColumn="STOR_ID" DataSetColumn="STOR_ID" />
+              <Mapping SourceColumn="LOCA_ID" DataSetColumn="LOCA_ID" />
+              <Mapping SourceColumn="ISSU_QTY" DataSetColumn="ISSU_QTY" />
+              <Mapping SourceColumn="ISSU_REASON" DataSetColumn="ISSU_REASON" />
+              <Mapping SourceColumn="ISSU_DATE" DataSetColumn="ISSU_DATE" />
+              <Mapping SourceColumn="USER_ID" DataSetColumn="USER_ID" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="LOCA_NAME" DataSetColumn="LOCA_NAME" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="ISSU_COST" DataSetColumn="ISSU_COST" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PRE_RECEIVETableAdapter" GeneratorDataComponentClassName="PRE_RECEIVETableAdapter" Name="PRE_RECEIVE" UserDataComponentName="PRE_RECEIVETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillAll" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="SelectByUserID" GeneratorSourceName="FillAll" GetMethodModifier="Public" GetMethodName="SelectByUserID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="SelectByUserID" UserSourceName="FillAll">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT R.RECE_ID,S.CATE_NAME,R.RECE_COST, R.STOR_ID,(SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE I.ITEM_ID=S.ITEM_ID) AS ITEM_NAME,(SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE U.UNIT_ID=S.UNIT_ID) AS UNIT_NAME,L.LOCA_NAME, R.LOCA_ID, R.RECE_QTY, R.RECE_REASON, R.RECE_DATE, R.USER_ID FROM (dbo.PRE_RECEIVE AS R INNER JOIN ITEM_STORE AS S ON R.STOR_ID=S.STOR_ID) INNER JOIN LOCATION AS L ON L.LOCA_ID=R.LOCA_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RECE_ID" DataSetColumn="RECE_ID" />
+              <Mapping SourceColumn="STOR_ID" DataSetColumn="STOR_ID" />
+              <Mapping SourceColumn="LOCA_ID" DataSetColumn="LOCA_ID" />
+              <Mapping SourceColumn="RECE_QTY" DataSetColumn="RECE_QTY" />
+              <Mapping SourceColumn="RECE_REASON" DataSetColumn="RECE_REASON" />
+              <Mapping SourceColumn="RECE_DATE" DataSetColumn="RECE_DATE" />
+              <Mapping SourceColumn="USER_ID" DataSetColumn="USER_ID" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="LOCA_NAME" DataSetColumn="LOCA_NAME" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="RECE_COST" DataSetColumn="RECE_COST" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ADJUSTMENTTableAdapter" GeneratorDataComponentClassName="ADJUSTMENTTableAdapter" Name="ADJUSTMENT" UserDataComponentName="ADJUSTMENTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        E.ADJU_ID, E.STOR_ID, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, E.ADJU_OLD_QTY, E.ADJU_NEW_QTY, E.ADJU_REASON, E.ADJU_DATE, E.USER_ID
+FROM            ADJUSTMENT AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ADJU_ID" DataSetColumn="ADJU_ID" />
+              <Mapping SourceColumn="STOR_ID" DataSetColumn="STOR_ID" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="ADJU_OLD_QTY" DataSetColumn="ADJU_OLD_QTY" />
+              <Mapping SourceColumn="ADJU_NEW_QTY" DataSetColumn="ADJU_NEW_QTY" />
+              <Mapping SourceColumn="ADJU_REASON" DataSetColumn="ADJU_REASON" />
+              <Mapping SourceColumn="ADJU_DATE" DataSetColumn="ADJU_DATE" />
+              <Mapping SourceColumn="USER_ID" DataSetColumn="USER_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ISSUE_SUMTableAdapter" GeneratorDataComponentClassName="ISSUE_SUMTableAdapter" Name="ISSUE_SUM" UserDataComponentName="ISSUE_SUMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.ISSU_QTY) AS ISSU_QTY, E.ISSU_COST AS LAST_COST
+FROM            ISSUE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.ISSU_COST</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LOCA_NAME" DataSetColumn="LOCA_NAME" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="ISSU_QTY" DataSetColumn="ISSU_QTY" />
+              <Mapping SourceColumn="LAST_COST" DataSetColumn="LAST_COST" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByCategoryAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllLocationByCategoryAndDate" GeneratorSourceName="FillByCategoryAndDate" GetMethodModifier="Public" GetMethodName="SelectAllLocationByCategoryAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllLocationByCategoryAndDate" UserSourceName="FillByCategoryAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.ISSU_QTY) AS ISSU_QTY, E.ISSU_COST AS LAST_COST
+FROM            ISSUE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE S.CATE_NAME=@CategoryName AND E.ISSU_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.ISSU_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="CategoryName" ColumnName="CATE_NAME" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="nvarchar(250)" DbType="String" Direction="Input" ParameterName="@CategoryName" Precision="0" ProviderType="NVarChar" Scale="0" Size="250" SourceColumn="CATE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllLocationByDate" GeneratorSourceName="FillByDate" GetMethodModifier="Public" GetMethodName="SelectAllLocationByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllLocationByDate" UserSourceName="FillByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.ISSU_QTY) AS ISSU_QTY, E.ISSU_COST AS LAST_COST
+FROM            ISSUE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE E.ISSU_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.ISSU_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByIDAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectByItemIDAndDate" GeneratorSourceName="FillByIDAndDate" GetMethodModifier="Public" GetMethodName="SelectByItemIDAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectByItemIDAndDate" UserSourceName="FillByIDAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.ISSU_QTY) AS ISSU_QTY, E.ISSU_COST AS LAST_COST
+FROM            ISSUE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE L.LOCA_NAME=@LocationName AND S.ITEM_ID=@ItemID AND E.ISSU_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.ISSU_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="LocationName" ColumnName="LOCA_NAME" DataSourceName="Inventory.dbo.LOCATION" DataTypeServer="varchar(250)" DbType="AnsiString" Direction="Input" ParameterName="@LocationName" Precision="0" ProviderType="VarChar" Scale="0" Size="250" SourceColumn="LOCA_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ItemID" ColumnName="ITEM_ID" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByItemIDAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllocationByItemIDAndDate" GeneratorSourceName="FillByItemIDAndDate" GetMethodModifier="Public" GetMethodName="SelectAllocationByItemIDAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllocationByItemIDAndDate" UserSourceName="FillByItemIDAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.ISSU_QTY) AS ISSU_QTY, E.ISSU_COST AS LAST_COST
+FROM            ISSUE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE S.ITEM_ID=@ItemID AND E.ISSU_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.ISSU_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="ItemID" ColumnName="ITEM_ID" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByLocationAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectByDate" GeneratorSourceName="FillByLocationAndDate" GetMethodModifier="Public" GetMethodName="SelectByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectByDate" UserSourceName="FillByLocationAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.ISSU_QTY) AS ISSU_QTY, E.ISSU_COST AS LAST_COST
+FROM            ISSUE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE L.LOCA_NAME=@LocationName AND E.ISSU_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.ISSU_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="LocationName" ColumnName="LOCA_NAME" DataSourceName="Inventory.dbo.LOCATION" DataTypeServer="varchar(250)" DbType="AnsiString" Direction="Input" ParameterName="@LocationName" Precision="0" ProviderType="VarChar" Scale="0" Size="250" SourceColumn="LOCA_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByLocationCategoryAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectByCategoryAndDate" GeneratorSourceName="FillByLocationCategoryAndDate" GetMethodModifier="Public" GetMethodName="SelectByCategoryAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectByCategoryAndDate" UserSourceName="FillByLocationCategoryAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.ISSU_QTY) AS ISSU_QTY, E.ISSU_COST AS LAST_COST
+FROM            ISSUE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE L.LOCA_NAME=@LocationName AND S.CATE_NAME=@CategoryName AND E.ISSU_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.ISSU_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="LocationName" ColumnName="LOCA_NAME" DataSourceName="Inventory.dbo.LOCATION" DataTypeServer="varchar(250)" DbType="AnsiString" Direction="Input" ParameterName="@LocationName" Precision="0" ProviderType="VarChar" Scale="0" Size="250" SourceColumn="LOCA_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="CategoryName" ColumnName="CATE_NAME" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="nvarchar(250)" DbType="String" Direction="Input" ParameterName="@CategoryName" Precision="0" ProviderType="NVarChar" Scale="0" Size="250" SourceColumn="CATE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="ISSU_DATE" DataSourceName="Inventory.dbo.ISSUE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="ISSU_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RECEIVE_SUMTableAdapter" GeneratorDataComponentClassName="RECEIVE_SUMTableAdapter" Name="RECEIVE_SUM" UserDataComponentName="RECEIVE_SUMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.RECE_QTY) AS RECE_QTY, E.RECE_COST AS LAST_COST
+FROM            RECEIVE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.RECE_COST</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LOCA_NAME" DataSetColumn="LOCA_NAME" />
+              <Mapping SourceColumn="CATE_NAME" DataSetColumn="CATE_NAME" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="RECE_QTY" DataSetColumn="RECE_QTY" />
+              <Mapping SourceColumn="LAST_COST" DataSetColumn="LAST_COST" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByCategoryAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllLocationByCategoryAndDate" GeneratorSourceName="FillByCategoryAndDate" GetMethodModifier="Public" GetMethodName="SelectAllLocationByCategoryAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllLocationByCategoryAndDate" UserSourceName="FillByCategoryAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.RECE_QTY) AS RECE_QTY, E.RECE_COST AS LAST_COST
+FROM            RECEIVE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE S.CATE_NAME=@CategoryName AND E.RECE_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.RECE_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="CategoryName" ColumnName="CATE_NAME" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="nvarchar(250)" DbType="String" Direction="Input" ParameterName="@CategoryName" Precision="0" ProviderType="NVarChar" Scale="0" Size="250" SourceColumn="CATE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllLocationByDate" GeneratorSourceName="FillByDate" GetMethodModifier="Public" GetMethodName="SelectAllLocationByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllLocationByDate" UserSourceName="FillByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.RECE_QTY) AS RECE_QTY, E.RECE_COST AS LAST_COST
+FROM            RECEIVE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE E.RECE_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.RECE_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByIDAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectByItemIDAndDate" GeneratorSourceName="FillByIDAndDate" GetMethodModifier="Public" GetMethodName="SelectByItemIDAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectByItemIDAndDate" UserSourceName="FillByIDAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.RECE_QTY) AS RECE_QTY, E.RECE_COST AS LAST_COST
+FROM            RECEIVE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE L.LOCA_NAME=@LocationName AND S.ITEM_ID=@ItemID AND E.RECE_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.RECE_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="LocationName" ColumnName="LOCA_NAME" DataSourceName="Inventory.dbo.LOCATION" DataTypeServer="varchar(250)" DbType="AnsiString" Direction="Input" ParameterName="@LocationName" Precision="0" ProviderType="VarChar" Scale="0" Size="250" SourceColumn="LOCA_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ItemID" ColumnName="ITEM_ID" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByItemIDAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllocationByItemIDAndDate" GeneratorSourceName="FillByItemIDAndDate" GetMethodModifier="Public" GetMethodName="SelectAllocationByItemIDAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllocationByItemIDAndDate" UserSourceName="FillByItemIDAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.RECE_QTY) AS RECE_QTY, E.RECE_COST AS LAST_COST
+FROM            RECEIVE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE S.ITEM_ID=@ItemID AND E.RECE_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.RECE_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="ItemID" ColumnName="ITEM_ID" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByLocationAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectByDate" GeneratorSourceName="FillByLocationAndDate" GetMethodModifier="Public" GetMethodName="SelectByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectByDate" UserSourceName="FillByLocationAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.RECE_QTY) AS RECE_QTY, E.RECE_COST AS LAST_COST
+FROM            RECEIVE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE L.LOCA_NAME=@LocationName AND E.RECE_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.RECE_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="LocationName" ColumnName="LOCA_NAME" DataSourceName="Inventory.dbo.LOCATION" DataTypeServer="varchar(250)" DbType="AnsiString" Direction="Input" ParameterName="@LocationName" Precision="0" ProviderType="VarChar" Scale="0" Size="250" SourceColumn="LOCA_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByLocationCategoryAndDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="SelectByCategoryAndDate" GeneratorSourceName="FillByLocationCategoryAndDate" GetMethodModifier="Public" GetMethodName="SelectByCategoryAndDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectByCategoryAndDate" UserSourceName="FillByLocationCategoryAndDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        L.LOCA_NAME, S.CATE_NAME,
+                             (SELECT        ITEM_NAME_CHN
+                               FROM            ITEM AS I
+                               WHERE        (ITEM_ID = S.ITEM_ID)) AS ITEM_NAME,
+                             (SELECT        UNIT_NAME_CHN
+                               FROM            UNIT AS U
+                               WHERE        (UNIT_ID = S.UNIT_ID)) AS UNIT_NAME, SUM(E.RECE_QTY) AS RECE_QTY, E.RECE_COST AS LAST_COST
+FROM            RECEIVE AS E INNER JOIN
+                         ITEM_STORE AS S ON E.STOR_ID = S.STOR_ID INNER JOIN
+                         LOCATION AS L ON L.LOCA_ID = E.LOCA_ID WHERE L.LOCA_NAME=@LocationName AND S.CATE_NAME=@CategoryName AND E.RECE_DATE BETWEEN @dtFrom AND @dtTo
+GROUP BY S.ITEM_ID, S.UNIT_ID, L.LOCA_NAME, S.CATE_NAME, E.RECE_COST</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="LocationName" ColumnName="LOCA_NAME" DataSourceName="Inventory.dbo.LOCATION" DataTypeServer="varchar(250)" DbType="AnsiString" Direction="Input" ParameterName="@LocationName" Precision="0" ProviderType="VarChar" Scale="0" Size="250" SourceColumn="LOCA_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="CategoryName" ColumnName="CATE_NAME" DataSourceName="Inventory.dbo.ITEM_STORE" DataTypeServer="nvarchar(250)" DbType="String" Direction="Input" ParameterName="@CategoryName" Precision="0" ProviderType="NVarChar" Scale="0" Size="250" SourceColumn="CATE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtFrom" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtFrom" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dtTo" ColumnName="RECE_DATE" DataSourceName="Inventory.dbo.RECEIVE" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dtTo" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="RECE_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PRE_ORDERTableAdapter" GeneratorDataComponentClassName="PRE_ORDERTableAdapter" Name="PRE_ORDER" UserDataComponentName="PRE_ORDERTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="INV_Database (MySettings)" DbObjectName="Inventory.dbo.PRE_ORDER" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[PRE_ORDER] WHERE (([ORDE_ID] = @Original_ORDE_ID) AND ((@IsNull_ITEM_ID = 1 AND [ITEM_ID] IS NULL) OR ([ITEM_ID] = @Original_ITEM_ID)) AND ((@IsNull_UNIT_ID = 1 AND [UNIT_ID] IS NULL) OR ([UNIT_ID] = @Original_UNIT_ID)) AND ((@IsNull_ORDE_QTY = 1 AND [ORDE_QTY] IS NULL) OR ([ORDE_QTY] = @Original_ORDE_QTY)) AND ((@IsNull_ORDE_PRICE = 1 AND [ORDE_PRICE] IS NULL) OR ([ORDE_PRICE] = @Original_ORDE_PRICE)) AND ((@IsNull_USER_ID = 1 AND [USER_ID] IS NULL) OR ([USER_ID] = @Original_USER_ID)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_ORDE_ID" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ORDE_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ITEM_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UNIT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UNIT_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_UNIT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UNIT_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORDE_QTY" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORDE_QTY" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_ORDE_QTY" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_QTY" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORDE_PRICE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORDE_PRICE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_ORDE_PRICE" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_PRICE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_USER_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_USER_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[PRE_ORDER] ([ITEM_ID], [UNIT_ID], [ORDE_QTY], [ORDE_PRICE], [USER_ID]) VALUES (@ITEM_ID, @UNIT_ID, @ORDE_QTY, @ORDE_PRICE, @USER_ID);
+SELECT ORDE_ID, ITEM_ID, (SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE (ITEM_ID = O.ITEM_ID)) AS ITEM_NAME, UNIT_ID, (SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE (UNIT_ID = O.UNIT_ID)) AS UNIT_NAME, ORDE_QTY, ORDE_PRICE, ORDE_QTY * ORDE_PRICE AS AMOUNT, USER_ID FROM PRE_ORDER AS O WHERE (ORDE_ID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@UNIT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UNIT_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@ORDE_QTY" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_QTY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@ORDE_PRICE" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_PRICE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@USER_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT O.ORDE_ID, O.ITEM_ID,(SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE I.ITEM_ID=O.ITEM_ID) AS ITEM_NAME, O.UNIT_ID,(SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE U.UNIT_ID=O.UNIT_ID) AS UNIT_NAME, O.ORDE_QTY, O.ORDE_PRICE,(O.ORDE_QTY*O.ORDE_PRICE) AS AMOUNT, O.USER_ID FROM dbo.PRE_ORDER AS O</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[PRE_ORDER] SET [ITEM_ID] = @ITEM_ID, [UNIT_ID] = @UNIT_ID, [ORDE_QTY] = @ORDE_QTY, [ORDE_PRICE] = @ORDE_PRICE, [USER_ID] = @USER_ID WHERE (([ORDE_ID] = @Original_ORDE_ID) AND ((@IsNull_ITEM_ID = 1 AND [ITEM_ID] IS NULL) OR ([ITEM_ID] = @Original_ITEM_ID)) AND ((@IsNull_UNIT_ID = 1 AND [UNIT_ID] IS NULL) OR ([UNIT_ID] = @Original_UNIT_ID)) AND ((@IsNull_ORDE_QTY = 1 AND [ORDE_QTY] IS NULL) OR ([ORDE_QTY] = @Original_ORDE_QTY)) AND ((@IsNull_ORDE_PRICE = 1 AND [ORDE_PRICE] IS NULL) OR ([ORDE_PRICE] = @Original_ORDE_PRICE)) AND ((@IsNull_USER_ID = 1 AND [USER_ID] IS NULL) OR ([USER_ID] = @Original_USER_ID)));
+SELECT ORDE_ID, ITEM_ID, (SELECT ITEM_NAME_CHN FROM ITEM AS I WHERE (ITEM_ID = O.ITEM_ID)) AS ITEM_NAME, UNIT_ID, (SELECT UNIT_NAME_CHN FROM UNIT AS U WHERE (UNIT_ID = O.UNIT_ID)) AS UNIT_NAME, ORDE_QTY, ORDE_PRICE, ORDE_QTY * ORDE_PRICE AS AMOUNT, USER_ID FROM PRE_ORDER AS O WHERE (ORDE_ID = @ORDE_ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@UNIT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UNIT_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@ORDE_QTY" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_QTY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@ORDE_PRICE" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_PRICE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@USER_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_ORDE_ID" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ORDE_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ITEM_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ITEM_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UNIT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UNIT_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_UNIT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UNIT_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORDE_QTY" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORDE_QTY" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_ORDE_QTY" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_QTY" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORDE_PRICE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORDE_PRICE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_ORDE_PRICE" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ORDE_PRICE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_USER_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_USER_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ORDE_ID" ColumnName="ORDE_ID" DataSourceName="Inventory.dbo.PRE_ORDER" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@ORDE_ID" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="ORDE_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ORDE_ID" DataSetColumn="ORDE_ID" />
+              <Mapping SourceColumn="ITEM_ID" DataSetColumn="ITEM_ID" />
+              <Mapping SourceColumn="ITEM_NAME" DataSetColumn="ITEM_NAME" />
+              <Mapping SourceColumn="UNIT_ID" DataSetColumn="UNIT_ID" />
+              <Mapping SourceColumn="UNIT_NAME" DataSetColumn="UNIT_NAME" />
+              <Mapping SourceColumn="ORDE_QTY" DataSetColumn="ORDE_QTY" />
+              <Mapping SourceColumn="ORDE_PRICE" DataSetColumn="ORDE_PRICE" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="USER_ID" DataSetColumn="USER_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSReport" msprop:Generator_DataSetName="DSReport" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRANSACTION" msprop:Generator_UserTableName="TRANSACTION" msprop:Generator_RowDeletedName="TRANSACTIONRowDeleted" msprop:Generator_RowChangedName="TRANSACTIONRowChanged" msprop:Generator_RowClassName="TRANSACTIONRow" msprop:Generator_RowChangingName="TRANSACTIONRowChanging" msprop:Generator_RowEvArgName="TRANSACTIONRowChangeEvent" msprop:Generator_RowEvHandlerName="TRANSACTIONRowChangeEventHandler" msprop:Generator_TableClassName="TRANSACTIONDataTable" msprop:Generator_TableVarName="tableTRANSACTION" msprop:Generator_RowDeletingName="TRANSACTIONRowDeleting" msprop:Generator_TablePropName="TRANSACTION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRAN_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="TRAN_ID" msprop:Generator_ColumnPropNameInRow="TRAN_ID" msprop:Generator_ColumnVarNameInTable="columnTRAN_ID" msprop:Generator_ColumnPropNameInTable="TRAN_IDColumn" type="xs:long" />
+              <xs:element name="STOR_ID" msprop:Generator_UserColumnName="STOR_ID" msprop:Generator_ColumnPropNameInRow="STOR_ID" msprop:Generator_ColumnVarNameInTable="columnSTOR_ID" msprop:Generator_ColumnPropNameInTable="STOR_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TRAN_OLD_QTY" msprop:Generator_UserColumnName="TRAN_OLD_QTY" msprop:Generator_ColumnPropNameInRow="TRAN_OLD_QTY" msprop:Generator_ColumnVarNameInTable="columnTRAN_OLD_QTY" msprop:Generator_ColumnPropNameInTable="TRAN_OLD_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TRAN_QTY" msprop:Generator_UserColumnName="TRAN_QTY" msprop:Generator_ColumnPropNameInRow="TRAN_QTY" msprop:Generator_ColumnVarNameInTable="columnTRAN_QTY" msprop:Generator_ColumnPropNameInTable="TRAN_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TRAN_NEW_QTY" msprop:Generator_UserColumnName="TRAN_NEW_QTY" msprop:Generator_ColumnPropNameInRow="TRAN_NEW_QTY" msprop:Generator_ColumnVarNameInTable="columnTRAN_NEW_QTY" msprop:Generator_ColumnPropNameInTable="TRAN_NEW_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TRAN_DATE" msprop:Generator_UserColumnName="TRAN_DATE" msprop:Generator_ColumnPropNameInRow="TRAN_DATE" msprop:Generator_ColumnVarNameInTable="columnTRAN_DATE" msprop:Generator_ColumnPropNameInTable="TRAN_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TYPE_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TYPE_NAME" msprop:Generator_ColumnPropNameInRow="TYPE_NAME" msprop:Generator_ColumnVarNameInTable="columnTYPE_NAME" msprop:Generator_ColumnPropNameInTable="TYPE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOCA_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LOCA_NAME" msprop:Generator_ColumnPropNameInRow="LOCA_NAME" msprop:Generator_ColumnVarNameInTable="columnLOCA_NAME" msprop:Generator_ColumnPropNameInTable="LOCA_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RECEIVE" msprop:Generator_UserTableName="RECEIVE" msprop:Generator_RowDeletedName="RECEIVERowDeleted" msprop:Generator_RowChangedName="RECEIVERowChanged" msprop:Generator_RowClassName="RECEIVERow" msprop:Generator_RowChangingName="RECEIVERowChanging" msprop:Generator_RowEvArgName="RECEIVERowChangeEvent" msprop:Generator_RowEvHandlerName="RECEIVERowChangeEventHandler" msprop:Generator_TableClassName="RECEIVEDataTable" msprop:Generator_TableVarName="tableRECEIVE" msprop:Generator_RowDeletingName="RECEIVERowDeleting" msprop:Generator_TablePropName="RECEIVE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RECE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="RECE_ID" msprop:Generator_ColumnPropNameInRow="RECE_ID" msprop:Generator_ColumnVarNameInTable="columnRECE_ID" msprop:Generator_ColumnPropNameInTable="RECE_IDColumn" type="xs:long" />
+              <xs:element name="STOR_ID" msprop:Generator_UserColumnName="STOR_ID" msprop:Generator_ColumnPropNameInRow="STOR_ID" msprop:Generator_ColumnVarNameInTable="columnSTOR_ID" msprop:Generator_ColumnPropNameInTable="STOR_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LOCA_ID" msprop:Generator_UserColumnName="LOCA_ID" msprop:Generator_ColumnPropNameInRow="LOCA_ID" msprop:Generator_ColumnVarNameInTable="columnLOCA_ID" msprop:Generator_ColumnPropNameInTable="LOCA_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RECE_QTY" msprop:Generator_UserColumnName="RECE_QTY" msprop:Generator_ColumnPropNameInRow="RECE_QTY" msprop:Generator_ColumnVarNameInTable="columnRECE_QTY" msprop:Generator_ColumnPropNameInTable="RECE_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="RECE_REASON" msprop:Generator_UserColumnName="RECE_REASON" msprop:Generator_ColumnPropNameInRow="RECE_REASON" msprop:Generator_ColumnVarNameInTable="columnRECE_REASON" msprop:Generator_ColumnPropNameInTable="RECE_REASONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECE_DATE" msprop:Generator_UserColumnName="RECE_DATE" msprop:Generator_ColumnPropNameInRow="RECE_DATE" msprop:Generator_ColumnVarNameInTable="columnRECE_DATE" msprop:Generator_ColumnPropNameInTable="RECE_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USER_ID" msprop:Generator_UserColumnName="USER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOCA_NAME" msprop:Generator_UserColumnName="LOCA_NAME" msprop:Generator_ColumnPropNameInRow="LOCA_NAME" msprop:Generator_ColumnVarNameInTable="columnLOCA_NAME" msprop:Generator_ColumnPropNameInTable="LOCA_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LAST_COST" msprop:Generator_UserColumnName="LAST_COST" msprop:Generator_ColumnVarNameInTable="columnLAST_COST" msprop:Generator_ColumnPropNameInRow="LAST_COST" msprop:Generator_ColumnPropNameInTable="LAST_COSTColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ISSUE" msprop:Generator_UserTableName="ISSUE" msprop:Generator_RowDeletedName="ISSUERowDeleted" msprop:Generator_RowChangedName="ISSUERowChanged" msprop:Generator_RowClassName="ISSUERow" msprop:Generator_RowChangingName="ISSUERowChanging" msprop:Generator_RowEvArgName="ISSUERowChangeEvent" msprop:Generator_RowEvHandlerName="ISSUERowChangeEventHandler" msprop:Generator_TableClassName="ISSUEDataTable" msprop:Generator_TableVarName="tableISSUE" msprop:Generator_RowDeletingName="ISSUERowDeleting" msprop:Generator_TablePropName="ISSUE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ISSU_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ISSU_ID" msprop:Generator_ColumnPropNameInRow="ISSU_ID" msprop:Generator_ColumnVarNameInTable="columnISSU_ID" msprop:Generator_ColumnPropNameInTable="ISSU_IDColumn" type="xs:long" />
+              <xs:element name="STOR_ID" msprop:Generator_UserColumnName="STOR_ID" msprop:Generator_ColumnPropNameInRow="STOR_ID" msprop:Generator_ColumnVarNameInTable="columnSTOR_ID" msprop:Generator_ColumnPropNameInTable="STOR_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LOCA_ID" msprop:Generator_UserColumnName="LOCA_ID" msprop:Generator_ColumnPropNameInRow="LOCA_ID" msprop:Generator_ColumnVarNameInTable="columnLOCA_ID" msprop:Generator_ColumnPropNameInTable="LOCA_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ISSU_QTY" msprop:Generator_UserColumnName="ISSU_QTY" msprop:Generator_ColumnPropNameInRow="ISSU_QTY" msprop:Generator_ColumnVarNameInTable="columnISSU_QTY" msprop:Generator_ColumnPropNameInTable="ISSU_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ISSU_REASON" msprop:Generator_UserColumnName="ISSU_REASON" msprop:Generator_ColumnPropNameInRow="ISSU_REASON" msprop:Generator_ColumnVarNameInTable="columnISSU_REASON" msprop:Generator_ColumnPropNameInTable="ISSU_REASONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISSU_DATE" msprop:Generator_UserColumnName="ISSU_DATE" msprop:Generator_ColumnPropNameInRow="ISSU_DATE" msprop:Generator_ColumnVarNameInTable="columnISSU_DATE" msprop:Generator_ColumnPropNameInTable="ISSU_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USER_ID" msprop:Generator_UserColumnName="USER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOCA_NAME" msprop:Generator_UserColumnName="LOCA_NAME" msprop:Generator_ColumnPropNameInRow="LOCA_NAME" msprop:Generator_ColumnVarNameInTable="columnLOCA_NAME" msprop:Generator_ColumnPropNameInTable="LOCA_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LAST_COST" msprop:Generator_UserColumnName="LAST_COST" msprop:Generator_ColumnVarNameInTable="columnLAST_COST" msprop:Generator_ColumnPropNameInRow="LAST_COST" msprop:Generator_ColumnPropNameInTable="LAST_COSTColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITEM_STORE" msprop:Generator_UserTableName="ITEM_STORE" msprop:Generator_RowDeletedName="ITEM_STORERowDeleted" msprop:Generator_RowChangedName="ITEM_STORERowChanged" msprop:Generator_RowClassName="ITEM_STORERow" msprop:Generator_RowChangingName="ITEM_STORERowChanging" msprop:Generator_RowEvArgName="ITEM_STORERowChangeEvent" msprop:Generator_RowEvHandlerName="ITEM_STORERowChangeEventHandler" msprop:Generator_TableClassName="ITEM_STOREDataTable" msprop:Generator_TableVarName="tableITEM_STORE" msprop:Generator_RowDeletingName="ITEM_STORERowDeleting" msprop:Generator_TablePropName="ITEM_STORE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STOR_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="STOR_ID" msprop:Generator_ColumnVarNameInTable="columnSTOR_ID" msprop:Generator_ColumnPropNameInRow="STOR_ID" msprop:Generator_ColumnPropNameInTable="STOR_IDColumn" type="xs:int" />
+              <xs:element name="ITEM_ID" msprop:Generator_UserColumnName="ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_ID" msprop:Generator_ColumnPropNameInRow="ITEM_ID" msprop:Generator_ColumnPropNameInTable="ITEM_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_ID" msprop:Generator_UserColumnName="UNIT_ID" msprop:Generator_ColumnVarNameInTable="columnUNIT_ID" msprop:Generator_ColumnPropNameInRow="UNIT_ID" msprop:Generator_ColumnPropNameInTable="UNIT_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RATIO_QTY" msprop:Generator_UserColumnName="RATIO_QTY" msprop:Generator_ColumnVarNameInTable="columnRATIO_QTY" msprop:Generator_ColumnPropNameInRow="RATIO_QTY" msprop:Generator_ColumnPropNameInTable="RATIO_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LAST_COST" msprop:Generator_UserColumnName="LAST_COST" msprop:Generator_ColumnVarNameInTable="columnLAST_COST" msprop:Generator_ColumnPropNameInRow="LAST_COST" msprop:Generator_ColumnPropNameInTable="LAST_COSTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ITEM_BALANCE" msprop:Generator_UserColumnName="ITEM_BALANCE" msprop:Generator_ColumnVarNameInTable="columnITEM_BALANCE" msprop:Generator_ColumnPropNameInRow="ITEM_BALANCE" msprop:Generator_ColumnPropNameInTable="ITEM_BALANCEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_NAME_CHN" msprop:Generator_UserColumnName="ITEM_NAME_CHN" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME_CHN" msprop:Generator_ColumnPropNameInRow="ITEM_NAME_CHN" msprop:Generator_ColumnPropNameInTable="ITEM_NAME_CHNColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME_CHN" msprop:Generator_UserColumnName="UNIT_NAME_CHN" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME_CHN" msprop:Generator_ColumnPropNameInRow="UNIT_NAME_CHN" msprop:Generator_ColumnPropNameInTable="UNIT_NAME_CHNColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITEM" msprop:Generator_UserTableName="ITEM" msprop:Generator_RowDeletedName="ITEMRowDeleted" msprop:Generator_RowChangedName="ITEMRowChanged" msprop:Generator_RowClassName="ITEMRow" msprop:Generator_RowChangingName="ITEMRowChanging" msprop:Generator_RowEvArgName="ITEMRowChangeEvent" msprop:Generator_RowEvHandlerName="ITEMRowChangeEventHandler" msprop:Generator_TableClassName="ITEMDataTable" msprop:Generator_TableVarName="tableITEM" msprop:Generator_RowDeletingName="ITEMRowDeleting" msprop:Generator_TablePropName="ITEM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEM_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_ID" msprop:Generator_ColumnPropNameInRow="ITEM_ID" msprop:Generator_ColumnPropNameInTable="ITEM_IDColumn" type="xs:int" />
+              <xs:element name="ITEM_BARCODE" msprop:Generator_UserColumnName="ITEM_BARCODE" msprop:Generator_ColumnVarNameInTable="columnITEM_BARCODE" msprop:Generator_ColumnPropNameInRow="ITEM_BARCODE" msprop:Generator_ColumnPropNameInTable="ITEM_BARCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_NAME" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_NAME_CHN" msprop:Generator_UserColumnName="ITEM_NAME_CHN" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME_CHN" msprop:Generator_ColumnPropNameInRow="ITEM_NAME_CHN" msprop:Generator_ColumnPropNameInTable="ITEM_NAME_CHNColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_ID" msprop:Generator_UserColumnName="CATE_ID" msprop:Generator_ColumnVarNameInTable="columnCATE_ID" msprop:Generator_ColumnPropNameInRow="CATE_ID" msprop:Generator_ColumnPropNameInTable="CATE_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ITEM_IMAGE" msprop:Generator_UserColumnName="ITEM_IMAGE" msprop:Generator_ColumnVarNameInTable="columnITEM_IMAGE" msprop:Generator_ColumnPropNameInRow="ITEM_IMAGE" msprop:Generator_ColumnPropNameInTable="ITEM_IMAGEColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_NAME_CHN" msprop:Generator_UserColumnName="CATE_NAME_CHN" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME_CHN" msprop:Generator_ColumnPropNameInRow="CATE_NAME_CHN" msprop:Generator_ColumnPropNameInTable="CATE_NAME_CHNColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PRE_ISSUE" msprop:Generator_UserTableName="PRE_ISSUE" msprop:Generator_RowDeletedName="PRE_ISSUERowDeleted" msprop:Generator_RowChangedName="PRE_ISSUERowChanged" msprop:Generator_RowClassName="PRE_ISSUERow" msprop:Generator_RowChangingName="PRE_ISSUERowChanging" msprop:Generator_RowEvArgName="PRE_ISSUERowChangeEvent" msprop:Generator_RowEvHandlerName="PRE_ISSUERowChangeEventHandler" msprop:Generator_TableClassName="PRE_ISSUEDataTable" msprop:Generator_TableVarName="tablePRE_ISSUE" msprop:Generator_RowDeletingName="PRE_ISSUERowDeleting" msprop:Generator_TablePropName="PRE_ISSUE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ISSU_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ISSU_ID" msprop:Generator_ColumnPropNameInRow="ISSU_ID" msprop:Generator_ColumnVarNameInTable="columnISSU_ID" msprop:Generator_ColumnPropNameInTable="ISSU_IDColumn" type="xs:long" />
+              <xs:element name="STOR_ID" msprop:Generator_UserColumnName="STOR_ID" msprop:Generator_ColumnPropNameInRow="STOR_ID" msprop:Generator_ColumnVarNameInTable="columnSTOR_ID" msprop:Generator_ColumnPropNameInTable="STOR_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LOCA_ID" msprop:Generator_UserColumnName="LOCA_ID" msprop:Generator_ColumnPropNameInRow="LOCA_ID" msprop:Generator_ColumnVarNameInTable="columnLOCA_ID" msprop:Generator_ColumnPropNameInTable="LOCA_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ISSU_QTY" msprop:Generator_UserColumnName="ISSU_QTY" msprop:Generator_ColumnPropNameInRow="ISSU_QTY" msprop:Generator_ColumnVarNameInTable="columnISSU_QTY" msprop:Generator_ColumnPropNameInTable="ISSU_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ISSU_REASON" msprop:Generator_UserColumnName="ISSU_REASON" msprop:Generator_ColumnPropNameInRow="ISSU_REASON" msprop:Generator_ColumnVarNameInTable="columnISSU_REASON" msprop:Generator_ColumnPropNameInTable="ISSU_REASONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISSU_DATE" msprop:Generator_UserColumnName="ISSU_DATE" msprop:Generator_ColumnPropNameInRow="ISSU_DATE" msprop:Generator_ColumnVarNameInTable="columnISSU_DATE" msprop:Generator_ColumnPropNameInTable="ISSU_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USER_ID" msprop:Generator_UserColumnName="USER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOCA_NAME" msprop:Generator_UserColumnName="LOCA_NAME" msprop:Generator_ColumnPropNameInRow="LOCA_NAME" msprop:Generator_ColumnVarNameInTable="columnLOCA_NAME" msprop:Generator_ColumnPropNameInTable="LOCA_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISSU_COST" msprop:Generator_UserColumnName="ISSU_COST" msprop:Generator_ColumnPropNameInRow="ISSU_COST" msprop:Generator_ColumnVarNameInTable="columnISSU_COST" msprop:Generator_ColumnPropNameInTable="ISSU_COSTColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PRE_RECEIVE" msprop:Generator_UserTableName="PRE_RECEIVE" msprop:Generator_RowDeletedName="PRE_RECEIVERowDeleted" msprop:Generator_RowChangedName="PRE_RECEIVERowChanged" msprop:Generator_RowClassName="PRE_RECEIVERow" msprop:Generator_RowChangingName="PRE_RECEIVERowChanging" msprop:Generator_RowEvArgName="PRE_RECEIVERowChangeEvent" msprop:Generator_RowEvHandlerName="PRE_RECEIVERowChangeEventHandler" msprop:Generator_TableClassName="PRE_RECEIVEDataTable" msprop:Generator_TableVarName="tablePRE_RECEIVE" msprop:Generator_RowDeletingName="PRE_RECEIVERowDeleting" msprop:Generator_TablePropName="PRE_RECEIVE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RECE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="RECE_ID" msprop:Generator_ColumnPropNameInRow="RECE_ID" msprop:Generator_ColumnVarNameInTable="columnRECE_ID" msprop:Generator_ColumnPropNameInTable="RECE_IDColumn" type="xs:long" />
+              <xs:element name="STOR_ID" msprop:Generator_UserColumnName="STOR_ID" msprop:Generator_ColumnPropNameInRow="STOR_ID" msprop:Generator_ColumnVarNameInTable="columnSTOR_ID" msprop:Generator_ColumnPropNameInTable="STOR_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LOCA_ID" msprop:Generator_UserColumnName="LOCA_ID" msprop:Generator_ColumnPropNameInRow="LOCA_ID" msprop:Generator_ColumnVarNameInTable="columnLOCA_ID" msprop:Generator_ColumnPropNameInTable="LOCA_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RECE_QTY" msprop:Generator_UserColumnName="RECE_QTY" msprop:Generator_ColumnPropNameInRow="RECE_QTY" msprop:Generator_ColumnVarNameInTable="columnRECE_QTY" msprop:Generator_ColumnPropNameInTable="RECE_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="RECE_REASON" msprop:Generator_UserColumnName="RECE_REASON" msprop:Generator_ColumnPropNameInRow="RECE_REASON" msprop:Generator_ColumnVarNameInTable="columnRECE_REASON" msprop:Generator_ColumnPropNameInTable="RECE_REASONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECE_DATE" msprop:Generator_UserColumnName="RECE_DATE" msprop:Generator_ColumnPropNameInRow="RECE_DATE" msprop:Generator_ColumnVarNameInTable="columnRECE_DATE" msprop:Generator_ColumnPropNameInTable="RECE_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USER_ID" msprop:Generator_UserColumnName="USER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOCA_NAME" msprop:Generator_UserColumnName="LOCA_NAME" msprop:Generator_ColumnPropNameInRow="LOCA_NAME" msprop:Generator_ColumnVarNameInTable="columnLOCA_NAME" msprop:Generator_ColumnPropNameInTable="LOCA_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECE_COST" msprop:Generator_UserColumnName="RECE_COST" msprop:Generator_ColumnPropNameInRow="RECE_COST" msprop:Generator_ColumnVarNameInTable="columnRECE_COST" msprop:Generator_ColumnPropNameInTable="RECE_COSTColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ADJUSTMENT" msprop:Generator_UserTableName="ADJUSTMENT" msprop:Generator_RowDeletedName="ADJUSTMENTRowDeleted" msprop:Generator_RowChangedName="ADJUSTMENTRowChanged" msprop:Generator_RowClassName="ADJUSTMENTRow" msprop:Generator_RowChangingName="ADJUSTMENTRowChanging" msprop:Generator_RowEvArgName="ADJUSTMENTRowChangeEvent" msprop:Generator_RowEvHandlerName="ADJUSTMENTRowChangeEventHandler" msprop:Generator_TableClassName="ADJUSTMENTDataTable" msprop:Generator_TableVarName="tableADJUSTMENT" msprop:Generator_RowDeletingName="ADJUSTMENTRowDeleting" msprop:Generator_TablePropName="ADJUSTMENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ADJU_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ADJU_ID" msprop:Generator_ColumnPropNameInRow="ADJU_ID" msprop:Generator_ColumnVarNameInTable="columnADJU_ID" msprop:Generator_ColumnPropNameInTable="ADJU_IDColumn" type="xs:long" />
+              <xs:element name="STOR_ID" msprop:Generator_UserColumnName="STOR_ID" msprop:Generator_ColumnPropNameInRow="STOR_ID" msprop:Generator_ColumnVarNameInTable="columnSTOR_ID" msprop:Generator_ColumnPropNameInTable="STOR_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADJU_OLD_QTY" msprop:Generator_UserColumnName="ADJU_OLD_QTY" msprop:Generator_ColumnPropNameInRow="ADJU_OLD_QTY" msprop:Generator_ColumnVarNameInTable="columnADJU_OLD_QTY" msprop:Generator_ColumnPropNameInTable="ADJU_OLD_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ADJU_NEW_QTY" msprop:Generator_UserColumnName="ADJU_NEW_QTY" msprop:Generator_ColumnPropNameInRow="ADJU_NEW_QTY" msprop:Generator_ColumnVarNameInTable="columnADJU_NEW_QTY" msprop:Generator_ColumnPropNameInTable="ADJU_NEW_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ADJU_REASON" msprop:Generator_UserColumnName="ADJU_REASON" msprop:Generator_ColumnPropNameInRow="ADJU_REASON" msprop:Generator_ColumnVarNameInTable="columnADJU_REASON" msprop:Generator_ColumnPropNameInTable="ADJU_REASONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADJU_DATE" msprop:Generator_UserColumnName="ADJU_DATE" msprop:Generator_ColumnPropNameInRow="ADJU_DATE" msprop:Generator_ColumnVarNameInTable="columnADJU_DATE" msprop:Generator_ColumnPropNameInTable="ADJU_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USER_ID" msprop:Generator_UserColumnName="USER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ISSUE_SUM" msprop:Generator_UserTableName="ISSUE_SUM" msprop:Generator_RowDeletedName="ISSUE_SUMRowDeleted" msprop:Generator_RowChangedName="ISSUE_SUMRowChanged" msprop:Generator_RowClassName="ISSUE_SUMRow" msprop:Generator_RowChangingName="ISSUE_SUMRowChanging" msprop:Generator_RowEvArgName="ISSUE_SUMRowChangeEvent" msprop:Generator_RowEvHandlerName="ISSUE_SUMRowChangeEventHandler" msprop:Generator_TableClassName="ISSUE_SUMDataTable" msprop:Generator_TableVarName="tableISSUE_SUM" msprop:Generator_RowDeletingName="ISSUE_SUMRowDeleting" msprop:Generator_TablePropName="ISSUE_SUM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOCA_NAME" msprop:Generator_UserColumnName="LOCA_NAME" msprop:Generator_ColumnPropNameInRow="LOCA_NAME" msprop:Generator_ColumnVarNameInTable="columnLOCA_NAME" msprop:Generator_ColumnPropNameInTable="LOCA_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISSU_QTY" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ISSU_QTY" msprop:Generator_ColumnPropNameInRow="ISSU_QTY" msprop:Generator_ColumnVarNameInTable="columnISSU_QTY" msprop:Generator_ColumnPropNameInTable="ISSU_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LAST_COST" msprop:Generator_UserColumnName="LAST_COST" msprop:Generator_ColumnPropNameInRow="LAST_COST" msprop:Generator_ColumnVarNameInTable="columnLAST_COST" msprop:Generator_ColumnPropNameInTable="LAST_COSTColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RECEIVE_SUM" msprop:Generator_UserTableName="RECEIVE_SUM" msprop:Generator_RowDeletedName="RECEIVE_SUMRowDeleted" msprop:Generator_RowChangedName="RECEIVE_SUMRowChanged" msprop:Generator_RowClassName="RECEIVE_SUMRow" msprop:Generator_RowChangingName="RECEIVE_SUMRowChanging" msprop:Generator_RowEvArgName="RECEIVE_SUMRowChangeEvent" msprop:Generator_RowEvHandlerName="RECEIVE_SUMRowChangeEventHandler" msprop:Generator_TableClassName="RECEIVE_SUMDataTable" msprop:Generator_TableVarName="tableRECEIVE_SUM" msprop:Generator_RowDeletingName="RECEIVE_SUMRowDeleting" msprop:Generator_TablePropName="RECEIVE_SUM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOCA_NAME" msprop:Generator_UserColumnName="LOCA_NAME" msprop:Generator_ColumnPropNameInRow="LOCA_NAME" msprop:Generator_ColumnVarNameInTable="columnLOCA_NAME" msprop:Generator_ColumnPropNameInTable="LOCA_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATE_NAME" msprop:Generator_UserColumnName="CATE_NAME" msprop:Generator_ColumnPropNameInRow="CATE_NAME" msprop:Generator_ColumnVarNameInTable="columnCATE_NAME" msprop:Generator_ColumnPropNameInTable="CATE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECE_QTY" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RECE_QTY" msprop:Generator_ColumnPropNameInRow="RECE_QTY" msprop:Generator_ColumnVarNameInTable="columnRECE_QTY" msprop:Generator_ColumnPropNameInTable="RECE_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LAST_COST" msprop:Generator_UserColumnName="LAST_COST" msprop:Generator_ColumnVarNameInTable="columnLAST_COST" msprop:Generator_ColumnPropNameInRow="LAST_COST" msprop:Generator_ColumnPropNameInTable="LAST_COSTColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PRE_ORDER" msprop:Generator_UserTableName="PRE_ORDER" msprop:Generator_RowDeletedName="PRE_ORDERRowDeleted" msprop:Generator_RowChangedName="PRE_ORDERRowChanged" msprop:Generator_RowClassName="PRE_ORDERRow" msprop:Generator_RowChangingName="PRE_ORDERRowChanging" msprop:Generator_RowEvArgName="PRE_ORDERRowChangeEvent" msprop:Generator_RowEvHandlerName="PRE_ORDERRowChangeEventHandler" msprop:Generator_TableClassName="PRE_ORDERDataTable" msprop:Generator_TableVarName="tablePRE_ORDER" msprop:Generator_RowDeletingName="PRE_ORDERRowDeleting" msprop:Generator_TablePropName="PRE_ORDER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORDE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ORDE_ID" msprop:Generator_ColumnVarNameInTable="columnORDE_ID" msprop:Generator_ColumnPropNameInRow="ORDE_ID" msprop:Generator_ColumnPropNameInTable="ORDE_IDColumn" type="xs:long" />
+              <xs:element name="ITEM_ID" msprop:Generator_UserColumnName="ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_ID" msprop:Generator_ColumnPropNameInRow="ITEM_ID" msprop:Generator_ColumnPropNameInTable="ITEM_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ITEM_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnITEM_NAME" msprop:Generator_ColumnPropNameInRow="ITEM_NAME" msprop:Generator_ColumnPropNameInTable="ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_ID" msprop:Generator_UserColumnName="UNIT_ID" msprop:Generator_ColumnVarNameInTable="columnUNIT_ID" msprop:Generator_ColumnPropNameInRow="UNIT_ID" msprop:Generator_ColumnPropNameInTable="UNIT_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="UNIT_NAME" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UNIT_NAME" msprop:Generator_ColumnVarNameInTable="columnUNIT_NAME" msprop:Generator_ColumnPropNameInRow="UNIT_NAME" msprop:Generator_ColumnPropNameInTable="UNIT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORDE_QTY" msprop:Generator_UserColumnName="ORDE_QTY" msprop:Generator_ColumnVarNameInTable="columnORDE_QTY" msprop:Generator_ColumnPropNameInRow="ORDE_QTY" msprop:Generator_ColumnPropNameInTable="ORDE_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ORDE_PRICE" msprop:Generator_UserColumnName="ORDE_PRICE" msprop:Generator_ColumnVarNameInTable="columnORDE_PRICE" msprop:Generator_ColumnPropNameInRow="ORDE_PRICE" msprop:Generator_ColumnPropNameInTable="ORDE_PRICEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AMOUNT" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="USER_ID" msprop:Generator_UserColumnName="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TRANSACTION" />
+      <xs:field xpath="mstns:TRAN_ID" />
+    </xs:unique>
+    <xs:unique name="RECEIVE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RECEIVE" />
+      <xs:field xpath="mstns:RECE_ID" />
+    </xs:unique>
+    <xs:unique name="ISSUE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ISSUE" />
+      <xs:field xpath="mstns:ISSU_ID" />
+    </xs:unique>
+    <xs:unique name="ITEM_STORE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ITEM_STORE" />
+      <xs:field xpath="mstns:STOR_ID" />
+    </xs:unique>
+    <xs:unique name="ITEM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ITEM" />
+      <xs:field xpath="mstns:ITEM_ID" />
+    </xs:unique>
+    <xs:unique name="PRE_ISSUE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PRE_ISSUE" />
+      <xs:field xpath="mstns:ISSU_ID" />
+    </xs:unique>
+    <xs:unique name="PRE_RECEIVE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PRE_RECEIVE" />
+      <xs:field xpath="mstns:RECE_ID" />
+    </xs:unique>
+    <xs:unique name="ADJUSTMENT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ADJUSTMENT" />
+      <xs:field xpath="mstns:ADJU_ID" />
+    </xs:unique>
+    <xs:unique name="PRE_ORDER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PRE_ORDER" />
+      <xs:field xpath="mstns:ORDE_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
