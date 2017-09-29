@@ -1,0 +1,139 @@
+D:\inventory\bin\Debug\Inventory System.exe.config
+D:\inventory\obj\Debug\Interop.AcroPDFLib.dll
+D:\inventory\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+D:\inventory\obj\Debug\AxInterop.AcroPDFLib.dll
+D:\inventory\obj\Debug\Inventory Management System.vbproj.ResolveComReference.cache
+D:\inventory\obj\Debug\Inventory System.exe
+D:\inventory\obj\Debug\Inventory System.xml
+D:\inventory\obj\Debug\Inventory System.pdb
+D:\inventory\bin\Debug\Inventory System.exe
+D:\inventory\bin\Debug\Inventory System.pdb
+D:\inventory\bin\Debug\Inventory System.xml
+D:\inventory\bin\Debug\Janus.Data.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.ButtonBar.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.CalendarCombo.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.Common.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.ExplorerBar.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.FilterEditor.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.GridEX.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.Ribbon.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.Schedule.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.TimeLine.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.UI.v3.dll
+D:\inventory\bin\Debug\Janus.Windows.Ribbon.v3.xml
+D:\inventory\bin\Debug\Janus.Windows.Schedule.v3.xml
+D:\inventory\bin\Debug\Janus.Windows.GridEX.v3.xml
+D:\inventory\bin\Debug\Janus.Windows.TimeLine.v3.xml
+D:\inventory\bin\Debug\Janus.Windows.ExplorerBar.v3.xml
+D:\inventory\bin\Debug\Janus.Windows.ButtonBar.v3.xml
+D:\inventory\bin\Debug\Janus.Windows.UI.v3.xml
+D:\inventory\bin\Debug\Janus.Windows.CalendarCombo.v3.xml
+D:\inventory\bin\Debug\Interop.AcroPDFLib.dll
+D:\inventory\bin\Debug\AxInterop.AcroPDFLib.dll
+D:\inventory\obj\Debug\ResolveAssemblyReference.cache
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Adjust.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Category.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Issue.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Item.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Item_Store.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Location.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Login.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.News.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Receive.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Report_Viewer.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Adjust.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Issue.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Receive.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Store.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Transaction.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Unit.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.User.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboradAccoudPayable.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FromReportAccPayable.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.New_Payable.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.ReportAccountPayable.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardAccountReceivable.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FormReportReceivable.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.New_Payment.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardCategory.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.NewCategory.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardCurrency.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardCustomers.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FindCustomer.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.NewCostomer.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardMainInventory.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.AdjustInventory.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardAdjustStock.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardItems.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.InitailCurrentStock.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.NewProduct.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.NewProductV1.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.PriceAndCost.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.ProductCost.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardMeasurement.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.NewMeasurement.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.AddMoreProductSale.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.AddProductSale.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.EnterBarcode.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FormViewerUnicode.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.ISSUE_INVOICE.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.NewSale.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.CostomerPaid.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardProductSale.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.InvoicePayment.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.ProductSale.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.ReportViewer.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.AddMorePurchaseOrder.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.AddPurchaseOrder.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardPurchaseOrder.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FindProduct.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FormReceiveProduct.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.PurchaseOrder.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.ReceiveStock.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashbordRevenue.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardSupplier.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FindSupplyer.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.NewSupplyer.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.main.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.MainDashBaord.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.MainInventoyV2.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.Resources.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.ReportPreview.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptAdjust.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptIssue.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptItem.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptReceive.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptStore.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptTransaction.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_AccessRight.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Adjustment.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Broadcast.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Category.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Chat.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Issue.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Item.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Location.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_OrderControl.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_OrderItem.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Receive.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Store.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Transaction.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Unit.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.UC_User.resources
+D:\inventory\obj\Debug\Inventory Management System.vbproj.GenerateResource.Cache
+D:\inventory\obj\Debug\Inventory System.exe.licenses
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FormEditQTY.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.EnterProductName.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FormExchangeRate.resources
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FormCompanyProfile.resources
+D:\inventory\obj\Debug\RdlCompile.cache
+D:\inventory\obj\Debug\RdlCompile.compiled
+D:\inventory\obj\Debug\Asia_Garden_Inventory_Management_System.FormPDFVeiwer.resources
+F:\inventory\bin\Debug\Inventory System.exe.config
+F:\inventory\obj\Debug\Interop.AcroPDFLib.dll
+F:\inventory\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+F:\inventory\obj\Debug\AxInterop.AcroPDFLib.dll
+F:\inventory\obj\Debug\Inventory Management System.vbproj.ResolveComReference.cache
+F:\inventory\obj\Debug\Inventory System.exe
+F:\inventory\obj\Debug\Inventory System.xml
+F:\inventory\obj\Debug\Inventory System.pdb
