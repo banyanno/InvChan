@@ -127,7 +127,7 @@ Partial Class DashboardItems
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.GroupBox3)
-        Me.SplitContainer3.Size = New System.Drawing.Size(297, 668)
+        Me.SplitContainer3.Size = New System.Drawing.Size(38, 668)
         Me.SplitContainer3.SplitterDistance = 296
         Me.SplitContainer3.TabIndex = 0
         '
@@ -139,7 +139,7 @@ Partial Class DashboardItems
         Me.GroupBox1.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(297, 296)
+        Me.GroupBox1.Size = New System.Drawing.Size(38, 296)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Category of Product (ប្រភេទ មុខទំនិញ)"
@@ -157,7 +157,7 @@ Partial Class DashboardItems
         Me.TreeCategory.Location = New System.Drawing.Point(3, 28)
         Me.TreeCategory.Name = "TreeCategory"
         Me.TreeCategory.SelectedImageIndex = 0
-        Me.TreeCategory.Size = New System.Drawing.Size(291, 265)
+        Me.TreeCategory.Size = New System.Drawing.Size(32, 265)
         Me.TreeCategory.TabIndex = 0
         '
         'ImageList1
@@ -179,7 +179,7 @@ Partial Class DashboardItems
         Me.GroupBox3.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox3.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(297, 368)
+        Me.GroupBox3.Size = New System.Drawing.Size(38, 368)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "ស្វែងរកទំនិញ"
@@ -259,7 +259,7 @@ Partial Class DashboardItems
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.GroupBox4)
-        Me.SplitContainer2.Size = New System.Drawing.Size(768, 692)
+        Me.SplitContainer2.Size = New System.Drawing.Size(1027, 692)
         Me.SplitContainer2.SplitterDistance = 422
         Me.SplitContainer2.TabIndex = 0
         '
@@ -271,7 +271,7 @@ Partial Class DashboardItems
         Me.GroupBox2.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(768, 422)
+        Me.GroupBox2.Size = New System.Drawing.Size(1027, 422)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "List of Products (បញ្ជីមុខទំនិញ)"
@@ -288,7 +288,7 @@ Partial Class DashboardItems
         Me.StoreList.GroupByBoxVisible = False
         Me.StoreList.GroupMode = Janus.Windows.GridEX.GroupMode.Collapsed
         Me.StoreList.HeaderFormatStyle.BackColorGradient = System.Drawing.Color.Empty
-        Me.StoreList.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 11.25!)
+        Me.StoreList.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.StoreList.HeaderFormatStyle.ForeColor = System.Drawing.Color.Blue
         Me.StoreList.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.StoreList.HideSelection = Janus.Windows.GridEX.HideSelection.HighlightInactive
@@ -296,7 +296,7 @@ Partial Class DashboardItems
         Me.StoreList.Name = "StoreList"
         Me.StoreList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.StoreList.RecordNavigator = True
-        Me.StoreList.Size = New System.Drawing.Size(762, 391)
+        Me.StoreList.Size = New System.Drawing.Size(1021, 391)
         Me.StoreList.TabIndex = 0
         Me.StoreList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
@@ -308,7 +308,7 @@ Partial Class DashboardItems
         Me.GroupBox4.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(768, 266)
+        Me.GroupBox4.Size = New System.Drawing.Size(1027, 266)
         Me.GroupBox4.TabIndex = 0
         Me.GroupBox4.TabStop = False
         '
@@ -319,7 +319,7 @@ Partial Class DashboardItems
         Me.UiTab1.Location = New System.Drawing.Point(3, 22)
         Me.UiTab1.Name = "UiTab1"
         Me.UiTab1.Office2007ColorScheme = Janus.Windows.UI.Office2007ColorScheme.Custom
-        Me.UiTab1.Size = New System.Drawing.Size(762, 241)
+        Me.UiTab1.Size = New System.Drawing.Size(1021, 241)
         Me.UiTab1.TabIndex = 1
         Me.UiTab1.TabPages.AddRange(New Janus.Windows.UI.Tab.UITabPage() {Me.UiTabPage1, Me.UiTabPage2})
         Me.UiTab1.VisualStyle = Janus.Windows.UI.Tab.TabVisualStyle.Office2007
@@ -331,7 +331,7 @@ Partial Class DashboardItems
         Me.UiTabPage1.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!)
         Me.UiTabPage1.Location = New System.Drawing.Point(1, 32)
         Me.UiTabPage1.Name = "UiTabPage1"
-        Me.UiTabPage1.Size = New System.Drawing.Size(760, 208)
+        Me.UiTabPage1.Size = New System.Drawing.Size(1019, 208)
         Me.UiTabPage1.TabStop = True
         Me.UiTabPage1.Text = "តំលៃ លក់"
         '
@@ -344,14 +344,14 @@ Partial Class DashboardItems
         Me.PriceList.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!)
         Me.PriceList.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid
         Me.PriceList.GroupByBoxVisible = False
-        Me.PriceList.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PriceList.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PriceList.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.PriceList.Location = New System.Drawing.Point(0, 31)
         Me.PriceList.Name = "PriceList"
         Me.PriceList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.PriceList.RecordNavigator = True
         Me.PriceList.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.[True]
-        Me.PriceList.Size = New System.Drawing.Size(760, 177)
+        Me.PriceList.Size = New System.Drawing.Size(1019, 177)
         Me.PriceList.TabIndex = 1
         Me.PriceList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
@@ -362,7 +362,7 @@ Partial Class DashboardItems
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripSeparator1, Me.ToolStripButton2, Me.ToolStripSeparator2, Me.ToolStripButton3})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(760, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1019, 31)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -411,7 +411,7 @@ Partial Class DashboardItems
         Me.UiTabPage2.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UiTabPage2.Location = New System.Drawing.Point(1, 32)
         Me.UiTabPage2.Name = "UiTabPage2"
-        Me.UiTabPage2.Size = New System.Drawing.Size(760, 208)
+        Me.UiTabPage2.Size = New System.Drawing.Size(1019, 208)
         Me.UiTabPage2.TabStop = True
         Me.UiTabPage2.Text = "តំលៃដើម"
         '
@@ -424,14 +424,14 @@ Partial Class DashboardItems
         Me.CostList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CostList.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid
         Me.CostList.GroupByBoxVisible = False
-        Me.CostList.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CostList.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CostList.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.CostList.Location = New System.Drawing.Point(0, 31)
         Me.CostList.Name = "CostList"
         Me.CostList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.CostList.RecordNavigator = True
         Me.CostList.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.[True]
-        Me.CostList.Size = New System.Drawing.Size(760, 177)
+        Me.CostList.Size = New System.Drawing.Size(1019, 177)
         Me.CostList.TabIndex = 3
         Me.CostList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
@@ -442,7 +442,7 @@ Partial Class DashboardItems
         Me.ToolStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNewCost, Me.ToolStripSeparator10, Me.bntDeleteCost})
         Me.ToolStrip4.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip4.Name = "ToolStrip4"
-        Me.ToolStrip4.Size = New System.Drawing.Size(760, 31)
+        Me.ToolStrip4.Size = New System.Drawing.Size(1019, 31)
         Me.ToolStrip4.TabIndex = 5
         Me.ToolStrip4.Text = "ToolStrip4"
         '
@@ -677,7 +677,7 @@ Partial Class DashboardItems
         'Design Time Panel Info:
         '
         Me.UiPanelManager1.BeginPanelInfo()
-        Me.UiPanelManager1.AddDockPanelInfo(New System.Guid("4fe5fdda-e5d4-4010-be6b-6915c2fa2b51"), Janus.Windows.UI.Dock.PanelDockStyle.Right, New System.Drawing.Size(303, 692), True)
+        Me.UiPanelManager1.AddDockPanelInfo(New System.Guid("4fe5fdda-e5d4-4010-be6b-6915c2fa2b51"), Janus.Windows.UI.Dock.PanelDockStyle.Right, New System.Drawing.Size(44, 692), True)
         Me.UiPanelManager1.AddFloatingPanelInfo(New System.Guid("4fe5fdda-e5d4-4010-be6b-6915c2fa2b51"), New System.Drawing.Point(-1, -1), New System.Drawing.Size(-1, -1), False)
         Me.UiPanelManager1.EndPanelInfo()
         '
@@ -686,9 +686,9 @@ Partial Class DashboardItems
         Me.uiPanel0.BorderPanelColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.[False]
         Me.uiPanel0.InnerContainer = Me.uiPanel0Container
-        Me.uiPanel0.Location = New System.Drawing.Point(771, 64)
+        Me.uiPanel0.Location = New System.Drawing.Point(1030, 64)
         Me.uiPanel0.Name = "uiPanel0"
-        Me.uiPanel0.Size = New System.Drawing.Size(303, 692)
+        Me.uiPanel0.Size = New System.Drawing.Size(44, 692)
         Me.uiPanel0.TabIndex = 4
         Me.uiPanel0.Text = "Product Utility"
         '
@@ -697,7 +697,7 @@ Partial Class DashboardItems
         Me.uiPanel0Container.Controls.Add(Me.SplitContainer3)
         Me.uiPanel0Container.Location = New System.Drawing.Point(5, 23)
         Me.uiPanel0Container.Name = "uiPanel0Container"
-        Me.uiPanel0Container.Size = New System.Drawing.Size(297, 668)
+        Me.uiPanel0Container.Size = New System.Drawing.Size(38, 668)
         Me.uiPanel0Container.TabIndex = 0
         '
         'DashboardItems

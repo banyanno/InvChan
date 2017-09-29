@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewInvoice">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="INVOICE_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="INVOICE_NO" type="xs:long" minOccurs="0" />
+                <xs:element name="CUST_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="CUST_NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="USD_AMOUNT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="USD_TOTAL" type="xs:decimal" minOccurs="0" />
+                <xs:element name="INVOICE_DATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="RATE" type="xs:int" minOccurs="0" />
+                <xs:element name="MONEY_RECEIVED" type="xs:decimal" minOccurs="0" />
+                <xs:element name="RETURN_KHR" type="xs:decimal" minOccurs="0" />
+                <xs:element name="RETURN_USD" type="xs:decimal" minOccurs="0" />
+                <xs:element name="DETAIL_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="ITEM_ID" type="xs:int" minOccurs="0" />
+                <xs:element name="QTY" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PRICE" type="xs:decimal" minOccurs="0" />
+                <xs:element name="USD_SUPTOTAL" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ITEM_NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="USER_ID" type="xs:int" minOccurs="0" />
+                <xs:element name="USER_NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="MONEY_RECEIVEDOLAR" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewInvoice>
+    <INVOICE_ID>16</INVOICE_ID>
+    <INVOICE_NO>201702206</INVOICE_NO>
+    <CUST_ID>1</CUST_ID>
+    <CUST_NAME>PHOUN</CUST_NAME>
+    <USD_AMOUNT>6.000</USD_AMOUNT>
+    <USD_TOTAL>6.000</USD_TOTAL>
+    <INVOICE_DATE>2017-02-20T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>0.000</RETURN_KHR>
+    <RETURN_USD>0.000</RETURN_USD>
+    <DETAIL_ID>40</DETAIL_ID>
+    <ITEM_ID>25</ITEM_ID>
+    <QTY>3</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>6.000</USD_SUPTOTAL>
+    <ITEM_NAME>គោជល់</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>0.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+</NewDataSet>

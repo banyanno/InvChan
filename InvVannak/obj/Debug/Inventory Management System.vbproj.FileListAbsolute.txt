@@ -137,3 +137,134 @@ F:\inventory\obj\Debug\Inventory Management System.vbproj.ResolveComReference.ca
 F:\inventory\obj\Debug\Inventory System.exe
 F:\inventory\obj\Debug\Inventory System.xml
 F:\inventory\obj\Debug\Inventory System.pdb
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Inventory System.exe.config
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Interop.AcroPDFLib.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\AxInterop.AcroPDFLib.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Inventory Management System.vbproj.ResolveComReference.cache
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Inventory System.exe
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Inventory System.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Inventory System.pdb
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Inventory System.exe
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Inventory System.pdb
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Inventory System.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Data.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.ButtonBar.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.CalendarCombo.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.Common.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.ExplorerBar.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.FilterEditor.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.GridEX.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.Ribbon.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.Schedule.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.TimeLine.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.UI.v3.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.Ribbon.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.Schedule.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.GridEX.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.TimeLine.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.ExplorerBar.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.ButtonBar.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.UI.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Janus.Windows.CalendarCombo.v3.xml
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\Interop.AcroPDFLib.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\bin\Debug\AxInterop.AcroPDFLib.dll
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\ResolveAssemblyReference.cache
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Adjust.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Category.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Issue.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Item.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Item_Store.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Location.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Login.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.News.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Receive.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Report_Viewer.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Adjust.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Issue.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Receive.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Store.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Search_Transaction.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Unit.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.User.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboradAccoudPayable.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FromReportAccPayable.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.New_Payable.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.ReportAccountPayable.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardAccountReceivable.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FormReportReceivable.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.New_Payment.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardCategory.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.NewCategory.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardCurrency.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardCustomers.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FindCustomer.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.NewCostomer.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardMainInventory.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.AdjustInventory.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FormPDFVeiwer.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardAdjustStock.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardItems.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.InitailCurrentStock.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.NewProduct.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.NewProductV1.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.PriceAndCost.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.ProductCost.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardMeasurement.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.NewMeasurement.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.AddMoreProductSale.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.AddProductSale.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.EnterProductName.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FormEditQTY.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.EnterBarcode.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FormViewerUnicode.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.ISSUE_INVOICE.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.NewSale.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.CostomerPaid.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardProductSale.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.InvoicePayment.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.ProductSale.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.ReportViewer.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.AddMorePurchaseOrder.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.AddPurchaseOrder.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardPurchaseOrder.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FindProduct.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FormReceiveProduct.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.PurchaseOrder.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.ReceiveStock.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashbordRevenue.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FormCompanyProfile.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FormExchangeRate.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.DashboardSupplier.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.FindSupplyer.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.NewSupplyer.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.main.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.MainDashBaord.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.MainInventoyV2.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.Resources.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.ReportPreview.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptAdjust.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptIssue.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptItem.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptReceive.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptStore.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_RptTransaction.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_AccessRight.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Adjustment.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Broadcast.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Category.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Chat.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Issue.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Item.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Location.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_OrderControl.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_OrderItem.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Receive.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Store.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Transaction.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_Unit.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.UC_User.resources
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Inventory Management System.vbproj.GenerateResource.Cache
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\Inventory System.exe.licenses
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\RdlCompile.cache
+G:\YannoSoft\Projects\InvChan\InvVannak\obj\Debug\RdlCompile.compiled
