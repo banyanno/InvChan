@@ -270,7 +270,23 @@ Public Class DashboardItems
     Dim DSBarcodde As New DSProducts
 
     Dim TblBarcodePrint As DataTable = DSBarcodde.Tables("ITEMS")
-    Private Sub BtnBardCode_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBardCode.Click
+    Private Sub BtnBardCode_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub UpdateImg_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UpdateImg.Click
+        If StoreList.SelectedItems.Count = 0 Then Exit Sub
+        If MessageBox.Show("Do you want to update image size?", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            For Each GXRow As Janus.Windows.GridEX.GridEXRow In StoreList.GetRows
+                Dim img As Image = ReductImageSize(byteArrayToImage(DAItem.SelectImageID(GXRow.Cells("ITEM_ID").Value)))
+                'StoreList.CurrentRow.Cells("ITEM_ID").Value))
+                DAItem.Impge(ImageToByArray(img), CInt(GXRow.Cells("ITEM_ID").Value))
+            Next
+        End If
+        
+    End Sub
+
+    Private Sub ToolStripButton10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Dim Drow As DataRow
 
@@ -354,15 +370,132 @@ Public Class DashboardItems
         FRViewer.ShowDialog()
     End Sub
 
-    Private Sub UpdateImg_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UpdateImg.Click
-        If StoreList.SelectedItems.Count = 0 Then Exit Sub
-        If MessageBox.Show("Do you want to update image size?", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-            For Each GXRow As Janus.Windows.GridEX.GridEXRow In StoreList.GetRows
-                Dim img As Image = ReductImageSize(byteArrayToImage(DAItem.SelectImageID(GXRow.Cells("ITEM_ID").Value)))
-                'StoreList.CurrentRow.Cells("ITEM_ID").Value))
-                DAItem.Impge(ImageToByArray(img), CInt(GXRow.Cells("ITEM_ID").Value))
+    Private Sub PrintBarcodeNoImageToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrintBarcodeNoImageToolStripMenuItem.Click
+
+        Dim Drow As DataRow
+
+        TblBarcodePrint.Clear()
+        Try
+            For Each row As Janus.Windows.GridEX.GridEXRow In StoreList.GetRows
+                Drow = TblBarcodePrint.NewRow
+                Drow("ITEM_BARCODE") = "*" & row.Cells("ITEM_BARCODE").Value & "*"
+                Drow("ITEM_IMAGE") = ImageToByArray(byteArrayToImage(DAItem.SelectImageID(row.Cells("ITEM_ID").Value)))
+                Drow("ITEM_NAME") = row.Cells("ITEM_NAME").Value
+                TblBarcodePrint.Rows.Add(Drow)
             Next
-        End If
+        Catch ex As Exception
+
+        End Try
         
+
+
+        Dim FRViewer As New ReportViewer
+        Dim ListOfProduct As New ListProductWithBarcodeNoPic
+
+        Dim tblProductlist As DataTable = DAProductList.GetData
+        ListOfProduct.SetDataSource(TblBarcodePrint)
+        '' ListOfProduct.SetDataSource(tblProductlist)
+
+        Dim CrExportOptionsBig As ExportOptions
+        Dim CrDiskFileDestinationOptionsBig As New DiskFileDestinationOptions()
+        Dim CrFormatTypeOptionsBig As New PdfRtfWordFormatOptions()
+        CrDiskFileDestinationOptionsBig.DiskFileName = My.Application.Info.DirectoryPath & "\ProductListBarcodeNopic.pdf"
+        CrExportOptionsBig = ListOfProduct.ExportOptions
+        With CrExportOptionsBig
+            .ExportDestinationType = ExportDestinationType.DiskFile
+            .ExportFormatType = ExportFormatType.PortableDocFormat
+            .DestinationOptions = CrDiskFileDestinationOptionsBig
+            .FormatOptions = CrFormatTypeOptionsBig
+        End With
+        ListOfProduct.Export()
+        Application.DoEvents()
+        Application.DoEvents()
+        FRViewer.AxAcroPDF1.src = My.Application.Info.DirectoryPath & "\ProductListBarcodeNopic.pdf"
+        FRViewer.AxAcroPDF1.setZoom(70)
+        FRViewer.ShowDialog()
+    End Sub
+
+    Private Sub PrintBarcodeWithImageToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrintBarcodeWithImageToolStripMenuItem.Click
+
+        Dim Drow As DataRow
+
+        TblBarcodePrint.Clear()
+        Try
+            For Each row As Janus.Windows.GridEX.GridEXRow In StoreList.GetRows
+                Drow = TblBarcodePrint.NewRow
+                Drow("ITEM_BARCODE") = "*" & row.Cells("ITEM_BARCODE").Value & "*"
+                Drow("ITEM_IMAGE") = ImageToByArray(byteArrayToImage(DAItem.SelectImageID(row.Cells("ITEM_ID").Value)))
+                Drow("ITEM_NAME") = row.Cells("ITEM_NAME").Value
+                TblBarcodePrint.Rows.Add(Drow)
+            Next
+        Catch ex As Exception
+
+        End Try
+        'For Each foundFile As String In My.Computer.FileSystem.GetFiles(Application.StartupPath & "\Temp", FileIO.SearchOption.SearchAllSubDirectories, "*.*")
+        '    My.Computer.FileSystem.DeleteFile(foundFile, FileIO.UIOption.OnlyErrorDialogs, FileIO.RecycleOption.DeletePermanently)
+        'Next
+
+        'Dim SQL As String = "SELECT * FROM ViewAproduct"
+
+        'Dim DS As New DataSet
+        'Dim dt As New DataTable
+        'Dim cnn As New SqlClient.SqlConnection(My.Settings.INV_Database)
+
+        'Application.DoEvents()
+
+        'Dim Da As New SqlClient.SqlDataAdapter(SQL, cnn)
+        'Application.DoEvents()
+        'System.Threading.Thread.Sleep(100)
+        'Da.Fill(DS, "ITEMS")
+        'Application.DoEvents()
+        'Dim RptName As String = Application.StartupPath & "\ListProductWithBarcode.rpt"
+
+        'Dim RAccPayable As New ReportPreview
+
+        'Dim myReportObj As New clsCrystalReport()
+
+
+        'myReportObj.ReportPath(RptName)
+
+        'Application.DoEvents()
+        'myReportObj.SetDataSource(DS, "ITEMS")
+        ''myReportObj.SetParameterValue("DateReport", "ចាប់ពីថ្ងៃទី  " & Format(DateFrom.Value, "dd/MM/yyyy") & " ដល់ " & Format(DateTo.Value.Date, "dd/MM/yyyy"))
+        'RAccPayable.ReportViewer.Refresh()
+        'RAccPayable.ReportViewer.ReportSource = myReportObj.Report
+        'RAccPayable.ReportViewer.ViewReport()
+        'RAccPayable.ReportViewer.Zoom(100)
+        'RAccPayable.ShowDialog()
+
+
+
+
+
+        ''==============
+
+
+        Dim FRViewer As New ReportViewer
+        Dim ListOfProduct As New ListProductWithBarcode
+
+        Dim tblProductlist As DataTable = DAProductList.GetData
+        ListOfProduct.SetDataSource(TblBarcodePrint)
+        '' ListOfProduct.SetDataSource(tblProductlist)
+
+        Dim CrExportOptionsBig As ExportOptions
+        Dim CrDiskFileDestinationOptionsBig As New DiskFileDestinationOptions()
+        Dim CrFormatTypeOptionsBig As New PdfRtfWordFormatOptions()
+        CrDiskFileDestinationOptionsBig.DiskFileName = My.Application.Info.DirectoryPath & "\ProductListBarcode.pdf"
+        CrExportOptionsBig = ListOfProduct.ExportOptions
+        With CrExportOptionsBig
+            .ExportDestinationType = ExportDestinationType.DiskFile
+            .ExportFormatType = ExportFormatType.PortableDocFormat
+            .DestinationOptions = CrDiskFileDestinationOptionsBig
+            .FormatOptions = CrFormatTypeOptionsBig
+        End With
+        ListOfProduct.Export()
+        Application.DoEvents()
+        Application.DoEvents()
+        FRViewer.AxAcroPDF1.src = My.Application.Info.DirectoryPath & "\ProductListBarcode.pdf"
+        FRViewer.AxAcroPDF1.setZoom(70)
+        FRViewer.ShowDialog()
     End Sub
 End Class

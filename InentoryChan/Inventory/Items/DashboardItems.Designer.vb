@@ -78,12 +78,17 @@ Partial Class DashboardItems
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator
         Me.BtnPrintProduct = New System.Windows.Forms.ToolStripButton
         Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator
-        Me.BtnBardCode = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator
         Me.UpdateImg = New System.Windows.Forms.ToolStripButton
         Me.UiPanelManager1 = New Janus.Windows.UI.Dock.UIPanelManager(Me.components)
         Me.uiPanel0 = New Janus.Windows.UI.Dock.UIPanel
         Me.uiPanel0Container = New Janus.Windows.UI.Dock.UIPanelInnerContainer
+        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator
+        Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton
+        Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
+        Me.PrintBarcodeNoImageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator
+        Me.PrintBarcodeWithImageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.Panel2.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
@@ -536,7 +541,7 @@ Partial Class DashboardItems
         '
         Me.ToolProduct.BackColor = System.Drawing.Color.Transparent
         Me.ToolProduct.ImageScalingSize = New System.Drawing.Size(30, 30)
-        Me.ToolProduct.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton7, Me.ToolStripSeparator6, Me.ToolStripButton8, Me.ToolStripSeparator5, Me.BtnFilter, Me.ToolStripSeparator7, Me.BtnRefreshProduct, Me.ToolStripSeparator9, Me.BtnAdjustment, Me.ToolStripSeparator8, Me.BtnPrintProduct, Me.ToolStripSeparator11, Me.BtnBardCode, Me.ToolStripSeparator12, Me.UpdateImg})
+        Me.ToolProduct.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton7, Me.ToolStripSeparator6, Me.ToolStripButton8, Me.ToolStripSeparator5, Me.BtnFilter, Me.ToolStripSeparator7, Me.BtnRefreshProduct, Me.ToolStripSeparator9, Me.BtnAdjustment, Me.ToolStripSeparator8, Me.BtnPrintProduct, Me.ToolStripSeparator11, Me.ToolStripSplitButton1, Me.ToolStripSeparator15, Me.UpdateImg, Me.ToolStripSeparator13})
         Me.ToolProduct.Location = New System.Drawing.Point(0, 0)
         Me.ToolProduct.Name = "ToolProduct"
         Me.ToolProduct.Size = New System.Drawing.Size(1077, 61)
@@ -639,22 +644,6 @@ Partial Class DashboardItems
         Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
         Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 61)
         '
-        'BtnBardCode
-        '
-        Me.BtnBardCode.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!)
-        Me.BtnBardCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnBardCode.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Cash_Register_100
-        Me.BtnBardCode.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BtnBardCode.Name = "BtnBardCode"
-        Me.BtnBardCode.Size = New System.Drawing.Size(117, 58)
-        Me.BtnBardCode.Text = "Print List Barcode"
-        Me.BtnBardCode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStripSeparator12
-        '
-        Me.ToolStripSeparator12.Name = "ToolStripSeparator12"
-        Me.ToolStripSeparator12.Size = New System.Drawing.Size(6, 61)
-        '
         'UpdateImg
         '
         Me.UpdateImg.ForeColor = System.Drawing.Color.Blue
@@ -664,6 +653,7 @@ Partial Class DashboardItems
         Me.UpdateImg.Size = New System.Drawing.Size(102, 58)
         Me.UpdateImg.Text = "Update All Image"
         Me.UpdateImg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.UpdateImg.Visible = False
         '
         'UiPanelManager1
         '
@@ -699,6 +689,53 @@ Partial Class DashboardItems
         Me.uiPanel0Container.Name = "uiPanel0Container"
         Me.uiPanel0Container.Size = New System.Drawing.Size(297, 668)
         Me.uiPanel0Container.TabIndex = 0
+        '
+        'ToolStripSeparator13
+        '
+        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 61)
+        Me.ToolStripSeparator13.Visible = False
+        '
+        'ToolStripSplitButton1
+        '
+        Me.ToolStripSplitButton1.DropDownButtonWidth = 20
+        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.PrintBarcodeNoImageToolStripMenuItem, Me.ToolStripMenuItem2, Me.PrintBarcodeWithImageToolStripMenuItem})
+        Me.ToolStripSplitButton1.ForeColor = System.Drawing.Color.Blue
+        Me.ToolStripSplitButton1.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Cash_Register_100
+        Me.ToolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
+        Me.ToolStripSplitButton1.Size = New System.Drawing.Size(124, 58)
+        Me.ToolStripSplitButton1.Text = "Print List Barcode"
+        Me.ToolStripSplitButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripSeparator15
+        '
+        Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
+        Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 6)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(204, 6)
+        '
+        'PrintBarcodeNoImageToolStripMenuItem
+        '
+        Me.PrintBarcodeNoImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
+        Me.PrintBarcodeNoImageToolStripMenuItem.Name = "PrintBarcodeNoImageToolStripMenuItem"
+        Me.PrintBarcodeNoImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.PrintBarcodeNoImageToolStripMenuItem.Text = "Print barcode no image"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(204, 6)
+        '
+        'PrintBarcodeWithImageToolStripMenuItem
+        '
+        Me.PrintBarcodeWithImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
+        Me.PrintBarcodeWithImageToolStripMenuItem.Name = "PrintBarcodeWithImageToolStripMenuItem"
+        Me.PrintBarcodeWithImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.PrintBarcodeWithImageToolStripMenuItem.Text = "Print barcode with image"
         '
         'DashboardItems
         '
@@ -802,8 +839,13 @@ Partial Class DashboardItems
     Friend WithEvents RadProductName As System.Windows.Forms.RadioButton
     Friend WithEvents PictProduct As System.Windows.Forms.PictureBox
     Friend WithEvents ToolStripSeparator11 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BtnBardCode As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator12 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents UpdateImg As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ToolStripSeparator13 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSplitButton1 As System.Windows.Forms.ToolStripSplitButton
+    Friend WithEvents ToolStripSeparator15 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents PrintBarcodeNoImageToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents PrintBarcodeWithImageToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

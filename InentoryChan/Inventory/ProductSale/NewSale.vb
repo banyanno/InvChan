@@ -463,7 +463,7 @@ Public Class NewSale
             'RAccPayable.ReportViewer.Zoom(100)
             'RAccPayable.ShowDialog()
 
-            myReportObj.PrintToPrinter()
+            myReportObj.PrintToPrinter(2)
             cnn.Close()
             RefreshOrderList()
 
