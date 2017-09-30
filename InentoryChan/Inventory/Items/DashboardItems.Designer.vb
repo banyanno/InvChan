@@ -78,17 +78,17 @@ Partial Class DashboardItems
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator
         Me.BtnPrintProduct = New System.Windows.Forms.ToolStripButton
         Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator
-        Me.UpdateImg = New System.Windows.Forms.ToolStripButton
-        Me.UiPanelManager1 = New Janus.Windows.UI.Dock.UIPanelManager(Me.components)
-        Me.uiPanel0 = New Janus.Windows.UI.Dock.UIPanel
-        Me.uiPanel0Container = New Janus.Windows.UI.Dock.UIPanelInnerContainer
-        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton
-        Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
         Me.PrintBarcodeNoImageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator
         Me.PrintBarcodeWithImageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator
+        Me.UpdateImg = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator
+        Me.UiPanelManager1 = New Janus.Windows.UI.Dock.UIPanelManager(Me.components)
+        Me.uiPanel0 = New Janus.Windows.UI.Dock.UIPanel
+        Me.uiPanel0Container = New Janus.Windows.UI.Dock.UIPanelInnerContainer
         Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.Panel2.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
@@ -644,6 +644,47 @@ Partial Class DashboardItems
         Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
         Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 61)
         '
+        'ToolStripSplitButton1
+        '
+        Me.ToolStripSplitButton1.DropDownButtonWidth = 20
+        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.PrintBarcodeNoImageToolStripMenuItem, Me.ToolStripMenuItem2, Me.PrintBarcodeWithImageToolStripMenuItem})
+        Me.ToolStripSplitButton1.ForeColor = System.Drawing.Color.Blue
+        Me.ToolStripSplitButton1.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Cash_Register_100
+        Me.ToolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
+        Me.ToolStripSplitButton1.Size = New System.Drawing.Size(124, 58)
+        Me.ToolStripSplitButton1.Text = "Print List Barcode"
+        Me.ToolStripSplitButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(204, 6)
+        '
+        'PrintBarcodeNoImageToolStripMenuItem
+        '
+        Me.PrintBarcodeNoImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
+        Me.PrintBarcodeNoImageToolStripMenuItem.Name = "PrintBarcodeNoImageToolStripMenuItem"
+        Me.PrintBarcodeNoImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.PrintBarcodeNoImageToolStripMenuItem.Text = "Print barcode no image"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(204, 6)
+        '
+        'PrintBarcodeWithImageToolStripMenuItem
+        '
+        Me.PrintBarcodeWithImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
+        Me.PrintBarcodeWithImageToolStripMenuItem.Name = "PrintBarcodeWithImageToolStripMenuItem"
+        Me.PrintBarcodeWithImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.PrintBarcodeWithImageToolStripMenuItem.Text = "Print barcode with image"
+        '
+        'ToolStripSeparator15
+        '
+        Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
+        Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 61)
+        '
         'UpdateImg
         '
         Me.UpdateImg.ForeColor = System.Drawing.Color.Blue
@@ -654,6 +695,12 @@ Partial Class DashboardItems
         Me.UpdateImg.Text = "Update All Image"
         Me.UpdateImg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.UpdateImg.Visible = False
+        '
+        'ToolStripSeparator13
+        '
+        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 61)
+        Me.ToolStripSeparator13.Visible = False
         '
         'UiPanelManager1
         '
@@ -689,53 +736,6 @@ Partial Class DashboardItems
         Me.uiPanel0Container.Name = "uiPanel0Container"
         Me.uiPanel0Container.Size = New System.Drawing.Size(297, 668)
         Me.uiPanel0Container.TabIndex = 0
-        '
-        'ToolStripSeparator13
-        '
-        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
-        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 61)
-        Me.ToolStripSeparator13.Visible = False
-        '
-        'ToolStripSplitButton1
-        '
-        Me.ToolStripSplitButton1.DropDownButtonWidth = 20
-        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.PrintBarcodeNoImageToolStripMenuItem, Me.ToolStripMenuItem2, Me.PrintBarcodeWithImageToolStripMenuItem})
-        Me.ToolStripSplitButton1.ForeColor = System.Drawing.Color.Blue
-        Me.ToolStripSplitButton1.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Cash_Register_100
-        Me.ToolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
-        Me.ToolStripSplitButton1.Size = New System.Drawing.Size(124, 58)
-        Me.ToolStripSplitButton1.Text = "Print List Barcode"
-        Me.ToolStripSplitButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStripSeparator15
-        '
-        Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
-        Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 6)
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(204, 6)
-        '
-        'PrintBarcodeNoImageToolStripMenuItem
-        '
-        Me.PrintBarcodeNoImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
-        Me.PrintBarcodeNoImageToolStripMenuItem.Name = "PrintBarcodeNoImageToolStripMenuItem"
-        Me.PrintBarcodeNoImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
-        Me.PrintBarcodeNoImageToolStripMenuItem.Text = "Print barcode no image"
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(204, 6)
-        '
-        'PrintBarcodeWithImageToolStripMenuItem
-        '
-        Me.PrintBarcodeWithImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
-        Me.PrintBarcodeWithImageToolStripMenuItem.Name = "PrintBarcodeWithImageToolStripMenuItem"
-        Me.PrintBarcodeWithImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
-        Me.PrintBarcodeWithImageToolStripMenuItem.Text = "Print barcode with image"
         '
         'DashboardItems
         '
