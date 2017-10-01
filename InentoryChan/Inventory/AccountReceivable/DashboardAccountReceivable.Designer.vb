@@ -141,7 +141,7 @@ Partial Class DashboardAccountReceivable
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.SplitContainer3)
         Me.SplitContainer1.Size = New System.Drawing.Size(793, 583)
-        Me.SplitContainer1.SplitterDistance = 362
+        Me.SplitContainer1.SplitterDistance = 363
         Me.SplitContainer1.SplitterWidth = 3
         Me.SplitContainer1.TabIndex = 15
         '
@@ -164,7 +164,7 @@ Partial Class DashboardAccountReceivable
         Me.ARList.Name = "ARList"
         Me.ARList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.ARList.RecordNavigator = True
-        Me.ARList.Size = New System.Drawing.Size(791, 360)
+        Me.ARList.Size = New System.Drawing.Size(791, 361)
         Me.ARList.TabIndex = 14
         Me.ARList.TotalRow = Janus.Windows.GridEX.InheritableBoolean.[True]
         Me.ARList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
@@ -183,7 +183,7 @@ Partial Class DashboardAccountReceivable
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.GroupBox2)
-        Me.SplitContainer3.Size = New System.Drawing.Size(791, 216)
+        Me.SplitContainer3.Size = New System.Drawing.Size(791, 215)
         Me.SplitContainer3.SplitterDistance = 435
         Me.SplitContainer3.TabIndex = 17
         '
@@ -195,7 +195,7 @@ Partial Class DashboardAccountReceivable
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(435, 216)
+        Me.GroupBox1.Size = New System.Drawing.Size(435, 215)
         Me.GroupBox1.TabIndex = 16
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment"
@@ -218,7 +218,7 @@ Partial Class DashboardAccountReceivable
         Me.PaymentList.Name = "PaymentList"
         Me.PaymentList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.PaymentList.RecordNavigator = True
-        Me.PaymentList.Size = New System.Drawing.Size(431, 187)
+        Me.PaymentList.Size = New System.Drawing.Size(431, 186)
         Me.PaymentList.TabIndex = 15
         Me.PaymentList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
@@ -253,7 +253,7 @@ Partial Class DashboardAccountReceivable
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(352, 216)
+        Me.GroupBox2.Size = New System.Drawing.Size(352, 215)
         Me.GroupBox2.TabIndex = 18
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Paid Detail"
