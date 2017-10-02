@@ -63,6 +63,7 @@ Partial Class DashboardProductSale
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
         Me.BtnRemoveProduct = New System.Windows.Forms.ToolStripMenuItem
         Me.InvoiceList = New Janus.Windows.GridEX.GridEX
+        Me.ChSale = New System.Windows.Forms.CheckBox
         Me.ToolProduct.SuspendLayout()
         CType(Me.UiPanelManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.uiPanel0, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -279,6 +280,7 @@ Partial Class DashboardProductSale
         'uiPanel0Container
         '
         Me.uiPanel0Container.BackColor = System.Drawing.SystemColors.Control
+        Me.uiPanel0Container.Controls.Add(Me.ChSale)
         Me.uiPanel0Container.Controls.Add(Me.BtnFind)
         Me.uiPanel0Container.Controls.Add(Me.TxtInvoiceNo)
         Me.uiPanel0Container.Controls.Add(Me.ISInvoiceNo)
@@ -296,7 +298,7 @@ Partial Class DashboardProductSale
         Me.BtnFind.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnFind.ForeColor = System.Drawing.Color.Blue
-        Me.BtnFind.Location = New System.Drawing.Point(6, 157)
+        Me.BtnFind.Location = New System.Drawing.Point(7, 189)
         Me.BtnFind.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnFind.Name = "BtnFind"
         Me.BtnFind.Size = New System.Drawing.Size(92, 35)
@@ -308,7 +310,7 @@ Partial Class DashboardProductSale
         '
         Me.TxtInvoiceNo.Enabled = False
         Me.TxtInvoiceNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtInvoiceNo.Location = New System.Drawing.Point(6, 128)
+        Me.TxtInvoiceNo.Location = New System.Drawing.Point(7, 160)
         Me.TxtInvoiceNo.Margin = New System.Windows.Forms.Padding(2)
         Me.TxtInvoiceNo.Name = "TxtInvoiceNo"
         Me.TxtInvoiceNo.Size = New System.Drawing.Size(188, 26)
@@ -319,7 +321,7 @@ Partial Class DashboardProductSale
         Me.ISInvoiceNo.AutoSize = True
         Me.ISInvoiceNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ISInvoiceNo.ForeColor = System.Drawing.Color.Blue
-        Me.ISInvoiceNo.Location = New System.Drawing.Point(6, 99)
+        Me.ISInvoiceNo.Location = New System.Drawing.Point(7, 132)
         Me.ISInvoiceNo.Margin = New System.Windows.Forms.Padding(2)
         Me.ISInvoiceNo.Name = "ISInvoiceNo"
         Me.ISInvoiceNo.Size = New System.Drawing.Size(106, 24)
@@ -354,7 +356,7 @@ Partial Class DashboardProductSale
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Blue
-        Me.Label2.Location = New System.Drawing.Point(2, 63)
+        Me.Label2.Location = New System.Drawing.Point(3, 63)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(70, 20)
@@ -366,7 +368,7 @@ Partial Class DashboardProductSale
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Blue
-        Me.Label1.Location = New System.Drawing.Point(2, 24)
+        Me.Label1.Location = New System.Drawing.Point(3, 24)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(89, 20)
@@ -479,6 +481,20 @@ Partial Class DashboardProductSale
         Me.InvoiceList.TotalRowFormatStyle.ForeColor = System.Drawing.Color.Red
         Me.InvoiceList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
+        'ChSale
+        '
+        Me.ChSale.AutoSize = True
+        Me.ChSale.Checked = True
+        Me.ChSale.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ChSale.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChSale.ForeColor = System.Drawing.Color.Blue
+        Me.ChSale.Location = New System.Drawing.Point(7, 99)
+        Me.ChSale.Name = "ChSale"
+        Me.ChSale.Size = New System.Drawing.Size(111, 28)
+        Me.ChSale.TabIndex = 7
+        Me.ChSale.Text = "បង្ហាញ់លក់រាយ"
+        Me.ChSale.UseVisualStyleBackColor = True
+        '
         'DashboardProductSale
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -544,5 +560,6 @@ Partial Class DashboardProductSale
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents btnWholSaleReport As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ChSale As System.Windows.Forms.CheckBox
 
 End Class

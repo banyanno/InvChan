@@ -25,7 +25,12 @@ Public Class DashboardProductSale
     End Sub
 
     Sub RefreshList()
-        Me.InvoiceList.DataSource = DAInvoice.SelectAllInvoiceDateToDate(DateFrom.Value.Date, DateTo.Value.Date)
+        If ChSale.Checked = True Then
+            Me.InvoiceList.DataSource = DAInvoice.SelectAllInvoiceWithPaymentCondition(DateFrom.Value.Date, DateTo.Value.Date, 1)
+        Else
+            Me.InvoiceList.DataSource = DAInvoice.SelectAllInvoiceWithPaymentCondition(DateFrom.Value.Date, DateTo.Value.Date, 0)
+        End If
+
         If Me.InvoiceList.SelectedItems.Count <> 0 Then
             DetailList.DataSource = DADetail.SelectByInvoiceID(Me.InvoiceList.CurrentRow.Cells("INVOICE_ID").Value)
         Else
@@ -383,5 +388,13 @@ Public Class DashboardProductSale
         RAccPayable.ReportViewer.ViewReport()
         RAccPayable.ReportViewer.Zoom(100)
         RAccPayable.ShowDialog()
+    End Sub
+
+    Private Sub ChSale_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChSale.CheckedChanged
+        If ChSale.Checked = True Then
+            ChSale.Text = "បង្ហាញលក់រាយ"
+        Else
+            ChSale.Text = "បង្ហាញលក់ដុំ"
+        End If
     End Sub
 End Class

@@ -554,85 +554,173 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.PRE_INVOICE_DETAILSDataTable">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILS_TEMDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.ViewDialySaleDataTable">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_BALANCEDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.IncomeSaleDataTable">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDERSDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.PRE_INVOICE_DETAILSRow">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCAHSE_ORDER_MAIN_VIEWDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_DETAIL_VIEWDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_VIEWDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_COSTSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILS_TEMRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.ViewDialySaleRow">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_BALANCERow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.IncomeSaleRow">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDERSRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.PRE_INVOICE_DETAILSRowChangeEvent">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCAHSE_ORDER_MAIN_VIEWRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_DETAIL_VIEWRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_VIEWRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_COSTSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILS_TEMRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.ViewDialySaleRowChangeEvent">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_BALANCERowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.IncomeSaleRowChangeEvent">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDERSRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCAHSE_ORDER_MAIN_VIEWRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_DETAIL_VIEWRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_VIEWRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_COSTSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.PRE_INVOICE_DETAILSTableAdapter">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ORDER_DETAILS_TEMTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.ViewDialySaleTableAdapter">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ITEM_BALANCETableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSSale,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ORDERSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ORDER_DETAILSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.PURCAHSE_ORDER_MAIN_VIEWTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.PURCHASE_ORDER_MASTER_DETAIL_VIEWTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.PURCHASE_ORDER_MASTER_VIEWTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ITEM_COSTSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSPurchaseOrder,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Update rows in top-down order.
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSSale,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSPurchaseOrder,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Insert rows in top-down order.
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSSale,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSPurchaseOrder,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Delete rows in bottom-up order.
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSSale)">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSPurchaseOrder)">
 	<summary>
 Update all changes to the dataset.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateOrderOption">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateOrderOption">
 	<summary>
 Update Order Option
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.SelfReferenceComparer">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.SelfReferenceComparer">
 	<summary>
 Used to sort self-referenced table's rows
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSCostomer">
+	<summary>
+Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="T:Asia_Garden_Inventory_Management_System.DSRevenue.RevenueDataTable">
 	<summary>
@@ -715,6 +803,579 @@ Update Order Option
 Used to sort self-referenced table's rows
 </summary>
 </member><member name="T:Asia_Garden_Inventory_Management_System.DSRevenueTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSupplyer">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Asia_Garden_Inventory_Management_System.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Asia_Garden_Inventory_Management_System.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CUSTOMERDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.LOCATIONSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.SUPPLIERDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.UNITSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CATEGORIESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEMSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CURRENCIESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_BALANCEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_COSTSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_PRICESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.RPT_INVOICEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICE_DETAILSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.PRE_INVOICE_DETAILSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CentralStoreDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ViewInvoiceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CUSTOMERRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.LOCATIONSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.SUPPLIERRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.UNITSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CATEGORIESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEMSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CURRENCIESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_BALANCERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_COSTSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_PRICESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.RPT_INVOICERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICE_DETAILSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.PRE_INVOICE_DETAILSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CentralStoreRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ViewInvoiceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CUSTOMERRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.LOCATIONSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.SUPPLIERRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.UNITSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CATEGORIESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEMSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CURRENCIESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_BALANCERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_COSTSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_PRICESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.RPT_INVOICERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICE_DETAILSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.PRE_INVOICE_DETAILSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CentralStoreRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ViewInvoiceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CUSTOMERTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.LOCATIONSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.SUPPLIERTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.UNITSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CATEGORIESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEMSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CURRENCIESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEM_BALANCETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEM_COSTSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEM_PRICESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.INVOICETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.RPT_INVOICETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.INVOICE_DETAILSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.PRE_INVOICE_DETAILSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CentralStoreTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ViewInvoiceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSInventory,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSInventory,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSInventory,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSInventory)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAY_ABLE_DETAILDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEWDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEW1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.PURCHASE_ORDER_MASTER_DETAIL_VIEWDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAY_ABLE_DETAILRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEWRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEW1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.PURCHASE_ORDER_MASTER_DETAIL_VIEWRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAY_ABLE_DETAILRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEWRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEW1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.PURCHASE_ORDER_MASTER_DETAIL_VIEWRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAYABLETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAY_ABLE_DETAILTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAYABLE_VIEWTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAYABLE_VIEW1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.PURCHASE_ORDER_MASTER_DETAIL_VIEWTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.AR_PAYMENTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICE_DETAILSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEWDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEW1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLE1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.AR_PAYMENTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICE_DETAILSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEWRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEW1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLE1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.AR_PAYMENTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICE_DETAILSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEWRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEW1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLE1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.INVOICETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACCOUNT_RECEIVABLETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.AR_PAYMENTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.INVOICE_DETAILSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACC_RECEIVED_ABLE_VIEWTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACC_RECEIVED_ABLE_VIEW1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACCOUNT_RECEIVABLE1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSAccountReceivable,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSAccountReceivable,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSAccountReceivable,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSAccountReceivable)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
@@ -1014,746 +1675,85 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
-</member><member name="P:Asia_Garden_Inventory_Management_System.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Asia_Garden_Inventory_Management_System.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICEDataTable">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.PRE_INVOICE_DETAILSDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLEDataTable">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.ViewDialySaleDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.AR_PAYMENTDataTable">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.IncomeSaleDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICE_DETAILSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEWDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEW1DataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLE1DataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICERow">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.PRE_INVOICE_DETAILSRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLERow">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.ViewDialySaleRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.AR_PAYMENTRow">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.IncomeSaleRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICE_DETAILSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEWRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEW1Row">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLE1Row">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICERowChangeEvent">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.PRE_INVOICE_DETAILSRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLERowChangeEvent">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.ViewDialySaleRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.AR_PAYMENTRowChangeEvent">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale.IncomeSaleRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.INVOICE_DETAILSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEWRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACC_RECEIVED_ABLE_VIEW1RowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable.ACCOUNT_RECEIVABLE1RowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivable">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSale">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.INVOICETableAdapter">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.PRE_INVOICE_DETAILSTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACCOUNT_RECEIVABLETableAdapter">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.ViewDialySaleTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.AR_PAYMENTTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.INVOICE_DETAILSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACC_RECEIVED_ABLE_VIEWTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACC_RECEIVED_ABLE_VIEW1TableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.ACCOUNT_RECEIVABLE1TableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSAccountReceivable,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSSale,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Update rows in top-down order.
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSAccountReceivable,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSSale,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Insert rows in top-down order.
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSAccountReceivable,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSSale,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Delete rows in bottom-up order.
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSAccountReceivable)">
+</member><member name="M:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSSale)">
 	<summary>
 Update all changes to the dataset.
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.UpdateOrderOption">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.UpdateOrderOption">
 	<summary>
 Update Order Option
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager.SelfReferenceComparer">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager.SelfReferenceComparer">
 	<summary>
 Used to sort self-referenced table's rows
 </summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSAccountReceivableTableAdapters.TableAdapterManager">
+</member><member name="T:Asia_Garden_Inventory_Management_System.DSSaleTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLEDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAY_ABLE_DETAILDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEWDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEW1DataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.PURCHASE_ORDER_MASTER_DETAIL_VIEWDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLERow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAY_ABLE_DETAILRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEWRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEW1Row">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.PURCHASE_ORDER_MASTER_DETAIL_VIEWRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLERowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAY_ABLE_DETAILRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEWRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.ACC_PAYABLE_VIEW1RowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE.PURCHASE_ORDER_MASTER_DETAIL_VIEWRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAYABLETableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAY_ABLE_DETAILTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAYABLE_VIEWTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.ACC_PAYABLE_VIEW1TableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.PURCHASE_ORDER_MASTER_DETAIL_VIEWTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLE)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSACCOUNTPAYABLETableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILS_TEMDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_BALANCEDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDERSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCAHSE_ORDER_MAIN_VIEWDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_DETAIL_VIEWDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_VIEWDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_COSTSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILS_TEMRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_BALANCERow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDERSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCAHSE_ORDER_MAIN_VIEWRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_DETAIL_VIEWRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_VIEWRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_COSTSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILS_TEMRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_BALANCERowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDERSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ORDER_DETAILSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCAHSE_ORDER_MAIN_VIEWRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_DETAIL_VIEWRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.PURCHASE_ORDER_MASTER_VIEWRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder.ITEM_COSTSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrder">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ORDER_DETAILS_TEMTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ITEM_BALANCETableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ORDERSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ORDER_DETAILSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.PURCAHSE_ORDER_MAIN_VIEWTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.PURCHASE_ORDER_MASTER_DETAIL_VIEWTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.PURCHASE_ORDER_MASTER_VIEWTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.ITEM_COSTSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSPurchaseOrder,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSPurchaseOrder,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSPurchaseOrder,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSPurchaseOrder)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSPurchaseOrderTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CUSTOMERDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.LOCATIONSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.SUPPLIERDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.UNITSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CATEGORIESDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEMSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CURRENCIESDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_BALANCEDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_COSTSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_PRICESDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICEDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.RPT_INVOICEDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICE_DETAILSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.PRE_INVOICE_DETAILSDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CentralStoreDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ViewInvoiceDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CUSTOMERRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.LOCATIONSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.SUPPLIERRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.UNITSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CATEGORIESRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEMSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CURRENCIESRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_BALANCERow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_COSTSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_PRICESRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICERow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.RPT_INVOICERow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICE_DETAILSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.PRE_INVOICE_DETAILSRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CentralStoreRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ViewInvoiceRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CUSTOMERRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.LOCATIONSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.SUPPLIERRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.UNITSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CATEGORIESRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEMSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CURRENCIESRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_BALANCERowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_COSTSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ITEM_PRICESRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICERowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.RPT_INVOICERowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.INVOICE_DETAILSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.PRE_INVOICE_DETAILSRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.CentralStoreRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory.ViewInvoiceRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventory">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CUSTOMERTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.LOCATIONSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.SUPPLIERTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.UNITSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CATEGORIESTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEMSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CURRENCIESTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEM_BALANCETableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEM_COSTSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ITEM_PRICESTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.INVOICETableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.RPT_INVOICETableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.INVOICE_DETAILSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.PRE_INVOICE_DETAILSTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.CentralStoreTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.ViewInvoiceTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateUpdatedRows(Asia_Garden_Inventory_Management_System.DSInventory,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateInsertedRows(Asia_Garden_Inventory_Management_System.DSInventory,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateDeletedRows(Asia_Garden_Inventory_Management_System.DSInventory,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateAll(Asia_Garden_Inventory_Management_System.DSInventory)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSInventoryTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSCostomer">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Asia_Garden_Inventory_Management_System.DSSupplyer">
-	<summary>
-Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
 </members>
