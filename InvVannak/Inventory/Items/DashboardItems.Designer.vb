@@ -78,9 +78,14 @@ Partial Class DashboardItems
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator
         Me.BtnPrintProduct = New System.Windows.Forms.ToolStripButton
         Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator
-        Me.BtnBardCode = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator
+        Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
+        Me.PrintBarcodeNoImageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator
+        Me.PrintBarcodeWithImageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator
         Me.UpdateImg = New System.Windows.Forms.ToolStripButton
+        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator
         Me.UiPanelManager1 = New Janus.Windows.UI.Dock.UIPanelManager(Me.components)
         Me.uiPanel0 = New Janus.Windows.UI.Dock.UIPanel
         Me.uiPanel0Container = New Janus.Windows.UI.Dock.UIPanelInnerContainer
@@ -127,7 +132,7 @@ Partial Class DashboardItems
         'SplitContainer3.Panel2
         '
         Me.SplitContainer3.Panel2.Controls.Add(Me.GroupBox3)
-        Me.SplitContainer3.Size = New System.Drawing.Size(38, 668)
+        Me.SplitContainer3.Size = New System.Drawing.Size(297, 668)
         Me.SplitContainer3.SplitterDistance = 296
         Me.SplitContainer3.TabIndex = 0
         '
@@ -139,7 +144,7 @@ Partial Class DashboardItems
         Me.GroupBox1.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(38, 296)
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 296)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Category of Product (ប្រភេទ មុខទំនិញ)"
@@ -157,7 +162,7 @@ Partial Class DashboardItems
         Me.TreeCategory.Location = New System.Drawing.Point(3, 28)
         Me.TreeCategory.Name = "TreeCategory"
         Me.TreeCategory.SelectedImageIndex = 0
-        Me.TreeCategory.Size = New System.Drawing.Size(32, 265)
+        Me.TreeCategory.Size = New System.Drawing.Size(291, 265)
         Me.TreeCategory.TabIndex = 0
         '
         'ImageList1
@@ -179,7 +184,7 @@ Partial Class DashboardItems
         Me.GroupBox3.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox3.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(38, 368)
+        Me.GroupBox3.Size = New System.Drawing.Size(297, 368)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "ស្វែងរកទំនិញ"
@@ -259,7 +264,7 @@ Partial Class DashboardItems
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.GroupBox4)
-        Me.SplitContainer2.Size = New System.Drawing.Size(1027, 692)
+        Me.SplitContainer2.Size = New System.Drawing.Size(768, 692)
         Me.SplitContainer2.SplitterDistance = 422
         Me.SplitContainer2.TabIndex = 0
         '
@@ -271,7 +276,7 @@ Partial Class DashboardItems
         Me.GroupBox2.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1027, 422)
+        Me.GroupBox2.Size = New System.Drawing.Size(768, 422)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "List of Products (បញ្ជីមុខទំនិញ)"
@@ -288,7 +293,7 @@ Partial Class DashboardItems
         Me.StoreList.GroupByBoxVisible = False
         Me.StoreList.GroupMode = Janus.Windows.GridEX.GroupMode.Collapsed
         Me.StoreList.HeaderFormatStyle.BackColorGradient = System.Drawing.Color.Empty
-        Me.StoreList.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.StoreList.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 11.25!)
         Me.StoreList.HeaderFormatStyle.ForeColor = System.Drawing.Color.Blue
         Me.StoreList.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.StoreList.HideSelection = Janus.Windows.GridEX.HideSelection.HighlightInactive
@@ -296,7 +301,7 @@ Partial Class DashboardItems
         Me.StoreList.Name = "StoreList"
         Me.StoreList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.StoreList.RecordNavigator = True
-        Me.StoreList.Size = New System.Drawing.Size(1021, 391)
+        Me.StoreList.Size = New System.Drawing.Size(762, 391)
         Me.StoreList.TabIndex = 0
         Me.StoreList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
@@ -308,7 +313,7 @@ Partial Class DashboardItems
         Me.GroupBox4.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(1027, 266)
+        Me.GroupBox4.Size = New System.Drawing.Size(768, 266)
         Me.GroupBox4.TabIndex = 0
         Me.GroupBox4.TabStop = False
         '
@@ -319,7 +324,7 @@ Partial Class DashboardItems
         Me.UiTab1.Location = New System.Drawing.Point(3, 22)
         Me.UiTab1.Name = "UiTab1"
         Me.UiTab1.Office2007ColorScheme = Janus.Windows.UI.Office2007ColorScheme.Custom
-        Me.UiTab1.Size = New System.Drawing.Size(1021, 241)
+        Me.UiTab1.Size = New System.Drawing.Size(762, 241)
         Me.UiTab1.TabIndex = 1
         Me.UiTab1.TabPages.AddRange(New Janus.Windows.UI.Tab.UITabPage() {Me.UiTabPage1, Me.UiTabPage2})
         Me.UiTab1.VisualStyle = Janus.Windows.UI.Tab.TabVisualStyle.Office2007
@@ -331,7 +336,7 @@ Partial Class DashboardItems
         Me.UiTabPage1.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!)
         Me.UiTabPage1.Location = New System.Drawing.Point(1, 32)
         Me.UiTabPage1.Name = "UiTabPage1"
-        Me.UiTabPage1.Size = New System.Drawing.Size(1019, 208)
+        Me.UiTabPage1.Size = New System.Drawing.Size(760, 208)
         Me.UiTabPage1.TabStop = True
         Me.UiTabPage1.Text = "តំលៃ លក់"
         '
@@ -344,14 +349,14 @@ Partial Class DashboardItems
         Me.PriceList.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!)
         Me.PriceList.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid
         Me.PriceList.GroupByBoxVisible = False
-        Me.PriceList.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PriceList.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PriceList.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.PriceList.Location = New System.Drawing.Point(0, 31)
         Me.PriceList.Name = "PriceList"
         Me.PriceList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.PriceList.RecordNavigator = True
         Me.PriceList.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.[True]
-        Me.PriceList.Size = New System.Drawing.Size(1019, 177)
+        Me.PriceList.Size = New System.Drawing.Size(760, 177)
         Me.PriceList.TabIndex = 1
         Me.PriceList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
@@ -362,7 +367,7 @@ Partial Class DashboardItems
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripSeparator1, Me.ToolStripButton2, Me.ToolStripSeparator2, Me.ToolStripButton3})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1019, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(760, 31)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -411,7 +416,7 @@ Partial Class DashboardItems
         Me.UiTabPage2.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UiTabPage2.Location = New System.Drawing.Point(1, 32)
         Me.UiTabPage2.Name = "UiTabPage2"
-        Me.UiTabPage2.Size = New System.Drawing.Size(1019, 208)
+        Me.UiTabPage2.Size = New System.Drawing.Size(760, 208)
         Me.UiTabPage2.TabStop = True
         Me.UiTabPage2.Text = "តំលៃដើម"
         '
@@ -424,14 +429,14 @@ Partial Class DashboardItems
         Me.CostList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CostList.GridLineStyle = Janus.Windows.GridEX.GridLineStyle.Solid
         Me.CostList.GroupByBoxVisible = False
-        Me.CostList.HeaderFormatStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CostList.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CostList.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.CostList.Location = New System.Drawing.Point(0, 31)
         Me.CostList.Name = "CostList"
         Me.CostList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.CostList.RecordNavigator = True
         Me.CostList.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.[True]
-        Me.CostList.Size = New System.Drawing.Size(1019, 177)
+        Me.CostList.Size = New System.Drawing.Size(760, 177)
         Me.CostList.TabIndex = 3
         Me.CostList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
@@ -442,7 +447,7 @@ Partial Class DashboardItems
         Me.ToolStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNewCost, Me.ToolStripSeparator10, Me.bntDeleteCost})
         Me.ToolStrip4.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip4.Name = "ToolStrip4"
-        Me.ToolStrip4.Size = New System.Drawing.Size(1019, 31)
+        Me.ToolStrip4.Size = New System.Drawing.Size(760, 31)
         Me.ToolStrip4.TabIndex = 5
         Me.ToolStrip4.Text = "ToolStrip4"
         '
@@ -536,7 +541,7 @@ Partial Class DashboardItems
         '
         Me.ToolProduct.BackColor = System.Drawing.Color.Transparent
         Me.ToolProduct.ImageScalingSize = New System.Drawing.Size(30, 30)
-        Me.ToolProduct.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton7, Me.ToolStripSeparator6, Me.ToolStripButton8, Me.ToolStripSeparator5, Me.BtnFilter, Me.ToolStripSeparator7, Me.BtnRefreshProduct, Me.ToolStripSeparator9, Me.BtnAdjustment, Me.ToolStripSeparator8, Me.BtnPrintProduct, Me.ToolStripSeparator11, Me.BtnBardCode, Me.ToolStripSeparator12, Me.UpdateImg})
+        Me.ToolProduct.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton7, Me.ToolStripSeparator6, Me.ToolStripButton8, Me.ToolStripSeparator5, Me.BtnFilter, Me.ToolStripSeparator7, Me.BtnRefreshProduct, Me.ToolStripSeparator9, Me.BtnAdjustment, Me.ToolStripSeparator8, Me.BtnPrintProduct, Me.ToolStripSeparator11, Me.ToolStripSplitButton1, Me.ToolStripSeparator15, Me.UpdateImg, Me.ToolStripSeparator13})
         Me.ToolProduct.Location = New System.Drawing.Point(0, 0)
         Me.ToolProduct.Name = "ToolProduct"
         Me.ToolProduct.Size = New System.Drawing.Size(1077, 61)
@@ -639,21 +644,46 @@ Partial Class DashboardItems
         Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
         Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 61)
         '
-        'BtnBardCode
+        'ToolStripSplitButton1
         '
-        Me.BtnBardCode.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!)
-        Me.BtnBardCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnBardCode.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Cash_Register_100
-        Me.BtnBardCode.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BtnBardCode.Name = "BtnBardCode"
-        Me.BtnBardCode.Size = New System.Drawing.Size(117, 58)
-        Me.BtnBardCode.Text = "Print List Barcode"
-        Me.BtnBardCode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ToolStripSplitButton1.DropDownButtonWidth = 20
+        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.PrintBarcodeNoImageToolStripMenuItem, Me.ToolStripMenuItem2, Me.PrintBarcodeWithImageToolStripMenuItem})
+        Me.ToolStripSplitButton1.ForeColor = System.Drawing.Color.Blue
+        Me.ToolStripSplitButton1.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Cash_Register_100
+        Me.ToolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
+        Me.ToolStripSplitButton1.Size = New System.Drawing.Size(124, 58)
+        Me.ToolStripSplitButton1.Text = "Print List Barcode"
+        Me.ToolStripSplitButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
-        'ToolStripSeparator12
+        'ToolStripMenuItem1
         '
-        Me.ToolStripSeparator12.Name = "ToolStripSeparator12"
-        Me.ToolStripSeparator12.Size = New System.Drawing.Size(6, 61)
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(204, 6)
+        '
+        'PrintBarcodeNoImageToolStripMenuItem
+        '
+        Me.PrintBarcodeNoImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
+        Me.PrintBarcodeNoImageToolStripMenuItem.Name = "PrintBarcodeNoImageToolStripMenuItem"
+        Me.PrintBarcodeNoImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.PrintBarcodeNoImageToolStripMenuItem.Text = "Print barcode no image"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(204, 6)
+        '
+        'PrintBarcodeWithImageToolStripMenuItem
+        '
+        Me.PrintBarcodeWithImageToolStripMenuItem.ForeColor = System.Drawing.Color.Blue
+        Me.PrintBarcodeWithImageToolStripMenuItem.Name = "PrintBarcodeWithImageToolStripMenuItem"
+        Me.PrintBarcodeWithImageToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.PrintBarcodeWithImageToolStripMenuItem.Text = "Print barcode with image"
+        '
+        'ToolStripSeparator15
+        '
+        Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
+        Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 61)
         '
         'UpdateImg
         '
@@ -664,6 +694,13 @@ Partial Class DashboardItems
         Me.UpdateImg.Size = New System.Drawing.Size(102, 58)
         Me.UpdateImg.Text = "Update All Image"
         Me.UpdateImg.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.UpdateImg.Visible = False
+        '
+        'ToolStripSeparator13
+        '
+        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 61)
+        Me.ToolStripSeparator13.Visible = False
         '
         'UiPanelManager1
         '
@@ -677,7 +714,7 @@ Partial Class DashboardItems
         'Design Time Panel Info:
         '
         Me.UiPanelManager1.BeginPanelInfo()
-        Me.UiPanelManager1.AddDockPanelInfo(New System.Guid("4fe5fdda-e5d4-4010-be6b-6915c2fa2b51"), Janus.Windows.UI.Dock.PanelDockStyle.Right, New System.Drawing.Size(44, 692), True)
+        Me.UiPanelManager1.AddDockPanelInfo(New System.Guid("4fe5fdda-e5d4-4010-be6b-6915c2fa2b51"), Janus.Windows.UI.Dock.PanelDockStyle.Right, New System.Drawing.Size(303, 692), True)
         Me.UiPanelManager1.AddFloatingPanelInfo(New System.Guid("4fe5fdda-e5d4-4010-be6b-6915c2fa2b51"), New System.Drawing.Point(-1, -1), New System.Drawing.Size(-1, -1), False)
         Me.UiPanelManager1.EndPanelInfo()
         '
@@ -686,9 +723,9 @@ Partial Class DashboardItems
         Me.uiPanel0.BorderPanelColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.uiPanel0.CloseButtonVisible = Janus.Windows.UI.InheritableBoolean.[False]
         Me.uiPanel0.InnerContainer = Me.uiPanel0Container
-        Me.uiPanel0.Location = New System.Drawing.Point(1030, 64)
+        Me.uiPanel0.Location = New System.Drawing.Point(771, 64)
         Me.uiPanel0.Name = "uiPanel0"
-        Me.uiPanel0.Size = New System.Drawing.Size(44, 692)
+        Me.uiPanel0.Size = New System.Drawing.Size(303, 692)
         Me.uiPanel0.TabIndex = 4
         Me.uiPanel0.Text = "Product Utility"
         '
@@ -697,7 +734,7 @@ Partial Class DashboardItems
         Me.uiPanel0Container.Controls.Add(Me.SplitContainer3)
         Me.uiPanel0Container.Location = New System.Drawing.Point(5, 23)
         Me.uiPanel0Container.Name = "uiPanel0Container"
-        Me.uiPanel0Container.Size = New System.Drawing.Size(38, 668)
+        Me.uiPanel0Container.Size = New System.Drawing.Size(297, 668)
         Me.uiPanel0Container.TabIndex = 0
         '
         'DashboardItems
@@ -802,8 +839,13 @@ Partial Class DashboardItems
     Friend WithEvents RadProductName As System.Windows.Forms.RadioButton
     Friend WithEvents PictProduct As System.Windows.Forms.PictureBox
     Friend WithEvents ToolStripSeparator11 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BtnBardCode As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator12 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents UpdateImg As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ToolStripSeparator13 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSplitButton1 As System.Windows.Forms.ToolStripSplitButton
+    Friend WithEvents ToolStripSeparator15 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents PrintBarcodeNoImageToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents PrintBarcodeWithImageToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

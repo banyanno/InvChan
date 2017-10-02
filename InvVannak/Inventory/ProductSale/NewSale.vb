@@ -373,7 +373,7 @@ Public Class NewSale
             Dim CurrCode As String
             Dim UnitName As String
             Dim UnitNameFree As String
-            Dim Qty As Decimal
+            Dim Qty As Double
             Dim Cost As Double
             Dim QtyFree As Decimal
             Dim Price As Double
@@ -463,6 +463,7 @@ Public Class NewSale
             'RAccPayable.ReportViewer.Zoom(100)
             'RAccPayable.ShowDialog()
 
+            myReportObj.PrintToPrinter()
             myReportObj.PrintToPrinter()
             cnn.Close()
             RefreshOrderList()

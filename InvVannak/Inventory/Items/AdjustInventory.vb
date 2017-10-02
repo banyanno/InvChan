@@ -61,9 +61,9 @@
             Dim MainStoreID As Integer = DABalance.SelectCurrentBalance(ItemID).Rows(0).Item("STORE_ID") 'SelectByItemAndUnitType(ItemID, "Main Unit").Rows(0).Item("STORE_ID")
             'Dim SubStoreID As Integer = DABalance.SelectByItemAndUnitType(ItemID, "Sub Unit").Rows(0).Item("STORE_ID")
 
-            Dim OldMain As Decimal = CDec(Me.TxtMainStock.Text)
+            Dim OldMain As Double = CDbl(Me.TxtMainStock.Text)
             'Dim OldSub As Decimal = CDec(Me.TxtSubStock.Text)
-            Dim NewMain As Decimal = CDec(Me.txtnewmainstock.Text)
+            Dim NewMain As Double = CDbl(Me.txtnewmainstock.Text)
             ' Dim NewSub As Decimal = CDec(Me.txtnewsubstock.Text)
 
             '' About Main QTY
@@ -138,6 +138,10 @@
     End Sub
 
     Private Sub AdjustInventory_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub CboProductName_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CboProductName.SelectedIndexChanged
 
     End Sub
 End Class

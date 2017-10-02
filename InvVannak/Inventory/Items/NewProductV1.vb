@@ -166,8 +166,8 @@ Public Class NewProductV1
         Dim CategoryID As Integer = CInt(Me.CboCategory.SelectedValue)
         Dim ItemImage() As Byte = ImageToByArray(ReductImageSize(ProdImg.Image))
         Dim MainUnit As String = CboMUnit.Text
-        Dim MainRatioQty As Integer = CInt(EmptyString(Me.txtMRatioQty.Text))
-        Dim MainBalance As Integer = CInt(EmptyString(Me.txtMBalance.Text))
+        Dim MainRatioQty As Decimal = CDec(EmptyString(Me.txtMRatioQty.Text))
+        Dim MainBalance As Decimal = CDec(EmptyString(Me.txtMBalance.Text))
         Dim SubUnit As String = CboSUnit.Text
         Dim SubRatioQty As Integer = CInt(EmptyString(Me.txtSRatioQty.Text))
         Dim SubBalance As Integer = CInt(EmptyString(Me.txtSBalance.Text))
@@ -358,21 +358,21 @@ Public Class NewProductV1
         SetDisableKeyString(e)
     End Sub
 
-    Private Sub txtMBalance_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtMBalance.KeyUp
-        If e.KeyValue = 190 Then
-            MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            txtMBalance.Text = 0
-            txtMBalance.Focus()
-            txtMBalance.SelectAll()
-        End If
-    End Sub
+    'Private Sub txtMBalance_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtMBalance.KeyUp
+    '    If e.KeyValue = 190 Then
+    '        MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    '        txtMBalance.Text = 0
+    '        txtMBalance.Focus()
+    '        txtMBalance.SelectAll()
+    '    End If
+    'End Sub
 
-    Private Sub txtSRatioQty_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtSRatioQty.KeyUp
-        If e.KeyValue = 190 Then
-            MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            txtSRatioQty.Text = 0
-            txtSRatioQty.Focus()
-            txtSRatioQty.SelectAll()
-        End If
-    End Sub
+    'Private Sub txtSRatioQty_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtSRatioQty.KeyUp
+    '    If e.KeyValue = 190 Then
+    '        MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    '        txtSRatioQty.Text = 0
+    '        txtSRatioQty.Focus()
+    '        txtSRatioQty.SelectAll()
+    '    End If
+    'End Sub
 End Class
