@@ -127,24 +127,30 @@ Public Class NewSale
         txtBarcode.Focus()
     End Sub
     Sub InsertPreInvoice(ByVal BarCode As String)
+
         If BarCode = "" Then
             Exit Sub
         Else
-            Dim tbl As DataTable = DAItem.SelectByBarCode(BarCode)
-            For Each rows As DataRow In tbl.Rows
-                Dim TblExistItem As DataTable = DAPreInvoice.ChExistPreInvoice(rows("ITEM_ID"), getCurrentUserID)
-                If TblExistItem.Rows.Count > 0 Then
-                    For Each rowsExit As DataRow In TblExistItem.Rows
-                        Dim qty = rowsExit("QTY") + 1
-                        Dim TotalPrice As Double = ((CDbl(rowsExit("PRICE"))) * qty)
-                        DAPreInvoice.PreUpdateExistingItem(qty, CDbl(TotalPrice), rowsExit("ITEM_ID"), getCurrentUserID)
-                    Next
-                Else
-                    DAPreInvoice.InsertDetail(rows("ITEM_ID"), "", 1, CDbl(rows("RETAIL_PRICE")), 0, "$", 0, CDbl(rows("RETAIL_PRICE")), 0, getCurrentUserID, 0, "", False, CDbl(rows("USD_COST")))
-                End If
-            Next
+            Try
+                Dim tbl As DataTable = DAItem.SelectByBarCode(BarCode)
+                For Each rows As DataRow In tbl.Rows
+                    Dim TblExistItem As DataTable = DAPreInvoice.ChExistPreInvoice(rows("ITEM_ID"), getCurrentUserID)
+                    If TblExistItem.Rows.Count > 0 Then
+                        For Each rowsExit As DataRow In TblExistItem.Rows
+                            Dim qty = rowsExit("QTY") + 1
+                            Dim TotalPrice As Double = ((CDbl(rowsExit("PRICE"))) * qty)
+                            DAPreInvoice.PreUpdateExistingItem(qty, CDbl(TotalPrice), rowsExit("ITEM_ID"), getCurrentUserID)
+                        Next
+                    Else
+                        DAPreInvoice.InsertDetail(rows("ITEM_ID"), "", 1, CDbl(rows("RETAIL_PRICE")), 0, "$", 0, CDbl(rows("RETAIL_PRICE")), 0, getCurrentUserID, 0, "", False, CDbl(rows("USD_COST")))
+                    End If
+                Next
+            Catch ex As Exception
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+           
         End If
-        
+
         RefreshOrderList()
     End Sub
 

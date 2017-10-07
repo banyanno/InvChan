@@ -1,0 +1,213 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ViewInvoice">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="INVOICE_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="INVOICE_NO" type="xs:long" minOccurs="0" />
+                <xs:element name="CUST_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="CUST_NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="USD_AMOUNT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="USD_TOTAL" type="xs:decimal" minOccurs="0" />
+                <xs:element name="INVOICE_DATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="RATE" type="xs:int" minOccurs="0" />
+                <xs:element name="MONEY_RECEIVED" type="xs:decimal" minOccurs="0" />
+                <xs:element name="RETURN_KHR" type="xs:decimal" minOccurs="0" />
+                <xs:element name="RETURN_USD" type="xs:decimal" minOccurs="0" />
+                <xs:element name="DETAIL_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="ITEM_ID" type="xs:int" minOccurs="0" />
+                <xs:element name="QTY" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PRICE" type="xs:decimal" minOccurs="0" />
+                <xs:element name="USD_SUPTOTAL" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ITEM_NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="USER_ID" type="xs:int" minOccurs="0" />
+                <xs:element name="USER_NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="MONEY_RECEIVEDOLAR" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>79</DETAIL_ID>
+    <ITEM_ID>35</ITEM_ID>
+    <QTY>1.00</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>2.000</USD_SUPTOTAL>
+    <ITEM_NAME>ទឹក ក្រូច ថៃ 3​L</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>80</DETAIL_ID>
+    <ITEM_ID>21</ITEM_ID>
+    <QTY>3.00</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>6.000</USD_SUPTOTAL>
+    <ITEM_NAME>សណ្ដែក ដប</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>81</DETAIL_ID>
+    <ITEM_ID>19</ITEM_ID>
+    <QTY>1.00</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>2.000</USD_SUPTOTAL>
+    <ITEM_NAME>ហ្វាម៉ូស ធំ</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>82</DETAIL_ID>
+    <ITEM_ID>18</ITEM_ID>
+    <QTY>2.00</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>4.000</USD_SUPTOTAL>
+    <ITEM_NAME>វ៉ាហាហា​​​ 500ml</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>83</DETAIL_ID>
+    <ITEM_ID>39</ITEM_ID>
+    <QTY>2.00</QTY>
+    <PRICE>344.000</PRICE>
+    <USD_SUPTOTAL>688.000</USD_SUPTOTAL>
+    <ITEM_NAME>345555</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>84</DETAIL_ID>
+    <ITEM_ID>7</ITEM_ID>
+    <QTY>1.00</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>2.000</USD_SUPTOTAL>
+    <ITEM_NAME>ស្រា​ ខ្លាំង</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>85</DETAIL_ID>
+    <ITEM_ID>23</ITEM_ID>
+    <QTY>1.00</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>2.000</USD_SUPTOTAL>
+    <ITEM_NAME>កូកា​ 330ml</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+  <ViewInvoice>
+    <INVOICE_ID>37</INVOICE_ID>
+    <INVOICE_NO>2017100327</INVOICE_NO>
+    <CUST_ID>0</CUST_ID>
+    <CUST_NAME>លក់រាយ</CUST_NAME>
+    <USD_AMOUNT>708.000</USD_AMOUNT>
+    <USD_TOTAL>708.000</USD_TOTAL>
+    <INVOICE_DATE>2017-10-03T00:00:00+07:00</INVOICE_DATE>
+    <RATE>4000</RATE>
+    <MONEY_RECEIVED>0.000</MONEY_RECEIVED>
+    <RETURN_KHR>168000.000</RETURN_KHR>
+    <RETURN_USD>42.000</RETURN_USD>
+    <DETAIL_ID>86</DETAIL_ID>
+    <ITEM_ID>37</ITEM_ID>
+    <QTY>1.00</QTY>
+    <PRICE>2.000</PRICE>
+    <USD_SUPTOTAL>2.000</USD_SUPTOTAL>
+    <ITEM_NAME>អ៊ីឈិតាន់</ITEM_NAME>
+    <USER_ID>4</USER_ID>
+    <USER_NAME>Admin</USER_NAME>
+    <MONEY_RECEIVEDOLAR>750.000</MONEY_RECEIVEDOLAR>
+  </ViewInvoice>
+</NewDataSet>
