@@ -48,6 +48,7 @@ Partial Class DashboardProductSale
         Me.UiPanelManager1 = New Janus.Windows.UI.Dock.UIPanelManager(Me.components)
         Me.uiPanel0 = New Janus.Windows.UI.Dock.UIPanel
         Me.uiPanel0Container = New Janus.Windows.UI.Dock.UIPanelInnerContainer
+        Me.ChSale = New System.Windows.Forms.CheckBox
         Me.BtnFind = New System.Windows.Forms.Button
         Me.TxtInvoiceNo = New System.Windows.Forms.TextBox
         Me.ISInvoiceNo = New System.Windows.Forms.CheckBox
@@ -63,7 +64,6 @@ Partial Class DashboardProductSale
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
         Me.BtnRemoveProduct = New System.Windows.Forms.ToolStripMenuItem
         Me.InvoiceList = New Janus.Windows.GridEX.GridEX
-        Me.ChSale = New System.Windows.Forms.CheckBox
         Me.ToolProduct.SuspendLayout()
         CType(Me.UiPanelManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.uiPanel0, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -293,6 +293,20 @@ Partial Class DashboardProductSale
         Me.uiPanel0Container.Size = New System.Drawing.Size(224, 619)
         Me.uiPanel0Container.TabIndex = 0
         '
+        'ChSale
+        '
+        Me.ChSale.AutoSize = True
+        Me.ChSale.Checked = True
+        Me.ChSale.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ChSale.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChSale.ForeColor = System.Drawing.Color.Blue
+        Me.ChSale.Location = New System.Drawing.Point(7, 99)
+        Me.ChSale.Name = "ChSale"
+        Me.ChSale.Size = New System.Drawing.Size(111, 28)
+        Me.ChSale.TabIndex = 7
+        Me.ChSale.Text = "បង្ហាញ់លក់រាយ"
+        Me.ChSale.UseVisualStyleBackColor = True
+        '
         'BtnFind
         '
         Me.BtnFind.Cursor = System.Windows.Forms.Cursors.Hand
@@ -474,26 +488,12 @@ Partial Class DashboardProductSale
         Me.InvoiceList.RowFormatStyle.Font = New System.Drawing.Font("Khmer OS Battambang", 11.25!)
         Me.InvoiceList.RowHeaderFormatStyle.Font = New System.Drawing.Font("Khmer OS Battambang", 14.0!)
         Me.InvoiceList.Size = New System.Drawing.Size(1075, 284)
-        Me.InvoiceList.TabIndex = 15
+        Me.InvoiceList.TabIndex = 16
         Me.InvoiceList.TableHeaderFormatStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.InvoiceList.TotalRowFormatStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.InvoiceList.TotalRowFormatStyle.FontSize = 12.0!
         Me.InvoiceList.TotalRowFormatStyle.ForeColor = System.Drawing.Color.Red
         Me.InvoiceList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
-        '
-        'ChSale
-        '
-        Me.ChSale.AutoSize = True
-        Me.ChSale.Checked = True
-        Me.ChSale.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ChSale.Font = New System.Drawing.Font("Khmer OS Battambang", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ChSale.ForeColor = System.Drawing.Color.Blue
-        Me.ChSale.Location = New System.Drawing.Point(7, 99)
-        Me.ChSale.Name = "ChSale"
-        Me.ChSale.Size = New System.Drawing.Size(111, 28)
-        Me.ChSale.TabIndex = 7
-        Me.ChSale.Text = "បង្ហាញ់លក់រាយ"
-        Me.ChSale.UseVisualStyleBackColor = True
         '
         'DashboardProductSale
         '
@@ -535,7 +535,6 @@ Partial Class DashboardProductSale
     Friend WithEvents uiPanel1 As Janus.Windows.UI.Dock.UIPanel
     Friend WithEvents uiPanel1Container As Janus.Windows.UI.Dock.UIPanelInnerContainer
     Friend WithEvents DetailList As Janus.Windows.GridEX.GridEX
-    Friend WithEvents InvoiceList As Janus.Windows.GridEX.GridEX
     Friend WithEvents ToolStripSeparator8 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents BtnSaleWale As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
@@ -561,5 +560,6 @@ Partial Class DashboardProductSale
     Friend WithEvents btnWholSaleReport As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ChSale As System.Windows.Forms.CheckBox
+    Friend WithEvents InvoiceList As Janus.Windows.GridEX.GridEX
 
 End Class

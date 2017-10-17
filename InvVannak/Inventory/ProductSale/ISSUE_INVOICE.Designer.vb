@@ -178,12 +178,12 @@ Partial Class ISSUE_INVOICE
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel2.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.images__1_
+        Me.Panel2.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Golf_Shirt_Grey_Seamless_Pattern_For_Website_Background
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(629, 43)
+        Me.Panel2.Size = New System.Drawing.Size(638, 43)
         Me.Panel2.TabIndex = 19
         '
         'Label13
@@ -191,7 +191,7 @@ Partial Class ISSUE_INVOICE
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Khmer OS Battambang", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Cyan
+        Me.Label13.ForeColor = System.Drawing.Color.Red
         Me.Label13.Location = New System.Drawing.Point(254, 7)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(128, 34)
@@ -201,15 +201,15 @@ Partial Class ISSUE_INVOICE
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel1.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.images__1_
+        Me.Panel1.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Golf_Shirt_Grey_Seamless_Pattern_For_Website_Background
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.lblRate)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 337)
+        Me.Panel1.Location = New System.Drawing.Point(0, 333)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(629, 59)
+        Me.Panel1.Size = New System.Drawing.Size(638, 59)
         Me.Panel1.TabIndex = 18
         '
         'Label9
@@ -217,7 +217,7 @@ Partial Class ISSUE_INVOICE
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Transparent
+        Me.Label9.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Label9.Location = New System.Drawing.Point(5, 4)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(312, 25)
@@ -229,7 +229,7 @@ Partial Class ISSUE_INVOICE
         Me.lblRate.AutoSize = True
         Me.lblRate.BackColor = System.Drawing.Color.Transparent
         Me.lblRate.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblRate.ForeColor = System.Drawing.Color.Beige
+        Me.lblRate.ForeColor = System.Drawing.Color.DodgerBlue
         Me.lblRate.Location = New System.Drawing.Point(572, 24)
         Me.lblRate.Name = "lblRate"
         Me.lblRate.Size = New System.Drawing.Size(54, 25)
@@ -242,7 +242,7 @@ Partial Class ISSUE_INVOICE
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Transparent
+        Me.Label7.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Label7.Location = New System.Drawing.Point(5, 29)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(384, 25)
@@ -254,7 +254,7 @@ Partial Class ISSUE_INVOICE
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Beige
+        Me.Label6.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Label6.Location = New System.Drawing.Point(451, 24)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(125, 25)
@@ -288,9 +288,9 @@ Partial Class ISSUE_INVOICE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 27.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Beige
+        Me.BackColor = System.Drawing.Color.OldLace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(629, 396)
+        Me.ClientSize = New System.Drawing.Size(638, 392)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TxtReceiveDollar)

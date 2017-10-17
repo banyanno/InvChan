@@ -180,8 +180,8 @@
     Private Sub LoadingProfile()
         LblComProfile.Text = "Dev By : KTG Team" & _
 vbCrLf & "Tel        : 012 238 738" & _
-vbCrLf & "Email:  Ban.Yanno@(GMAIL.com)" & _
-vbCrLf & "All right reserved copyright BAN YANNO" & _
+vbCrLf & "Email:  ban.yanno@gmail.com" & _
+vbCrLf & "All right reserved copyright by Mr.BAN YANNO" & _
 vbCrLf & "អាជ្ញាប័ណ្ណ Software ជូន" & _
 vbCrLf & _
 vbCrLf & GetComName() & _

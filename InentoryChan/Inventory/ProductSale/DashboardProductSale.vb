@@ -54,9 +54,9 @@ Public Class DashboardProductSale
         RefreshList()
     End Sub
 
-  
 
-    Private Sub InvoiceList_SelectionChanged1(ByVal sender As Object, ByVal e As System.EventArgs) Handles InvoiceList.SelectionChanged
+
+    Private Sub InvoiceList_SelectionChanged1(ByVal sender As Object, ByVal e As System.EventArgs)
         If Me.InvoiceList.RowCount >= 1 Then
             DetailList.DataSource = DADetail.SelectByInvoiceID(Me.InvoiceList.CurrentRow.Cells("INVOICE_ID").Value)
         End If
@@ -114,7 +114,7 @@ Public Class DashboardProductSale
         Catch ex As Exception
 
         End Try
-       
+
     End Sub
 
     Private Sub BtnSaleWale_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSaleWale.Click
@@ -219,7 +219,7 @@ Public Class DashboardProductSale
             Dim QTYPromotion As Integer = DetailList.GetRow.Cells("QTY_FREE").Value
             Dim ItemID As Double = DetailList.GetRow.Cells("ITEM_ID").Value
 
-          
+
 
             Dim StoreID As Integer
             Dim StoreIDFree As Integer
@@ -307,7 +307,7 @@ Public Class DashboardProductSale
             TxtInvoiceNo.Text = InvoiceList.GetRow.Cells("INVOICE_NO").Value
             BtnFind_Click(sender, e)
         End If
-        
+
 
 
     End Sub
@@ -395,6 +395,12 @@ Public Class DashboardProductSale
             ChSale.Text = "បង្ហាញលក់រាយ"
         Else
             ChSale.Text = "បង្ហាញលក់ដុំ"
+        End If
+    End Sub
+
+    Private Sub InvoiceList_SelectionChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InvoiceList.SelectionChanged
+        If Me.InvoiceList.RowCount >= 1 Then
+            DetailList.DataSource = DADetail.SelectByInvoiceID(Me.InvoiceList.CurrentRow.Cells("INVOICE_ID").Value)
         End If
     End Sub
 End Class

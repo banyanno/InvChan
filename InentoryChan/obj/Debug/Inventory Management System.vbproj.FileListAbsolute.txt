@@ -269,26 +269,16 @@ C:\YannoSoft\Projects\InvChan\InentoryChan\obj\Debug\RdlCompile.cache
 C:\YannoSoft\Projects\InvChan\InentoryChan\obj\Debug\RdlCompile.compiled
 C:\YannoSoft\Projects\InvChan\InentoryChan\obj\Debug\Inventory System.exe
 C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Inventory System.exe.config
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Inventory System.exe
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Inventory System.pdb
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Inventory System.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Interop.AcroPDFLib.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\ResolveAssemblyReference.cache
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Interop.AcroPDFLib.dll
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\AxInterop.AcroPDFLib.dll
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Inventory Management System.vbproj.ResolveComReference.cache
-C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Inventory System.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Inventory System.pdb
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Inventory System.exe
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Inventory System.pdb
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Inventory System.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.Ribbon.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.Schedule.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.GridEX.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.TimeLine.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.ExplorerBar.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.ButtonBar.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.UI.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.CalendarCombo.v3.xml
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Interop.AcroPDFLib.dll
-C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\AxInterop.AcroPDFLib.dll
-C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\ResolveAssemblyReference.cache
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Asia_Garden_Inventory_Management_System.Adjust.resources
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Asia_Garden_Inventory_Management_System.Category.resources
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Asia_Garden_Inventory_Management_System.Issue.resources
@@ -388,3 +378,24 @@ C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Inventory System.exe.lice
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\RdlCompile.cache
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\RdlCompile.compiled
 C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Inventory System.exe
+C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Inventory System.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\obj\Debug\Inventory System.pdb
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Data.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.ButtonBar.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.CalendarCombo.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.Common.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.ExplorerBar.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.FilterEditor.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.GridEX.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.Ribbon.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.Schedule.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.TimeLine.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.UI.v3.dll
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.GridEX.v3.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.ExplorerBar.v3.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.Schedule.v3.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.TimeLine.v3.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.CalendarCombo.v3.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.Ribbon.v3.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.UI.v3.xml
+C:\BanYanno\SoftProject\InvChan\InentoryChan\bin\Debug\Janus.Windows.ButtonBar.v3.xml
