@@ -385,7 +385,7 @@ Partial Class FormReceiveProduct
         Me.GroupBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox5.Size = New System.Drawing.Size(1090, 407)
+        Me.GroupBox5.Size = New System.Drawing.Size(1090, 403)
         Me.GroupBox5.TabIndex = 17
         Me.GroupBox5.TabStop = False
         '
@@ -396,6 +396,8 @@ Partial Class FormReceiveProduct
         Me.GridOrderDetail.DesignTimeLayout = GridOrderDetail_DesignTimeLayout
         Me.GridOrderDetail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridOrderDetail.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.GridOrderDetail.GroupByBoxFormatStyle.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.GridOrderDetail.GroupByBoxFormatStyle.BackColorGradient = System.Drawing.SystemColors.ControlDark
         Me.GridOrderDetail.GroupByBoxVisible = False
         Me.GridOrderDetail.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridOrderDetail.HeaderFormatStyle.FontSize = 9.0!
@@ -406,7 +408,7 @@ Partial Class FormReceiveProduct
         Me.GridOrderDetail.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.GridOrderDetail.Office2007CustomColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.GridOrderDetail.RecordNavigator = True
-        Me.GridOrderDetail.Size = New System.Drawing.Size(1086, 327)
+        Me.GridOrderDetail.Size = New System.Drawing.Size(1086, 323)
         Me.GridOrderDetail.TabIndex = 14
         Me.GridOrderDetail.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '

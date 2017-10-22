@@ -68,20 +68,18 @@
 
    
     Private Sub TxtQTY_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TxtQTY.KeyUp
-        If e.KeyValue = 190 Then
-            MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            TxtQTY.Text = 0
-            TxtQTY.Focus()
-            TxtQTY.SelectAll()
-            Exit Sub
-        End If
+        'If e.KeyValue = 190 Then
+        '    MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '    TxtQTY.Text = 0
+        '    TxtQTY.Focus()
+        '    TxtQTY.SelectAll()
+        '    Exit Sub
+        'End If
     End Sub
 
     Private Sub TxtQTY_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TxtQTY.KeyPress
         SetDisableKeyString(e)
     End Sub
 
-    Private Sub TxtQTY_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtQTY.TextChanged
-
-    End Sub
+    
 End Class

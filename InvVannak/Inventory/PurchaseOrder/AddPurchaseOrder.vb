@@ -6,6 +6,7 @@
     Dim DABalance As New DSInventoryTableAdapters.ITEM_BALANCETableAdapter
     Dim POrder As New PurchaseOrder
     Dim FReceiveItme As FormReceiveProduct
+    Dim DAPurchasOrderDetailTem As New DSPurchaseOrderTableAdapters.ORDER_DETAILS_TEMTableAdapter
     Sub New(ByVal FReceiveItme As FormReceiveProduct)
 
         ' This call is required by the Windows Form Designer.
@@ -85,13 +86,22 @@
         Dim TotalCostTHB As Double = 0
     
         TotalCostUSD = EmptyString(txtQTY.Text) * EmptyString(txtCost.Text)
-        If POrder.AddItemDetial(lblOrderNo.Text, CDbl(GridProductList.GetRow.Cells("ITEM_ID").Value), TxtProductName.Text, "Main Unit", txtQTY.Text, 0, EmptyString(txtCost.Text), 0, TotalCostUSD, 0, "$", "") = 1 Then
+        If Me.AddItemDetial(lblOrderNo.Text, CDbl(GridProductList.GetRow.Cells("ITEM_ID").Value), TxtProductName.Text, "Main Unit", EmptyString(txtQTY.Text), 0, EmptyString(txtCost.Text), 0, TotalCostUSD, 0, "$", "") = 1 Then
             FReceiveItme.SelectDetailOrder(lblOrderNo.Text)
             FReceiveItme.AddTotolCast()
             ClearnForm()
         End If
     End Sub
+    Public Function AddItemDetial(ByVal OrderNo As Double, ByVal ProductID As Integer, ByVal ProductName As String, ByVal UnitName As String, _
+                            ByVal QTY As Double, ByVal ProQTY As Double, ByVal Cost As Double, ByVal TotalCostR As Double, _
+                            ByVal TotalCostD As Double, ByVal TotalCostB As Double, ByVal IS_Currency As String, ByVal UNIT_NAME_FREE As String) As Integer
+        If DAPurchasOrderDetailTem.InsertPreOrder(OrderNo, ProductID, UnitName, QTY, Cost, TotalCostD, TotalCostR, TotalCostB, IS_Currency, ProQTY, UNIT_NAME_FREE) = 1 Then
+            Return 1
+        Else
+            Return 0
+        End If
 
+    End Function
   
     Private Sub CboCurrency_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CboCurrency.SelectedIndexChanged
         Try
@@ -116,13 +126,13 @@
     End Sub
 
     Private Sub txtQTY_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtQTY.KeyUp
-        If e.KeyValue = 190 Then
-            MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            txtQTY.Text = 0
-            txtQTY.Focus()
-            txtQTY.SelectAll()
+        'If e.KeyValue = 190 Then
+        '    MessageBox.Show("You are can not type .", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '    txtQTY.Text = 0
+        '    txtQTY.Focus()
+        '    txtQTY.SelectAll()
 
-        End If
+        'End If
         Try
             TxtTotalCost.Text = EmptyString(txtQTY.Text) * EmptyString(txtCost.Text)
         Catch ex As Exception

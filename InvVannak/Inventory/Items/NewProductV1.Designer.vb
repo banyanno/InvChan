@@ -113,7 +113,7 @@ Partial Class NewProductV1
         Me.UiTab1.Location = New System.Drawing.Point(0, 0)
         Me.UiTab1.Name = "UiTab1"
         Me.UiTab1.Office2007ColorScheme = Janus.Windows.UI.Office2007ColorScheme.Custom
-        Me.UiTab1.Office2007CustomColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.UiTab1.Office2007CustomColor = System.Drawing.SystemColors.Control
         Me.UiTab1.Size = New System.Drawing.Size(536, 487)
         Me.UiTab1.TabIndex = 0
         Me.UiTab1.TabPages.AddRange(New Janus.Windows.UI.Tab.UITabPage() {Me.UiTabPage1})
@@ -192,7 +192,7 @@ Partial Class NewProductV1
         Me.UiTab2.Location = New System.Drawing.Point(8, 150)
         Me.UiTab2.Name = "UiTab2"
         Me.UiTab2.Office2007ColorScheme = Janus.Windows.UI.Office2007ColorScheme.Custom
-        Me.UiTab2.Office2007CustomColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.UiTab2.Office2007CustomColor = System.Drawing.SystemColors.Control
         Me.UiTab2.Size = New System.Drawing.Size(504, 246)
         Me.UiTab2.TabIndex = 11
         Me.UiTab2.TabPages.AddRange(New Janus.Windows.UI.Tab.UITabPage() {Me.UiTabPage2, Me.UiTabPage3, Me.UiTabPage4, Me.UiTabPage5})
@@ -567,7 +567,7 @@ Partial Class NewProductV1
         'ProdImg
         '
         Me.ProdImg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ProdImg.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.shoping_cart
+        Me.ProdImg.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Supplier_Icon_Transparent_120_x_120
         Me.ProdImg.Location = New System.Drawing.Point(12, 12)
         Me.ProdImg.Name = "ProdImg"
         Me.ProdImg.Size = New System.Drawing.Size(203, 183)
@@ -808,7 +808,7 @@ Partial Class NewProductV1
         Me.AcceptButton = Me.BtnSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(536, 487)
         Me.Controls.Add(Me.UiTab1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle

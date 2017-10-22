@@ -12,11 +12,9 @@
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
-
-
     Public Function AddItemDetial(ByVal OrderNo As Double, ByVal ProductID As Integer, ByVal ProductName As String, ByVal UnitName As String, _
-                             ByVal QTY As Integer, ByVal ProQTY As Integer, ByVal Cost As Double, ByVal TotalCostR As Double, _
-                             ByVal TotalCostD As Double, ByVal TotalCostB As Double, ByVal IS_Currency As String, ByVal UNIT_NAME_FREE As String) As Integer
+                            ByVal QTY As Integer, ByVal ProQTY As Integer, ByVal Cost As Double, ByVal TotalCostR As Double, _
+                            ByVal TotalCostD As Double, ByVal TotalCostB As Double, ByVal IS_Currency As String, ByVal UNIT_NAME_FREE As String) As Integer
         If DAPurchasOrderDetailTem.InsertPreOrder(OrderNo, ProductID, UnitName, QTY, Cost, TotalCostD, TotalCostR, TotalCostB, IS_Currency, ProQTY, UNIT_NAME_FREE) = 1 Then
             Return 1
         Else
@@ -24,6 +22,8 @@
         End If
 
     End Function
+
+   
     Public Sub AddTotolCast()
         TxtTotalB.Text = 0
         TxtTotalR.Text = 0

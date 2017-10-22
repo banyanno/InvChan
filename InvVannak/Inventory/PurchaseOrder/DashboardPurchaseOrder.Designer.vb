@@ -293,6 +293,7 @@ Partial Class DashboardPurchaseOrder
         Me.GridPurchaseDetail.RowHeaderFormatStyle.Font = New System.Drawing.Font("Khmer OS Battambang", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GridPurchaseDetail.Size = New System.Drawing.Size(873, 311)
         Me.GridPurchaseDetail.TabIndex = 6
+        Me.GridPurchaseDetail.TotalRow = Janus.Windows.GridEX.InheritableBoolean.[True]
         Me.GridPurchaseDetail.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
         'ContextAddRemoveItem

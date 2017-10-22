@@ -26,15 +26,15 @@ Public Class NewSale
         Dim OrderTable As New DataTable
         OrderTable = DAPreInvoice.SelectByUserID(getCurrentUserID)
         Me.OrderList.DataSource = OrderTable
-        Dim KHRAmount As Decimal = 0
-        Dim USDAmount As Decimal = 0
-        Dim THBAmount As Decimal = 0
+        Dim KHRAmount As Double = 0
+        Dim USDAmount As Double = 0
+        Dim THBAmount As Double = 0
 
         If Me.OrderList.RecordCount >= 1 Then
             For i As Integer = 0 To OrderTable.Rows.Count - 1
-                KHRAmount = KHRAmount + CDec(OrderTable.Rows(i).Item("KHR_AMOUNT"))
-                USDAmount = USDAmount + CDec(OrderTable.Rows(i).Item("USD_AMOUNT"))
-                THBAmount = THBAmount + CDec(OrderTable.Rows(i).Item("THB_AMOUNT"))
+                KHRAmount = KHRAmount + CDbl(OrderTable.Rows(i).Item("KHR_AMOUNT"))
+                USDAmount = USDAmount + CDbl(OrderTable.Rows(i).Item("USD_AMOUNT"))
+                THBAmount = THBAmount + CDbl(OrderTable.Rows(i).Item("THB_AMOUNT"))
             Next
         End If
 
@@ -296,24 +296,26 @@ Public Class NewSale
     End Sub
 
     Private Sub BtnCalculation_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCalculation.Click
-        'If ListProduct.SelectedItems.Count = 0 Then Exit Sub
+        If ListProduct.SelectedItems.Count = 0 Then Exit Sub
+        Dim IssueInvoice As New ISSUE_INVOICE
         Try
             If TxtTotalUSD.Text = "0" Then
                 MessageBox.Show("You can not issue bill. Please select product to sale!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
             End If
-            Dim IssueInvoice As New ISSUE_INVOICE
-            IssueInvoice.TxtTotalUSD.Text = TxtTotalUSD.Text ' FormatNumber(TxtTotalUSD.Text , 3)
-            IssueInvoice.TxtTotalKHR.Text = TxtTotalKHR.Text ' FormatNumber(TxtTotalKHR.Text, 0)
+
+            IssueInvoice.TxtTotalUSD.Text = EmptyString(TxtTotalUSD.Text) ' FormatNumber(TxtTotalUSD.Text , 3)
+            IssueInvoice.TxtTotalKHR.Text = EmptyString(TxtTotalKHR.Text) ' FormatNumber(TxtTotalKHR.Text, 0)
             If IssueInvoice.ShowDialog() = Windows.Forms.DialogResult.OK Then
-                SaveNewInvoice(GetExchangeRage, IssueInvoice.TxtReceivedR.Text, EmptyString(IssueInvoice.TxtReceiveDollar.Text), IssueInvoice.TxtExchangeKHR.Text, IssueInvoice.TxtExchangeUSD.Text)
+                SaveNewInvoice(GetExchangeRage, EmptyString(IssueInvoice.TxtReceivedR.Text), EmptyString(IssueInvoice.TxtReceiveDollar.Text), EmptyString(IssueInvoice.TxtExchangeKHR.Text), EmptyString(IssueInvoice.TxtExchangeUSD.Text))
             End If
         Catch ex As Exception
-
+            MessageBox.Show(ex.Message)
         End Try
         txtBarcode.SelectAll()
         txtBarcode.Focus()
-
+        IssueInvoice.Close()
+        IssueInvoice.Dispose()
     End Sub
     Private Function GetSaleNo() As String
         Dim Years As Integer = Date.Now.Year
@@ -435,7 +437,7 @@ Public Class NewSale
             ' MsgBox("The invoice was saved", MsgBoxStyle.Information)
             DAPreInvoice.DeleteByUserID(getCurrentUserID)
 
-
+            Application.DoEvents()
 
             For Each foundFile As String In My.Computer.FileSystem.GetFiles(Application.StartupPath & "\Temp", FileIO.SearchOption.SearchAllSubDirectories, "*.*")
                 My.Computer.FileSystem.DeleteFile(foundFile, FileIO.UIOption.OnlyErrorDialogs, FileIO.RecycleOption.DeletePermanently)
@@ -449,29 +451,22 @@ Public Class NewSale
             Application.DoEvents()
             cnn.Open()
             Dim Da As New SqlClient.SqlDataAdapter(sql, cnn)
-            Application.DoEvents()
-            System.Threading.Thread.Sleep(100)
+            'Application.DoEvents()
+            'System.Threading.Thread.Sleep(100)
             Da.Fill(DS, "ViewInvoice")
             Application.DoEvents()
             Dim RptName As String = Application.StartupPath & "\RptInvoice.rpt"
 
-            ' Dim RAccPayable As New ReportPreview
-            ' Dim MyReport As New RptInvoice
+
             Dim myReportObj As New clsCrystalReport()
             myReportObj.ReportPath(RptName)
             Application.DoEvents()
             myReportObj.SetDataSource(DS, "ViewInvoice")
-
-
-            'RAccPayable.ReportViewer.Refresh()
-            'RAccPayable.ReportViewer.ReportSource = myReportObj.Report
-            'RAccPayable.ReportViewer.ViewReport()
-            'RAccPayable.ReportViewer.Zoom(100)
-            'RAccPayable.ShowDialog()
-
             myReportObj.PrintToPrinter()
             myReportObj.PrintToPrinter()
             cnn.Close()
+            myReportObj.Close()
+
             RefreshOrderList()
 
             ' Me.Close()

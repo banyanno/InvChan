@@ -63,7 +63,7 @@ Partial Class DashboardAdjustStock
         Me.ToolProduct.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnAdjustment, Me.ToolStripSeparator6, Me.BtnRefreshProduct})
         Me.ToolProduct.Location = New System.Drawing.Point(0, 0)
         Me.ToolProduct.Name = "ToolProduct"
-        Me.ToolProduct.Size = New System.Drawing.Size(732, 48)
+        Me.ToolProduct.Size = New System.Drawing.Size(734, 48)
         Me.ToolProduct.TabIndex = 3
         Me.ToolProduct.Text = "ToolStrip1"
         '
@@ -103,6 +103,7 @@ Partial Class DashboardAdjustStock
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.UiTab1)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.ToolProduct)
         '
         'SplitContainer1.Panel2
         '
@@ -123,12 +124,12 @@ Partial Class DashboardAdjustStock
         Me.UiTab1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.UiTab1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UiTab1.ForeColor = System.Drawing.Color.Red
-        Me.UiTab1.Location = New System.Drawing.Point(0, 0)
+        Me.UiTab1.Location = New System.Drawing.Point(0, 48)
         Me.UiTab1.Margin = New System.Windows.Forms.Padding(2)
         Me.UiTab1.MultiLine = True
         Me.UiTab1.Name = "UiTab1"
         Me.UiTab1.Office2007ColorScheme = Janus.Windows.UI.Office2007ColorScheme.Custom
-        Me.UiTab1.Size = New System.Drawing.Size(734, 540)
+        Me.UiTab1.Size = New System.Drawing.Size(734, 492)
         Me.UiTab1.TabIndex = 1
         Me.UiTab1.TabPages.AddRange(New Janus.Windows.UI.Tab.UITabPage() {Me.UiTabPage2, Me.UiTabPage1})
         Me.UiTab1.VisualStyle = Janus.Windows.UI.Tab.TabVisualStyle.Office2007
@@ -141,7 +142,7 @@ Partial Class DashboardAdjustStock
         Me.UiTabPage2.Margin = New System.Windows.Forms.Padding(2)
         Me.UiTabPage2.Name = "UiTabPage2"
         Me.UiTabPage2.PanelFormatStyle.ForeColor = System.Drawing.Color.Blue
-        Me.UiTabPage2.Size = New System.Drawing.Size(732, 514)
+        Me.UiTabPage2.Size = New System.Drawing.Size(732, 466)
         Me.UiTabPage2.TabStop = True
         Me.UiTabPage2.Text = "Product Transaction"
         '
@@ -160,19 +161,18 @@ Partial Class DashboardAdjustStock
         Me.StoreTransaction.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.StoreTransaction.Office2007CustomColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.StoreTransaction.RecordNavigator = True
-        Me.StoreTransaction.Size = New System.Drawing.Size(732, 514)
+        Me.StoreTransaction.Size = New System.Drawing.Size(732, 466)
         Me.StoreTransaction.TabIndex = 1
         Me.StoreTransaction.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
         '
         'UiTabPage1
         '
         Me.UiTabPage1.Controls.Add(Me.AdjustList)
-        Me.UiTabPage1.Controls.Add(Me.ToolProduct)
         Me.UiTabPage1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UiTabPage1.Location = New System.Drawing.Point(1, 25)
         Me.UiTabPage1.Margin = New System.Windows.Forms.Padding(2)
         Me.UiTabPage1.Name = "UiTabPage1"
-        Me.UiTabPage1.Size = New System.Drawing.Size(732, 514)
+        Me.UiTabPage1.Size = New System.Drawing.Size(732, 466)
         Me.UiTabPage1.TabStop = True
         Me.UiTabPage1.Text = "Stock Adjustment"
         '
@@ -185,7 +185,7 @@ Partial Class DashboardAdjustStock
         Me.AdjustList.GroupByBoxVisible = False
         Me.AdjustList.HeaderFormatStyle.Font = New System.Drawing.Font("Kh Battambang", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdjustList.HeaderFormatStyle.ForeColor = System.Drawing.Color.Blue
-        Me.AdjustList.Location = New System.Drawing.Point(0, 48)
+        Me.AdjustList.Location = New System.Drawing.Point(0, 0)
         Me.AdjustList.Margin = New System.Windows.Forms.Padding(2)
         Me.AdjustList.Name = "AdjustList"
         Me.AdjustList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
@@ -311,6 +311,7 @@ Partial Class DashboardAdjustStock
         Me.ToolProduct.ResumeLayout(False)
         Me.ToolProduct.PerformLayout()
         Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.PerformLayout()
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         Me.SplitContainer1.Panel2.PerformLayout()
         Me.SplitContainer1.ResumeLayout(False)
@@ -319,7 +320,6 @@ Partial Class DashboardAdjustStock
         Me.UiTabPage2.ResumeLayout(False)
         CType(Me.StoreTransaction, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UiTabPage1.ResumeLayout(False)
-        Me.UiTabPage1.PerformLayout()
         CType(Me.AdjustList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

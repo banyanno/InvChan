@@ -293,7 +293,7 @@ Partial Class AdjustInventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 27.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(682, 546)
         Me.Controls.Add(Me.BtnCancel)
         Me.Controls.Add(Me.BtnSave)

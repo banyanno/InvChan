@@ -80,14 +80,20 @@ Public Class NewProductV1
         If ValidateTextField(txtItemName, "", ErrProduct) = False Then Exit Sub
         If ValidateCombobox(CboCategory, "", ErrProduct) = False Then
             UiTab2.SelectedIndex = 0
+            CboCategory.Focus()
+            CboCategory.SelectAll()
             Exit Sub
         End If
         If ValidateCombobox(CboMUnit, "", ErrProduct) = False Then
             UiTab2.SelectedIndex = 0
+            CboMUnit.Focus()
+            CboMUnit.SelectAll()
             Exit Sub
         End If
         If ValidateCombobox(CboSUnit, "", ErrProduct) = False Then
             UiTab2.SelectedIndex = 0
+            CboSUnit.Focus()
+            CboSUnit.SelectAll()
             Exit Sub
         End If
         'If ValidateTextField(txtSBalance, "", ErrProduct) = False Then Exit Sub
@@ -108,15 +114,21 @@ Public Class NewProductV1
 
         If ValidateTextField(txtWUSDPrice, "", ErrProduct) = False Then
             UiTab2.SelectedIndex = 1
+            txtWUSDPrice.Focus()
+            txtWUSDPrice.SelectAll()
             Exit Sub
         End If
         If ValidateTextField(txtUSDCost, "", ErrProduct) = False Then
             UiTab2.SelectedIndex = 1
+            txtUSDCost.Focus()
+            txtUSDCost.SelectAll()
             Exit Sub
         End If
 
         If ValidateTextField(txtRPrice, "", ErrProduct) = False Then
             UiTab2.SelectedIndex = 1
+            txtRPrice.Focus()
+            txtRPrice.SelectAll()
             Exit Sub
         End If
 
@@ -228,6 +240,7 @@ Public Class NewProductV1
     Private Sub NewCategory_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         TxtBarcode.Select()
         TxtBarcode.Focus()
+        ProdImg.Image = byteArrayToImage(ReadFile(My.Application.Info.DirectoryPath & "\groceries-1.JPG"))
     End Sub
     Private Sub CleanInterface()
         lblStatus.Text = "0"

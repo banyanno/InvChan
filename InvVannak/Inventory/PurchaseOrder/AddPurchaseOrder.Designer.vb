@@ -57,9 +57,9 @@ Partial Class AddPurchaseOrder
         Me.BtnAdd = New System.Windows.Forms.Button
         Me.ErrProduct = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
+        Me.BtnAddProduct = New System.Windows.Forms.Button
         Me.GridProductList = New Janus.Windows.GridEX.GridEX
         Me.txtSearchProduct = New System.Windows.Forms.TextBox
-        Me.BtnAddProduct = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         Me.GroupQTYFree.SuspendLayout()
         CType(Me.ErrProduct, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -447,6 +447,17 @@ Partial Class AddPurchaseOrder
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Product Name:"
         '
+        'BtnAddProduct
+        '
+        Me.BtnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAddProduct.Location = New System.Drawing.Point(344, 28)
+        Me.BtnAddProduct.Name = "BtnAddProduct"
+        Me.BtnAddProduct.Size = New System.Drawing.Size(46, 42)
+        Me.BtnAddProduct.TabIndex = 4
+        Me.BtnAddProduct.Text = "..."
+        Me.BtnAddProduct.UseVisualStyleBackColor = True
+        '
         'GridProductList
         '
         Me.GridProductList.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.[False]
@@ -478,23 +489,12 @@ Partial Class AddPurchaseOrder
         Me.txtSearchProduct.Size = New System.Drawing.Size(335, 42)
         Me.txtSearchProduct.TabIndex = 2
         '
-        'BtnAddProduct
-        '
-        Me.BtnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAddProduct.Location = New System.Drawing.Point(344, 28)
-        Me.BtnAddProduct.Name = "BtnAddProduct"
-        Me.BtnAddProduct.Size = New System.Drawing.Size(46, 42)
-        Me.BtnAddProduct.TabIndex = 4
-        Me.BtnAddProduct.Text = "..."
-        Me.BtnAddProduct.UseVisualStyleBackColor = True
-        '
         'AddPurchaseOrder
         '
         Me.AcceptButton = Me.BtnAdd
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(931, 579)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.BtnAdd)

@@ -124,14 +124,14 @@
         Dim UnitName As String = ""
         Dim UnitNameFee As String = ""
         Dim Cost As Double = 0
-        Dim QTY_Order As Integer = 0
-        Dim QTY_Free As Integer = 0
+        Dim QTY_Order As Double = 0
+        Dim QTY_Free As Double = 0
         Dim TotalTHB As Double = 0
         Dim TotalKHR As Double = 0
         Dim TotalUSD As Double = 0
         Dim IS_Currency As String = ""
         Dim StoreID As Integer
-        Dim CurrentQty As Decimal
+        Dim CurrentQty As Double
         If DAPurchasOrder.InsertReceiveProduct(CDbl(TxtPuchaseOrderNo.Text), CInt(cboSupplier.SelectedValue), TxtDateOrder.Value.Date, 0, CDbl(TxtTotalUSD.Text), 0, "", 4, "1", TxtDateOrder.Value.Year, "0", DateReceived.Value.Date, txtInvoiceReferrent.Text) = 1 Then
             For i As Integer = 0 To GridOrderDetail.RowCount - 1
                 ProductID = GridOrderDetail.GetRow(i).Cells("ITEM_ID").Value
