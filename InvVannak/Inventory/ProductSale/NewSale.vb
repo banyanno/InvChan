@@ -479,9 +479,21 @@ Public Class NewSale
     
     Private Sub txtBarcod_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBarcode.KeyDown
         If e.KeyCode = Keys.Enter Then
-            InsertPreInvoice(txtBarcode.Text.Trim)
+            Dim FEnterBarcode As New EnterBarcode(Me)
+            '
+            FEnterBarcode.TxtBarCode.Focus()
+            FEnterBarcode.TxtBarCode.SelectAll()
+            FEnterBarcode.TxtBarCode.Text = Me.txtBarcode.Text
+            FEnterBarcode.ShowDialog()
+            FEnterBarcode.Close()
+            ' If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
+            '    InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
+            'End If
             txtBarcode.SelectAll()
             txtBarcode.Focus()
+            'InsertPreInvoice(txtBarcode.Text.Trim)
+            'txtBarcode.SelectAll()
+            'txtBarcode.Focus()
         End If
     End Sub
 

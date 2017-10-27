@@ -22,15 +22,25 @@ Partial Class EnterBarcode
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EnterBarcode))
         Me.Label1 = New System.Windows.Forms.Label
         Me.TxtBarCode = New System.Windows.Forms.TextBox
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.TxtProducName = New System.Windows.Forms.TextBox
+        Me.txtQTY = New System.Windows.Forms.TextBox
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.TxtPrice = New System.Windows.Forms.TextBox
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.BtnCancel = New System.Windows.Forms.Button
+        Me.ErrAddProduct = New System.Windows.Forms.ErrorProvider(Me.components)
+        CType(Me.ErrAddProduct, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 25)
+        Me.Label1.Location = New System.Drawing.Point(11, 25)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 29)
@@ -40,22 +50,100 @@ Partial Class EnterBarcode
         'TxtBarCode
         '
         Me.TxtBarCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtBarCode.Location = New System.Drawing.Point(104, 18)
+        Me.TxtBarCode.Location = New System.Drawing.Point(118, 18)
         Me.TxtBarCode.Name = "TxtBarCode"
-        Me.TxtBarCode.Size = New System.Drawing.Size(359, 37)
-        Me.TxtBarCode.TabIndex = 1
+        Me.TxtBarCode.Size = New System.Drawing.Size(345, 37)
+        Me.TxtBarCode.TabIndex = 0
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(11, 88)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(91, 29)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Pro-Name:"
+        '
+        'TxtProducName
+        '
+        Me.TxtProducName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtProducName.Location = New System.Drawing.Point(118, 80)
+        Me.TxtProducName.Name = "TxtProducName"
+        Me.TxtProducName.Size = New System.Drawing.Size(345, 37)
+        Me.TxtProducName.TabIndex = 1
+        '
+        'txtQTY
+        '
+        Me.txtQTY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtQTY.Location = New System.Drawing.Point(324, 157)
+        Me.txtQTY.Name = "txtQTY"
+        Me.txtQTY.Size = New System.Drawing.Size(141, 37)
+        Me.txtQTY.TabIndex = 3
+        Me.txtQTY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(270, 165)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(50, 29)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "ចំនួន:"
+        '
+        'TxtPrice
+        '
+        Me.TxtPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtPrice.Location = New System.Drawing.Point(118, 157)
+        Me.TxtPrice.Name = "TxtPrice"
+        Me.TxtPrice.Size = New System.Drawing.Size(150, 37)
+        Me.TxtPrice.TabIndex = 2
+        Me.TxtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(11, 165)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(69, 29)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "តំលៃ($):"
+        '
+        'BtnCancel
+        '
+        Me.BtnCancel.Location = New System.Drawing.Point(391, 217)
+        Me.BtnCancel.Name = "BtnCancel"
+        Me.BtnCancel.Size = New System.Drawing.Size(75, 34)
+        Me.BtnCancel.TabIndex = 4
+        Me.BtnCancel.Text = "Cancel"
+        Me.BtnCancel.UseVisualStyleBackColor = True
+        '
+        'ErrAddProduct
+        '
+        Me.ErrAddProduct.ContainerControl = Me
         '
         'EnterBarcode
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(476, 70)
+        Me.ClientSize = New System.Drawing.Size(490, 259)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.BtnCancel)
+        Me.Controls.Add(Me.TxtPrice)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.txtQTY)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TxtProducName)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TxtBarCode)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Blue
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -63,10 +151,19 @@ Partial Class EnterBarcode
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bard Code"
+        CType(Me.ErrAddProduct, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TxtBarCode As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents TxtProducName As System.Windows.Forms.TextBox
+    Friend WithEvents txtQTY As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents TxtPrice As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents BtnCancel As System.Windows.Forms.Button
+    Friend WithEvents ErrAddProduct As System.Windows.Forms.ErrorProvider
 End Class

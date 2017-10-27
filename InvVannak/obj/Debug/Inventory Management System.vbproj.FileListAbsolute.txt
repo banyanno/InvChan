@@ -530,3 +530,4 @@ C:\BanYanno\SoftProject\InvChan\InvVannak\bin\Debug\Janus.Windows.Ribbon.v3.dll
 C:\BanYanno\SoftProject\InvChan\InvVannak\bin\Debug\Janus.Windows.Schedule.v3.dll
 C:\BanYanno\SoftProject\InvChan\InvVannak\bin\Debug\Janus.Windows.TimeLine.v3.dll
 C:\BanYanno\SoftProject\InvChan\InvVannak\bin\Debug\Janus.Windows.UI.v3.dll
+C:\BanYanno\SoftProject\InvChan\InvVannak\obj\Debug\Asia_Garden_Inventory_Management_System.PrintBarCode.resources

@@ -470,6 +470,12 @@
     <Compile Include="Inventory\ProductSale\FormEditQTY.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inventory\ProductSale\PrintBarCode.Designer.vb">
+      <DependentUpon>PrintBarCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductSale\PrintBarCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inventory\ProductSale\ReportSale\WholdDialySaleIncome.vb">
       <DependentUpon>WholdDialySaleIncome.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1125,6 +1131,9 @@
       <DependentUpon>FormEditQTY.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\ProductSale\InvoiceMS.rdlc" />
+    <EmbeddedResource Include="Inventory\ProductSale\PrintBarCode.resx">
+      <DependentUpon>PrintBarCode.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\ProductSale\ReportSale\WholdDialySaleIncome.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>WholdDialySaleIncome.vb</LastGenOutput>
