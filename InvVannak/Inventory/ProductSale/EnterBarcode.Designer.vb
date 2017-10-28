@@ -34,6 +34,7 @@ Partial Class EnterBarcode
         Me.Label4 = New System.Windows.Forms.Label
         Me.BtnCancel = New System.Windows.Forms.Button
         Me.ErrAddProduct = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Label5 = New System.Windows.Forms.Label
         CType(Me.ErrAddProduct, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,7 +59,7 @@ Partial Class EnterBarcode
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 88)
+        Me.Label2.Location = New System.Drawing.Point(11, 69)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(91, 29)
@@ -68,24 +69,25 @@ Partial Class EnterBarcode
         'TxtProducName
         '
         Me.TxtProducName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtProducName.Location = New System.Drawing.Point(118, 80)
+        Me.TxtProducName.Location = New System.Drawing.Point(118, 61)
         Me.TxtProducName.Name = "TxtProducName"
         Me.TxtProducName.Size = New System.Drawing.Size(345, 37)
         Me.TxtProducName.TabIndex = 1
         '
         'txtQTY
         '
+        Me.txtQTY.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.txtQTY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtQTY.Location = New System.Drawing.Point(324, 157)
+        Me.txtQTY.Location = New System.Drawing.Point(299, 157)
         Me.txtQTY.Name = "txtQTY"
-        Me.txtQTY.Size = New System.Drawing.Size(141, 37)
+        Me.txtQTY.Size = New System.Drawing.Size(166, 37)
         Me.txtQTY.TabIndex = 3
         Me.txtQTY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(270, 165)
+        Me.Label3.Location = New System.Drawing.Point(385, 125)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(50, 29)
@@ -94,17 +96,18 @@ Partial Class EnterBarcode
         '
         'TxtPrice
         '
+        Me.TxtPrice.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.TxtPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtPrice.Location = New System.Drawing.Point(118, 157)
         Me.TxtPrice.Name = "TxtPrice"
-        Me.TxtPrice.Size = New System.Drawing.Size(150, 37)
+        Me.TxtPrice.Size = New System.Drawing.Size(161, 37)
         Me.TxtPrice.TabIndex = 2
         Me.TxtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 165)
+        Me.Label4.Location = New System.Drawing.Point(155, 125)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 29)
@@ -113,7 +116,7 @@ Partial Class EnterBarcode
         '
         'BtnCancel
         '
-        Me.BtnCancel.Location = New System.Drawing.Point(391, 217)
+        Me.BtnCancel.Location = New System.Drawing.Point(390, 200)
         Me.BtnCancel.Name = "BtnCancel"
         Me.BtnCancel.Size = New System.Drawing.Size(75, 34)
         Me.BtnCancel.TabIndex = 4
@@ -124,12 +127,24 @@ Partial Class EnterBarcode
         '
         Me.ErrAddProduct.ContainerControl = Me
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Khmer OS Battambang", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Red
+        Me.Label5.Location = New System.Drawing.Point(4, 212)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(259, 19)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Note: Pls select field Barcode to print product"
+        '
         'EnterBarcode
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(490, 259)
+        Me.ClientSize = New System.Drawing.Size(484, 239)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BtnCancel)
         Me.Controls.Add(Me.TxtPrice)
         Me.Controls.Add(Me.Label4)
@@ -166,4 +181,5 @@ Partial Class EnterBarcode
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents BtnCancel As System.Windows.Forms.Button
     Friend WithEvents ErrAddProduct As System.Windows.Forms.ErrorProvider
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

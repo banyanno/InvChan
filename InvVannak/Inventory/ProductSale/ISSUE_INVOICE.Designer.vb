@@ -51,7 +51,7 @@ Partial Class ISSUE_INVOICE
         '
         Me.LblInvoice.AutoSize = True
         Me.LblInvoice.BackColor = System.Drawing.Color.Transparent
-        Me.LblInvoice.Location = New System.Drawing.Point(564, 145)
+        Me.LblInvoice.Location = New System.Drawing.Point(348, 22)
         Me.LblInvoice.Name = "LblInvoice"
         Me.LblInvoice.Size = New System.Drawing.Size(20, 27)
         Me.LblInvoice.TabIndex = 17
@@ -183,7 +183,7 @@ Partial Class ISSUE_INVOICE
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(638, 43)
+        Me.Panel2.Size = New System.Drawing.Size(634, 43)
         Me.Panel2.TabIndex = 19
         '
         'Label13
@@ -206,21 +206,22 @@ Partial Class ISSUE_INVOICE
         Me.Panel1.Controls.Add(Me.lblRate)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.LblInvoice)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 333)
+        Me.Panel1.Location = New System.Drawing.Point(0, 329)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(638, 59)
+        Me.Panel1.Size = New System.Drawing.Size(634, 59)
         Me.Panel1.TabIndex = 18
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Label9.Location = New System.Drawing.Point(5, 4)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(312, 25)
+        Me.Label9.Size = New System.Drawing.Size(281, 25)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "ចុច Key D=ទទួលលុយ$,  Key R=ទទួលលុយ ៛"
         '
@@ -228,11 +229,11 @@ Partial Class ISSUE_INVOICE
         '
         Me.lblRate.AutoSize = True
         Me.lblRate.BackColor = System.Drawing.Color.Transparent
-        Me.lblRate.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRate.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!)
         Me.lblRate.ForeColor = System.Drawing.Color.DodgerBlue
         Me.lblRate.Location = New System.Drawing.Point(572, 24)
         Me.lblRate.Name = "lblRate"
-        Me.lblRate.Size = New System.Drawing.Size(54, 25)
+        Me.lblRate.Size = New System.Drawing.Size(49, 25)
         Me.lblRate.TabIndex = 18
         Me.lblRate.Text = "4100៛"
         Me.lblRate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -241,11 +242,11 @@ Partial Class ISSUE_INVOICE
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Label7.Location = New System.Drawing.Point(5, 29)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(384, 25)
+        Me.Label7.Size = New System.Drawing.Size(337, 25)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "ចុច Key Enter=ចេញ Invoice,  Key Esc=Cancel Issue"
         '
@@ -253,11 +254,11 @@ Partial Class ISSUE_INVOICE
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DodgerBlue
         Me.Label6.Location = New System.Drawing.Point(451, 24)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(125, 25)
+        Me.Label6.Size = New System.Drawing.Size(113, 25)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "អត្រាប្តូរប្រាក់ 1$="
         '
@@ -289,9 +290,7 @@ Partial Class ISSUE_INVOICE
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 27.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.OldLace
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(638, 392)
-        Me.ControlBox = False
+        Me.ClientSize = New System.Drawing.Size(634, 388)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TxtReceiveDollar)
         Me.Controls.Add(Me.TxtExchangeUSD)
@@ -300,7 +299,6 @@ Partial Class ISSUE_INVOICE
         Me.Controls.Add(Me.TxtTotalUSD)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.LblInvoice)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
@@ -309,13 +307,13 @@ Partial Class ISSUE_INVOICE
         Me.Controls.Add(Me.Label2)
         Me.Font = New System.Drawing.Font("Khmer OS Battambang", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "ISSUE_INVOICE"
-        Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Issue Invoice"

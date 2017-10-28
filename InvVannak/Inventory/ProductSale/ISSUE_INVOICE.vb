@@ -1,9 +1,11 @@
 ﻿Public Class ISSUE_INVOICE
     Dim IsDolar As Boolean = True
+    Dim IsCalCulate As Boolean = False
     Private Sub ISSUE_INVOICE_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lblRate.Text = GetExchangeRage() & "៛"
-        TxtReceivedR.Select()
-        TxtReceivedR.Focus()
+        TxtReceiveDollar.Focus()
+        TxtReceiveDollar.SelectAll()
+
     End Sub
 
     Private Sub ISSUE_INVOICE_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -12,19 +14,25 @@
         ElseIf e.KeyCode = Keys.Enter Then
             If IsDolar = True Then
                 If CDbl(EmptyString(TxtReceiveDollar.Text)) < CDbl(EmptyString(TxtTotalUSD.Text)) Then
-                    MessageBox.Show("សូមបញ្ជូល ចំនួនលុយដែលទទួលជា ដុលារ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    TxtReceiveDollar.Focus()
-                    TxtReceiveDollar.SelectAll()
+                    'MessageBox.Show("សូមបញ្ជូល ចំនួនលុយដែលទទួលជា ដុលារ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MsgBox("សូមបញ្ជូល ចំនួនលុយដែលទទួលជា ដុលារ", MsgBoxStyle.Critical, "Error")
+                    'TxtReceiveDollar.Focus()
+                    'TxtReceiveDollar.SelectAll()
+                    Exit Sub
                 Else
-                    Me.DialogResult = Windows.Forms.DialogResult.OK
+                    Me.DialogResult = Windows.Forms.DialogResult.Yes
+                    'Me.Close()
                 End If
             Else
                 If CDbl(EmptyString(TxtReceivedR.Text)) < CDbl(EmptyString(TxtTotalKHR.Text)) Then
-                    MessageBox.Show("សូមបញ្ជូល ចំនួនលុយដែលទទួលជា រៀល", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    TxtReceivedR.Focus()
-                    TxtReceiveDollar.SelectAll()
+                    ' MessageBox.Show("សូមបញ្ជូល ចំនួនលុយដែលទទួលជា រៀល", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MsgBox("សូមបញ្ជូល ចំនួនលុយដែលទទួលជា រៀល", MsgBoxStyle.Critical, "Error")
+                    'TxtReceivedR.Focus()
+                    'TxtReceivedR.SelectAll()
+                    Exit Sub
                 Else
-                    Me.DialogResult = Windows.Forms.DialogResult.OK
+                    Me.DialogResult = Windows.Forms.DialogResult.Yes
+                    ' Me.Close()
                 End If
             End If
 
@@ -39,8 +47,8 @@
             TxtReceiveDollar.SelectAll()
         ElseIf e.KeyCode = Keys.R Then
             IsDolar = False
-            TxtReceivedR.Enabled = True
             TxtReceiveDollar.Enabled = False
+            TxtReceivedR.Enabled = True
             TxtReceivedR.Text = "0"
             TxtReceiveDollar.Text = "0"
             TxtReceivedR.Focus()

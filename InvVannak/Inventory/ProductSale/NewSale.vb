@@ -38,7 +38,7 @@ Public Class NewSale
             Next
         End If
 
-        Me.TxtTotalUSD.Text = FormatNumber(USDAmount, 3)
+        Me.TxtTotalUSD.Text = FormatNumber(USDAmount, 2)
         Me.TxtTotalKHR.Text = FormatNumber(USDAmount * GetExchangeRage(), 0)
     End Sub
     Private Sub RefreshProductList()
@@ -115,16 +115,16 @@ Public Class NewSale
         lblUser.Text = "អ្នកប្រើប្រាស់: " & GetCurrentUserName()
         txtInvoiceNo.Text = GetSaleNo()
         RefreshProductList()
-        txtBarcode.SelectAll()
         txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
 
 
 
     Private Sub BtnShopList_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnShopList.Click
         RefreshProductList()
-        txtBarcode.SelectAll()
         txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
     Sub InsertPreInvoice(ByVal BarCode As String)
 
@@ -161,8 +161,8 @@ Public Class NewSale
             DAPreInvoice.DeleteByUserID(getCurrentUserID)
             RefreshOrderList()
         End If
-        txtBarcode.SelectAll()
         txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
 
   
@@ -173,9 +173,10 @@ Public Class NewSale
 
     Private Sub BtnBarcode_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBarcode.Click
         Dim FEnterBarcode As New EnterBarcode(Me)
-        If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
-            InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
-        End If
+        FEnterBarcode.ShowDialog()
+        ' If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
+        '    InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
+        'End If
         txtBarcode.SelectAll()
         txtBarcode.Focus()
     End Sub
@@ -219,22 +220,29 @@ Public Class NewSale
     Private Sub NewSale_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
 
         If e.KeyCode = Keys.F1 Then
+            If OrderList.SelectedItems.Count = 0 Then Exit Sub
+            Dim IssueInvoice As New ISSUE_INVOICE
             Try
                 If TxtTotalUSD.Text = "0" Then
                     MessageBox.Show("You can not issue bill. Please select product to sale!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     Exit Sub
                 End If
-                Dim IssueInvoice As New ISSUE_INVOICE
-                IssueInvoice.TxtTotalUSD.Text = FormatNumber(TxtTotalUSD.Text, 2)
-                IssueInvoice.TxtTotalKHR.Text = FormatNumber(TxtTotalKHR.Text, 0)
-                If IssueInvoice.ShowDialog() = Windows.Forms.DialogResult.OK Then
-                    SaveNewInvoice(GetExchangeRage, IssueInvoice.TxtReceivedR.Text, EmptyString(IssueInvoice.TxtReceiveDollar.Text), IssueInvoice.TxtExchangeKHR.Text, IssueInvoice.TxtExchangeUSD.Text)
+
+                IssueInvoice.TxtTotalUSD.Text = FormatNumber(EmptyString(TxtTotalUSD.Text), 2) 'EmptyString(TxtTotalUSD.Text, 2) '
+                IssueInvoice.TxtTotalKHR.Text = FormatNumber(EmptyString(TxtTotalKHR.Text), 0) 'EmptyString(TxtTotalKHR.Text, 2) ' 
+                If IssueInvoice.ShowDialog() = Windows.Forms.DialogResult.Yes Then
+                    SaveNewInvoice(GetExchangeRage, EmptyString(IssueInvoice.TxtReceivedR.Text), EmptyString(IssueInvoice.TxtReceiveDollar.Text), EmptyString(IssueInvoice.TxtExchangeKHR.Text), EmptyString(IssueInvoice.TxtExchangeUSD.Text))
+                    IssueInvoice.Close()
+                    IssueInvoice.Dispose()
                 End If
             Catch ex As Exception
-
+                MessageBox.Show(ex.Message)
             End Try
-            txtBarcode.SelectAll()
             txtBarcode.Focus()
+            txtBarcode.SelectAll()
+
+            'IssueInvoice.Close()
+            'IssueInvoice.Dispose()
         ElseIf e.KeyCode = Keys.F2 Then
             Dim FEnterBarcode As New EnterBarcode(Me)
             If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -245,28 +253,28 @@ Public Class NewSale
         ElseIf e.KeyCode = Keys.F3 Then
             Dim FEnterProduct As New EnterProductName(Me)
             FEnterProduct.ShowDialog()
-            txtBarcode.SelectAll()
             txtBarcode.Focus()
+            txtBarcode.SelectAll()
             'If FEnterProduct.ShowDialog = Windows.Forms.DialogResult.OK Then
             '    SearchByProductName(FEnterProduct.TxtBarProductName.Text)
             'End If
-            txtBarcode.SelectAll()
-            txtBarcode.Focus()
+            'txtBarcode.SelectAll()
+            'txtBarcode.Focus()
         ElseIf e.KeyCode = Keys.F12 Then
             If MsgBox("Do you want to cancel this invoice?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
                 DAPreInvoice.DeleteByUserID(getCurrentUserID)
                 RefreshOrderList()
             End If
-            txtBarcode.SelectAll()
             txtBarcode.Focus()
+            txtBarcode.SelectAll()
         ElseIf e.KeyCode = Keys.Delete Then
             If MessageBox.Show("Do you want to remove  this item?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 If OrderList.SelectedItems.Count = 0 Then Exit Sub
                 DAPreInvoice.DeleteByID(OrderList.GetRow.Cells("PRE_ID").Value)
                 RefreshOrderList()
             End If
-            txtBarcode.SelectAll()
             txtBarcode.Focus()
+            txtBarcode.SelectAll()
         ElseIf e.KeyCode = Keys.F4 Then
             RefreshProductList()
             txtBarcode.SelectAll()
@@ -281,41 +289,63 @@ Public Class NewSale
 
     End Sub
 
-    Private Sub NewSale_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles MyBase.KeyPress
-        Me.Text = Me.Text & e.KeyChar
-    End Sub
+    'Private Sub NewSale_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles MyBase.KeyPress
+    '    ' Me.Text = Me.Text & e.KeyChar
+    'End Sub
 
     Private Sub BtnNewInvoice_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNewInvoice.Click
         Dim FEnterProduct As New EnterProductName(Me)
-        FEnterProduct.ShowDialog()
-        'If FEnterProduct.ShowDialog = Windows.Forms.DialogResult.OK Then
-        '    SearchByProductName(FEnterProduct.TxtBarProductName.Text)
-        'End If
+        'FEnterProduct.ShowDialog()
+        If FEnterProduct.ShowDialog = Windows.Forms.DialogResult.OK Then
+            SearchByProductName(FEnterProduct.TxtBarProductName.Text)
+        End If
         txtBarcode.SelectAll()
         txtBarcode.Focus()
     End Sub
 
     Private Sub BtnCalculation_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCalculation.Click
-        If ListProduct.SelectedItems.Count = 0 Then Exit Sub
-        Dim IssueInvoice As New ISSUE_INVOICE
+
+        'Try
+        '    If TxtTotalUSD.Text = "0" Then
+        '        MessageBox.Show("You can not issue bill. Please select product to sale!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '        Exit Sub
+        '    End If
+        '    Dim IssueInvoice As New ISSUE_INVOICE
+        '    IssueInvoice.TxtTotalUSD.Text = FormatNumber(TxtTotalUSD.Text, 2)
+        '    IssueInvoice.TxtTotalKHR.Text = FormatNumber(TxtTotalKHR.Text, 0)
+        '    If IssueInvoice.ShowDialog() = Windows.Forms.DialogResult.OK Then
+        '        SaveNewInvoice(GetExchangeRage, IssueInvoice.TxtReceivedR.Text, EmptyString(IssueInvoice.TxtReceiveDollar.Text), IssueInvoice.TxtExchangeKHR.Text, IssueInvoice.TxtExchangeUSD.Text)
+        '    End If
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+        'End Try
+        'txtBarcode.SelectAll()
+        'txtBarcode.Focus()
+
+        If OrderList.SelectedItems.Count = 0 Then Exit Sub
         Try
+            Dim IssueInvoice As New ISSUE_INVOICE
+
             If TxtTotalUSD.Text = "0" Then
                 MessageBox.Show("You can not issue bill. Please select product to sale!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
             End If
 
-            IssueInvoice.TxtTotalUSD.Text = EmptyString(TxtTotalUSD.Text) ' FormatNumber(TxtTotalUSD.Text , 3)
-            IssueInvoice.TxtTotalKHR.Text = EmptyString(TxtTotalKHR.Text) ' FormatNumber(TxtTotalKHR.Text, 0)
-            If IssueInvoice.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            IssueInvoice.TxtTotalUSD.Text = FormatNumber(EmptyString(TxtTotalUSD.Text), 2) 'EmptyString(TxtTotalUSD.Text, 2) '
+            IssueInvoice.TxtTotalKHR.Text = FormatNumber(EmptyString(TxtTotalKHR.Text), 0) 'EmptyString(TxtTotalKHR.Text, 2) ' 
+            If IssueInvoice.ShowDialog() = Windows.Forms.DialogResult.Yes Then
                 SaveNewInvoice(GetExchangeRage, EmptyString(IssueInvoice.TxtReceivedR.Text), EmptyString(IssueInvoice.TxtReceiveDollar.Text), EmptyString(IssueInvoice.TxtExchangeKHR.Text), EmptyString(IssueInvoice.TxtExchangeUSD.Text))
+                IssueInvoice.Close()
+                IssueInvoice.Dispose()
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
-        txtBarcode.SelectAll()
+        
         txtBarcode.Focus()
-        IssueInvoice.Close()
-        IssueInvoice.Dispose()
+        txtBarcode.SelectAll()
+
+       
     End Sub
     Private Function GetSaleNo() As String
         Dim Years As Integer = Date.Now.Year
@@ -443,29 +473,31 @@ Public Class NewSale
                 My.Computer.FileSystem.DeleteFile(foundFile, FileIO.UIOption.OnlyErrorDialogs, FileIO.RecycleOption.DeletePermanently)
             Next
 
-            Dim DS As New DataSet
-            Dim dt As New DataTable
-            Dim sql As String = "SELECT INVOICE_ID,INVOICE_NO,CUST_ID,CUST_NAME,USD_AMOUNT,USD_TOTAL,INVOICE_DATE,RATE,MONEY_RECEIVED,RETURN_KHR,RETURN_USD,DETAIL_ID,ITEM_ID,QTY,PRICE,USD_SUPTOTAL,ITEM_NAME,USER_ID,USER_NAME,MONEY_RECEIVEDOLAR FROM ViewInvoice WHERE INVOICE_ID=" & InvoiceNo
-            Dim cnn As New SqlClient.SqlConnection(My.Settings.INV_Database)
+            
 
             Application.DoEvents()
-            cnn.Open()
-            Dim Da As New SqlClient.SqlDataAdapter(sql, cnn)
-            'Application.DoEvents()
-            'System.Threading.Thread.Sleep(100)
-            Da.Fill(DS, "ViewInvoice")
-            Application.DoEvents()
-            Dim RptName As String = Application.StartupPath & "\RptInvoice.rpt"
-
-
-            Dim myReportObj As New clsCrystalReport()
-            myReportObj.ReportPath(RptName)
-            Application.DoEvents()
-            myReportObj.SetDataSource(DS, "ViewInvoice")
-            myReportObj.PrintToPrinter()
-            myReportObj.PrintToPrinter()
-            cnn.Close()
-            myReportObj.Close()
+            If MessageBox.Show("Do you want to print invoice?", "Info", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+                Dim DS As New DataSet
+                Dim dt As New DataTable
+                Dim sql As String = "SELECT INVOICE_ID,INVOICE_NO,CUST_ID,CUST_NAME,USD_AMOUNT,USD_TOTAL,INVOICE_DATE,RATE,MONEY_RECEIVED,RETURN_KHR,RETURN_USD,DETAIL_ID,ITEM_ID,QTY,PRICE,USD_SUPTOTAL,ITEM_NAME,USER_ID,USER_NAME,MONEY_RECEIVEDOLAR FROM ViewInvoice WHERE INVOICE_ID=" & InvoiceNo
+                Dim cnn As New SqlClient.SqlConnection(My.Settings.INV_Database)
+                cnn.Open()
+                Dim Da As New SqlClient.SqlDataAdapter(sql, cnn)
+                'Application.DoEvents()
+                'System.Threading.Thread.Sleep(100)
+                Da.Fill(DS, "ViewInvoice")
+                Application.DoEvents()
+                Dim RptName As String = Application.StartupPath & "\RptInvoice.rpt"
+                Dim myReportObj As New clsCrystalReport()
+                myReportObj.ReportPath(RptName)
+                Application.DoEvents()
+                myReportObj.SetDataSource(DS, "ViewInvoice")
+                myReportObj.PrintToPrinter()
+                myReportObj.PrintToPrinter()
+                cnn.Close()
+                myReportObj.Close()
+            End If
+            
 
             RefreshOrderList()
 
@@ -479,21 +511,28 @@ Public Class NewSale
     
     Private Sub txtBarcod_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBarcode.KeyDown
         If e.KeyCode = Keys.Enter Then
-            Dim FEnterBarcode As New EnterBarcode(Me)
-            '
-            FEnterBarcode.TxtBarCode.Focus()
-            FEnterBarcode.TxtBarCode.SelectAll()
-            FEnterBarcode.TxtBarCode.Text = Me.txtBarcode.Text
-            FEnterBarcode.ShowDialog()
-            FEnterBarcode.Close()
-            ' If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
-            '    InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
-            'End If
+            ''MsgBox(txtBarcode.Text.Trim)
+            'Dim tbl As DataTable = DAItem.SelectByBarCode(txtBarcode.Text)
+            'Dim FEnterBarcode As New EnterBarcode(Me)
+            'For Each rows As DataRow In tbl.Rows
+            '    FEnterBarcode.TxtProducName.Text = rows("ITEM_NAME")
+            '    FEnterBarcode.TxtPrice.Text = CDbl(rows("RETAIL_PRICE"))
+            'Next
+
+            'FEnterBarcode.TxtBarCode.Text = Me.txtBarcode.Text
+            'FEnterBarcode.txtQTY.Focus()
+            'FEnterBarcode.txtQTY.SelectAll()
+            'FEnterBarcode.ShowDialog()
+            'FEnterBarcode.Close()
+            '' If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
+            ''    InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
+            ''End If
+
+            'txtBarcode.Focus()
+            'txtBarcode.SelectAll()
+            InsertPreInvoice(txtBarcode.Text.Trim)
             txtBarcode.SelectAll()
             txtBarcode.Focus()
-            'InsertPreInvoice(txtBarcode.Text.Trim)
-            'txtBarcode.SelectAll()
-            'txtBarcode.Focus()
         End If
     End Sub
 
@@ -549,7 +588,5 @@ Public Class NewSale
         txtBarcode.Focus()
     End Sub
 
-    Private Sub Panel3_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel3.Paint
-
-    End Sub
+   
 End Class

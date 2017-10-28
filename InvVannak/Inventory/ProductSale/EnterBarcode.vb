@@ -42,16 +42,22 @@
         If e.KeyCode = Keys.Escape Then
             Me.Close()
         ElseIf e.KeyCode = Keys.Enter Then
-            If ValidateTextField(TxtPrice, "", ErrAddProduct) = False Then
-                TxtPrice.Focus()
-                TxtPrice.SelectAll()
-                Exit Sub
-            End If
+
             If ValidateTextField(txtQTY, "", ErrAddProduct) = False Then
                 txtQTY.Focus()
                 txtQTY.SelectAll()
                 Exit Sub
             End If
+            If ValidateTextField(TxtPrice, "", ErrAddProduct) = False Then
+                TxtPrice.Focus()
+                TxtPrice.SelectAll()
+                Exit Sub
+            End If
+            tbl = DAItem.SelectByBarCode(TxtBarCode.Text)
+            'For Each rows As DataRow In tbl.Rows
+            '    TxtProducName.Text = rows("ITEM_NAME")
+            '    TxtPrice.Text = CDbl(rows("RETAIL_PRICE"))
+            'Next
 
 
             For Each rows As DataRow In tbl.Rows
@@ -67,7 +73,8 @@
                     '    DAPreInvoice.PreUpdateExistingItem(qty, CDbl(TotalPrice), rowsExit("ITEM_ID"), getCurrentUserID)
                     'Next
                 Else
-                    DAPreInvoice.InsertDetail(rows("ITEM_ID"), "", EmptyString(txtQTY.Text), EmptyString(TxtPrice.Text), 0, "$", 0, EmptyString(TxtPrice.Text), 0, getCurrentUserID, 0, "", False, CDbl(rows("USD_COST")))
+                    'Dim TotalPrice As Double = ((CDbl(rowsExit("PRICE"))) * qty)
+                    DAPreInvoice.InsertDetail(rows("ITEM_ID"), "", EmptyString(txtQTY.Text), EmptyString(TxtPrice.Text), 0, "$", 0, EmptyString(TxtPrice.Text) * EmptyString(txtQTY.Text), 0, getCurrentUserID, 0, "", False, CDbl(rows("USD_COST")))
                     'DAPreInvoice.InsertDetail(rows("ITEM_ID"), "", 1, CDbl(rows("RETAIL_PRICE")), 0, "$", 0, CDbl(rows("RETAIL_PRICE")), 0, getCurrentUserID, 0, "", False, CDbl(rows("USD_COST")))
                 End If
             Next
@@ -98,8 +105,5 @@
         SetDisableKeyString(e)
     End Sub
 
-    Private Sub EnterBarcode_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.MouseHover
-        TxtBarCode.Focus()
-        TxtBarCode.SelectAll()
-    End Sub
+
 End Class
