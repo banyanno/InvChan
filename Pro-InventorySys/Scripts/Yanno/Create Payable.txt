@@ -1,0 +1,7 @@
+select supp_id,supp_name,acc_pay_id,purchase_no,referren_no,create_date,ACC_PAY_STATUS,Total_Amount_USD,Total_amount_KHR,Total_amount_thb,
+sum(paid_usd) as PaidUSD,sum(paid_kht) as PAIDKHR ,SUM(Paid_THb) AS PAIDTHB,
+(Total_Amount_USD- sum(paid_usd)) as REMAIN_USD,
+(Total_amount_KHR-sum(paid_kht)) as REMAIN_KHR,
+(Total_amount_thb-SUM(Paid_THb)) as REMAIN_THB
+from ACC_PAYABLE_VIEW
+group by supp_id,supp_name,acc_pay_id,purchase_no,referren_no,create_date,ACC_PAY_STATUS,Total_Amount_USD,Total_amount_KHR,Total_amount_thb
