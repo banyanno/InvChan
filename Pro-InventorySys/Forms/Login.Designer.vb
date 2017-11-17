@@ -26,10 +26,10 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Panel2 = New System.Windows.Forms.Panel
-        Me.txtPassword = New System.Windows.Forms.TextBox
-        Me.txtUserName = New System.Windows.Forms.TextBox
         Me.btnLogin = New System.Windows.Forms.Button
+        Me.txtPassword = New System.Windows.Forms.TextBox
         Me.btnCancel = New System.Windows.Forms.Button
+        Me.txtUserName = New System.Windows.Forms.TextBox
         Me.PictureBox3 = New System.Windows.Forms.PictureBox
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.Panel1.SuspendLayout()
@@ -108,27 +108,6 @@ Partial Class Login
         Me.Panel2.Size = New System.Drawing.Size(522, 247)
         Me.Panel2.TabIndex = 20
         '
-        'txtPassword
-        '
-        Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(35, 113)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(441, 35)
-        Me.txtPassword.TabIndex = 1
-        Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'txtUserName
-        '
-        Me.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtUserName.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserName.Location = New System.Drawing.Point(35, 54)
-        Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(441, 35)
-        Me.txtUserName.TabIndex = 0
-        Me.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'btnLogin
         '
         Me.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaption
@@ -146,6 +125,17 @@ Partial Class Login
         Me.btnLogin.Text = "Log in"
         Me.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnLogin.UseVisualStyleBackColor = False
+        '
+        'txtPassword
+        '
+        Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(35, 113)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(441, 35)
+        Me.txtPassword.TabIndex = 1
+        Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnCancel
         '
@@ -165,6 +155,16 @@ Partial Class Login
         Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCancel.UseVisualStyleBackColor = False
         '
+        'txtUserName
+        '
+        Me.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtUserName.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUserName.Location = New System.Drawing.Point(35, 54)
+        Me.txtUserName.Name = "txtUserName"
+        Me.txtUserName.Size = New System.Drawing.Size(441, 35)
+        Me.txtUserName.TabIndex = 0
+        Me.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'PictureBox3
         '
         Me.PictureBox3.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.silvergb1
@@ -181,9 +181,9 @@ Partial Class Login
         Me.PictureBox2.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.inventorySliderBG
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 50)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1013, 566)
+        Me.PictureBox2.Size = New System.Drawing.Size(1013, 466)
         Me.PictureBox2.TabIndex = 21
         Me.PictureBox2.TabStop = False
         '
@@ -198,9 +198,9 @@ Partial Class Login
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.lblHeader)
         Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.lblHeader)
+        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"

@@ -91,7 +91,7 @@ Partial Class NewSale
         Me.SplitContainer3.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SplitContainer3.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SplitContainer3.Panel2Collapsed = True
-        Me.SplitContainer3.Size = New System.Drawing.Size(1444, 395)
+        Me.SplitContainer3.Size = New System.Drawing.Size(1444, 644)
         Me.SplitContainer3.SplitterDistance = 370
         Me.SplitContainer3.SplitterWidth = 1
         Me.SplitContainer3.TabIndex = 1
@@ -110,11 +110,12 @@ Partial Class NewSale
         Me.SplitContainer2.Panel1.Controls.Add(Me.ListProduct)
         Me.SplitContainer2.Panel1.Controls.Add(Me.Label6)
         Me.SplitContainer2.Panel1.Controls.Add(Me.Panel1)
+        Me.SplitContainer2.Panel1Collapsed = True
         '
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.OrderList)
-        Me.SplitContainer2.Size = New System.Drawing.Size(1442, 393)
+        Me.SplitContainer2.Size = New System.Drawing.Size(1442, 642)
         Me.SplitContainer2.SplitterDistance = 276
         Me.SplitContainer2.SplitterWidth = 1
         Me.SplitContainer2.TabIndex = 1
@@ -140,7 +141,7 @@ Partial Class NewSale
         Me.ListProduct.Location = New System.Drawing.Point(0, 34)
         Me.ListProduct.MultiSelect = False
         Me.ListProduct.Name = "ListProduct"
-        Me.ListProduct.Size = New System.Drawing.Size(276, 325)
+        Me.ListProduct.Size = New System.Drawing.Size(276, 574)
         Me.ListProduct.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.ListProduct.TabIndex = 0
         Me.ListProduct.UseCompatibleStateImageBehavior = False
@@ -163,7 +164,7 @@ Partial Class NewSale
         Me.Panel1.Controls.Add(Me.BtnRemove)
         Me.Panel1.Controls.Add(Me.BtnAdd)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 359)
+        Me.Panel1.Location = New System.Drawing.Point(0, 608)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(276, 34)
         Me.Panel1.TabIndex = 2
@@ -228,17 +229,23 @@ Partial Class NewSale
         '
         Me.OrderList.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.[False]
         Me.OrderList.BackColor = System.Drawing.SystemColors.Control
-        Me.OrderList.BorderStyle = Janus.Windows.GridEX.BorderStyle.None
-        Me.OrderList.CardColumnHeaderFormatStyle.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OrderList.CardCaptionFormatStyle.ForeColor = System.Drawing.Color.Blue
+        Me.OrderList.CardCaptionFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
+        Me.OrderList.CardCaptionPrefix = "Product"
+        Me.OrderList.CardColumnHeaderFormatStyle.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!)
         Me.OrderList.CardColumnHeaderFormatStyle.ForeColor = System.Drawing.Color.Blue
-        Me.OrderList.CardHeaders = False
-        Me.OrderList.CardViewGridlines = Janus.Windows.GridEX.CardViewGridlines.Both
+        Me.OrderList.CardSpacing = 10
+        Me.OrderList.CardViewGridlines = Janus.Windows.GridEX.CardViewGridlines.Horizontal
+        Me.OrderList.ColumnHeaders = Janus.Windows.GridEX.InheritableBoolean.[False]
+        Me.OrderList.ColumnSetHeaders = Janus.Windows.GridEX.InheritableBoolean.[False]
+        Me.OrderList.ContinuousScroll = False
         OrderList_DesignTimeLayout.LayoutString = resources.GetString("OrderList_DesignTimeLayout.LayoutString")
         Me.OrderList.DesignTimeLayout = OrderList_DesignTimeLayout
         Me.OrderList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.OrderList.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.OrderList.GroupByBoxVisible = False
         Me.OrderList.HeaderFormatStyle.FontSize = 10.0!
+        Me.OrderList.HeaderFormatStyle.ForeColor = System.Drawing.Color.Blue
         Me.OrderList.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.OrderList.HideSelection = Janus.Windows.GridEX.HideSelection.HighlightInactive
         Me.OrderList.Location = New System.Drawing.Point(0, 0)
@@ -246,10 +253,17 @@ Partial Class NewSale
         Me.OrderList.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
         Me.OrderList.Office2007CustomColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.OrderList.RowFormatStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.OrderList.Size = New System.Drawing.Size(1165, 393)
+        Me.OrderList.SelectOnExpand = False
+        Me.OrderList.Size = New System.Drawing.Size(1442, 642)
         Me.OrderList.TabIndex = 2
+        Me.OrderList.TableViewHorizontalScrollIncrement = 4
         Me.OrderList.View = Janus.Windows.GridEX.View.CardView
         Me.OrderList.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007
+        Me.OrderList.WatermarkImage.Alpha = 250
+        Me.OrderList.WatermarkImage.Image = CType(resources.GetObject("OrderList.WatermarkImage.Image"), System.Drawing.Image)
+        Me.OrderList.WatermarkImage.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.OrderList.WatermarkImage.Size = New System.Drawing.Size(500, 500)
+        Me.OrderList.WatermarkImage.WashMode = Janus.Windows.GridEX.WashMode.UseWashColor
         '
         'lblUser
         '
@@ -257,7 +271,7 @@ Partial Class NewSale
         Me.lblUser.BackColor = System.Drawing.Color.Transparent
         Me.lblUser.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUser.ForeColor = System.Drawing.Color.White
-        Me.lblUser.Location = New System.Drawing.Point(3, 61)
+        Me.lblUser.Location = New System.Drawing.Point(3, 57)
         Me.lblUser.Name = "lblUser"
         Me.lblUser.Size = New System.Drawing.Size(157, 25)
         Me.lblUser.TabIndex = 48
@@ -270,7 +284,7 @@ Partial Class NewSale
         Me.LblRate.BackColor = System.Drawing.Color.Transparent
         Me.LblRate.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblRate.ForeColor = System.Drawing.Color.White
-        Me.LblRate.Location = New System.Drawing.Point(3, 36)
+        Me.LblRate.Location = New System.Drawing.Point(3, 27)
         Me.LblRate.Name = "LblRate"
         Me.LblRate.Size = New System.Drawing.Size(157, 25)
         Me.LblRate.TabIndex = 47
@@ -283,7 +297,7 @@ Partial Class NewSale
         Me.dtInvoice.CustomFormat = "dd/MM/yyyy"
         Me.dtInvoice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtInvoice.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtInvoice.Location = New System.Drawing.Point(26, 45)
+        Me.dtInvoice.Location = New System.Drawing.Point(26, 41)
         Me.dtInvoice.Name = "dtInvoice"
         Me.dtInvoice.ShowCheckBox = True
         Me.dtInvoice.Size = New System.Drawing.Size(133, 26)
@@ -294,11 +308,12 @@ Partial Class NewSale
         '
         Me.TxtTotalKHR.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.TxtTotalKHR.BackColor = System.Drawing.Color.White
-        Me.TxtTotalKHR.Font = New System.Drawing.Font("Khmer OS Battambang", 19.0!)
+        Me.TxtTotalKHR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.TxtTotalKHR.Font = New System.Drawing.Font("Khmer OS Battambang", 14.0!)
         Me.TxtTotalKHR.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TxtTotalKHR.Location = New System.Drawing.Point(474, 37)
+        Me.TxtTotalKHR.Location = New System.Drawing.Point(1137, 7)
         Me.TxtTotalKHR.Name = "TxtTotalKHR"
-        Me.TxtTotalKHR.Size = New System.Drawing.Size(299, 49)
+        Me.TxtTotalKHR.Size = New System.Drawing.Size(299, 34)
         Me.TxtTotalKHR.TabIndex = 5
         Me.TxtTotalKHR.Text = "0"
         Me.TxtTotalKHR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -307,11 +322,12 @@ Partial Class NewSale
         '
         Me.TxtTotalUSD.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.TxtTotalUSD.BackColor = System.Drawing.Color.White
-        Me.TxtTotalUSD.Font = New System.Drawing.Font("Khmer OS Battambang", 19.0!)
+        Me.TxtTotalUSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.TxtTotalUSD.Font = New System.Drawing.Font("Khmer OS Battambang", 14.0!)
         Me.TxtTotalUSD.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TxtTotalUSD.Location = New System.Drawing.Point(778, 37)
+        Me.TxtTotalUSD.Location = New System.Drawing.Point(1137, 44)
         Me.TxtTotalUSD.Name = "TxtTotalUSD"
-        Me.TxtTotalUSD.Size = New System.Drawing.Size(299, 49)
+        Me.TxtTotalUSD.Size = New System.Drawing.Size(299, 34)
         Me.TxtTotalUSD.TabIndex = 4
         Me.TxtTotalUSD.Text = "0"
         Me.TxtTotalUSD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -321,11 +337,11 @@ Partial Class NewSale
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(568, 5)
+        Me.Label5.Location = New System.Drawing.Point(1037, 16)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(102, 29)
+        Me.Label5.Size = New System.Drawing.Size(94, 25)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "ចំនួន សរុប(៛):"
         '
@@ -334,11 +350,11 @@ Partial Class NewSale
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(874, 5)
+        Me.Label4.Location = New System.Drawing.Point(1034, 53)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 29)
+        Me.Label4.Size = New System.Drawing.Size(97, 25)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "ចំនួន សរុប($):"
         '
@@ -394,6 +410,7 @@ Partial Class NewSale
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(274, 50)
         Me.TextBox1.TabIndex = 58
+        Me.TextBox1.Visible = False
         '
         'Label11
         '
@@ -550,7 +567,7 @@ Partial Class NewSale
         Me.txtInvoiceNo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtInvoiceNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtInvoiceNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtInvoiceNo.Location = New System.Drawing.Point(26, 11)
+        Me.txtInvoiceNo.Location = New System.Drawing.Point(26, 7)
         Me.txtInvoiceNo.Name = "txtInvoiceNo"
         Me.txtInvoiceNo.ReadOnly = True
         Me.txtInvoiceNo.Size = New System.Drawing.Size(133, 26)
@@ -570,9 +587,9 @@ Partial Class NewSale
         Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(0, 481)
+        Me.Panel4.Location = New System.Drawing.Point(0, 730)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1444, 90)
+        Me.Panel4.Size = New System.Drawing.Size(1444, 86)
         Me.Panel4.TabIndex = 3
         '
         'NewSale
@@ -580,7 +597,7 @@ Partial Class NewSale
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1444, 571)
+        Me.ClientSize = New System.Drawing.Size(1444, 816)
         Me.Controls.Add(Me.SplitContainer3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)

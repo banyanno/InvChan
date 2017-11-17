@@ -111,7 +111,7 @@ Public Class NewSale
         ''SplitContainer2.SplitterDistance = (Me.Width / 2) + 30
         lblUser.Text = "អ្នកប្រើប្រាស់: " & GetCurrentUserName()
         txtInvoiceNo.Text = GetSaleNo()
-        RefreshProductList()
+        'RefreshProductList()
         txtBarcode.Focus()
         txtBarcode.SelectAll()
     End Sub
@@ -179,11 +179,7 @@ Public Class NewSale
 
 
 
-
-
-
-
-    Private Sub BtnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAdd.Click
+    Private Sub AddProductFrogList()
         Try
             Dim Rows As DataRow = CType(ListProduct.SelectedItems.Item(0).Tag, DataRow)
             InsertPreInvoice(Rows("ITEM_BARCODE"))
@@ -194,7 +190,13 @@ Public Class NewSale
         End Try
         txtBarcode.SelectAll()
         txtBarcode.Focus()
+    End Sub
 
+
+
+    Private Sub BtnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAdd.Click
+       
+        AddProductFrogList()
     End Sub
 
     Private Sub NewSale_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
@@ -606,5 +608,12 @@ Public Class NewSale
     Private Sub LinkLabel6_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
         DAPreInvoice.DeleteByUserID(getCurrentUserID)
         Me.Close()
+    End Sub
+
+   
+
+    
+    Private Sub ListProduct_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListProduct.Click
+        AddProductFrogList()
     End Sub
 End Class
