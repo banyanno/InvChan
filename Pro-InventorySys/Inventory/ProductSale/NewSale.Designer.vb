@@ -23,8 +23,8 @@ Partial Class NewSale
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewSale))
         Dim OrderList_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewSale))
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer
         Me.txtBarcode = New System.Windows.Forms.TextBox
@@ -60,6 +60,7 @@ Partial Class NewSale
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
         Me.txtInvoiceNo = New System.Windows.Forms.TextBox
         Me.Panel4 = New System.Windows.Forms.Panel
+        Me.Button1 = New System.Windows.Forms.Button
         Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
         Me.SplitContainer2.Panel1.SuspendLayout()
@@ -141,7 +142,7 @@ Partial Class NewSale
         Me.ListProduct.Location = New System.Drawing.Point(0, 34)
         Me.ListProduct.MultiSelect = False
         Me.ListProduct.Name = "ListProduct"
-        Me.ListProduct.Size = New System.Drawing.Size(276, 574)
+        Me.ListProduct.Size = New System.Drawing.Size(276, 32)
         Me.ListProduct.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.ListProduct.TabIndex = 0
         Me.ListProduct.UseCompatibleStateImageBehavior = False
@@ -164,7 +165,7 @@ Partial Class NewSale
         Me.Panel1.Controls.Add(Me.BtnRemove)
         Me.Panel1.Controls.Add(Me.BtnAdd)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 608)
+        Me.Panel1.Location = New System.Drawing.Point(0, 66)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(276, 34)
         Me.Panel1.TabIndex = 2
@@ -578,6 +579,7 @@ Partial Class NewSale
         '
         Me.Panel4.AutoScroll = True
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.Button1)
         Me.Panel4.Controls.Add(Me.TxtTotalKHR)
         Me.Panel4.Controls.Add(Me.lblUser)
         Me.Panel4.Controls.Add(Me.txtInvoiceNo)
@@ -591,6 +593,15 @@ Partial Class NewSale
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1444, 86)
         Me.Panel4.TabIndex = 3
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(230, 29)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 49
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'NewSale
         '
@@ -660,4 +671,5 @@ Partial Class NewSale
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents txtInvoiceNo As System.Windows.Forms.TextBox
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

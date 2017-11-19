@@ -616,4 +616,15 @@ Public Class NewSale
     Private Sub ListProduct_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListProduct.Click
         AddProductFrogList()
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        'Dim screen1 As Screen
+        'screen1 = Screen.AllScreens(1)
+        SecondScreen.StartPosition = FormStartPosition.Manual
+        SecondScreen.Location = Screen.AllScreens(UBound(Screen.AllScreens)).Bounds.Location + New Point(0, 0)
+        SecondScreen.ShowInTaskbar = False
+        SecondScreen.WindowState = FormWindowState.Maximized
+        SecondScreen.Show()
+
+    End Sub
 End Class

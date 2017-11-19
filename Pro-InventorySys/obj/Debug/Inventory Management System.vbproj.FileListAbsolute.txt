@@ -663,3 +663,4 @@ C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\Inventory Management 
 C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\Inventory System.exe.licenses
 C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\RdlCompile.cache
 C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\RdlCompile.compiled
+C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\Asia_Garden_Inventory_Management_System.SecondScreen.resources

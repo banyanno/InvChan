@@ -577,6 +577,12 @@
       <DependentUpon>RptInvoice.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Inventory\ProductSale\SecondScreen.Designer.vb">
+      <DependentUpon>SecondScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductSale\SecondScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inventory\PurchaseOrder\AddMorePurchaseOrder.Designer.vb">
       <DependentUpon>AddMorePurchaseOrder.vb</DependentUpon>
     </Compile>
@@ -1193,6 +1199,9 @@
     <EmbeddedResource Include="Inventory\ProductSale\RptInvoice.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RptInvoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductSale\SecondScreen.resx">
+      <DependentUpon>SecondScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\PurchaseOrder\AddMorePurchaseOrder.resx">
       <DependentUpon>AddMorePurchaseOrder.vb</DependentUpon>
