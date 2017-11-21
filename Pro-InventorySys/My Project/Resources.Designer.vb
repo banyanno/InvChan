@@ -172,6 +172,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property buttons_PNG71() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("buttons_PNG71", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property Cancel() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Cancel", resourceCulture)
@@ -203,6 +210,13 @@ Namespace My.Resources
         Friend ReadOnly Property choose() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("choose", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property color_background() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("color-background", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -396,6 +410,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property pull_down_48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pull-down-48", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property Receive() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Receive", resourceCulture)
@@ -448,6 +469,13 @@ Namespace My.Resources
         Friend ReadOnly Property Screen_Shot_2012_07_29_at_2_31_11_AM() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Screen-Shot-2012-07-29-at-2.31.11-AM", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property scroll_down_48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("scroll-down-48", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

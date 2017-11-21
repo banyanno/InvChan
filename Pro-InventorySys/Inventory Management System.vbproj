@@ -1585,6 +1585,8 @@
     <None Include="Resources\Cash Register-100.png" />
     <None Include="Resources\Cancle.png" />
     <None Include="Resources\Cancel.png" />
+    <None Include="Resources\buttons_PNG71.png" />
+    <None Include="Resources\color-background.jpg" />
     <Content Include="Resources\Housing-Inventory2.jpg" />
     <None Include="Resources\images.jpg" />
     <None Include="Resources\images %281%29.jpg" />
@@ -1592,6 +1594,8 @@
     <None Include="Resources\images %281%291.jpg" />
     <None Include="Resources\inventorySliderBG.jpg" />
     <Content Include="Resources\Inventory_Management.png" />
+    <None Include="Resources\pull-down-48.png" />
+    <None Include="Resources\scroll-down-48.png" />
     <None Include="Resources\location-48.png" />
     <None Include="Resources\login-24.png" />
     <None Include="Resources\silvergb1.jpg" />

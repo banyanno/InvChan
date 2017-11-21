@@ -23,8 +23,8 @@ Partial Class NewSale
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Dim OrderList_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewSale))
+        Dim OrderList_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer
         Me.txtBarcode = New System.Windows.Forms.TextBox
@@ -92,7 +92,7 @@ Partial Class NewSale
         Me.SplitContainer3.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SplitContainer3.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SplitContainer3.Panel2Collapsed = True
-        Me.SplitContainer3.Size = New System.Drawing.Size(1444, 644)
+        Me.SplitContainer3.Size = New System.Drawing.Size(1438, 644)
         Me.SplitContainer3.SplitterDistance = 370
         Me.SplitContainer3.SplitterWidth = 1
         Me.SplitContainer3.TabIndex = 1
@@ -111,12 +111,11 @@ Partial Class NewSale
         Me.SplitContainer2.Panel1.Controls.Add(Me.ListProduct)
         Me.SplitContainer2.Panel1.Controls.Add(Me.Label6)
         Me.SplitContainer2.Panel1.Controls.Add(Me.Panel1)
-        Me.SplitContainer2.Panel1Collapsed = True
         '
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.OrderList)
-        Me.SplitContainer2.Size = New System.Drawing.Size(1442, 642)
+        Me.SplitContainer2.Size = New System.Drawing.Size(1436, 642)
         Me.SplitContainer2.SplitterDistance = 276
         Me.SplitContainer2.SplitterWidth = 1
         Me.SplitContainer2.TabIndex = 1
@@ -142,7 +141,7 @@ Partial Class NewSale
         Me.ListProduct.Location = New System.Drawing.Point(0, 34)
         Me.ListProduct.MultiSelect = False
         Me.ListProduct.Name = "ListProduct"
-        Me.ListProduct.Size = New System.Drawing.Size(276, 32)
+        Me.ListProduct.Size = New System.Drawing.Size(276, 574)
         Me.ListProduct.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.ListProduct.TabIndex = 0
         Me.ListProduct.UseCompatibleStateImageBehavior = False
@@ -165,7 +164,7 @@ Partial Class NewSale
         Me.Panel1.Controls.Add(Me.BtnRemove)
         Me.Panel1.Controls.Add(Me.BtnAdd)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 66)
+        Me.Panel1.Location = New System.Drawing.Point(0, 608)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(276, 34)
         Me.Panel1.TabIndex = 2
@@ -255,7 +254,7 @@ Partial Class NewSale
         Me.OrderList.Office2007CustomColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.OrderList.RowFormatStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.OrderList.SelectOnExpand = False
-        Me.OrderList.Size = New System.Drawing.Size(1442, 642)
+        Me.OrderList.Size = New System.Drawing.Size(1159, 642)
         Me.OrderList.TabIndex = 2
         Me.OrderList.TableViewHorizontalScrollIncrement = 4
         Me.OrderList.View = Janus.Windows.GridEX.View.CardView
@@ -400,7 +399,7 @@ Partial Class NewSale
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1444, 86)
+        Me.Panel2.Size = New System.Drawing.Size(1438, 86)
         Me.Panel2.TabIndex = 2
         '
         'TextBox1
@@ -591,7 +590,7 @@ Partial Class NewSale
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel4.Location = New System.Drawing.Point(0, 730)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1444, 86)
+        Me.Panel4.Size = New System.Drawing.Size(1438, 86)
         Me.Panel4.TabIndex = 3
         '
         'Button1
@@ -608,7 +607,7 @@ Partial Class NewSale
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1444, 816)
+        Me.ClientSize = New System.Drawing.Size(1438, 816)
         Me.Controls.Add(Me.SplitContainer3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)

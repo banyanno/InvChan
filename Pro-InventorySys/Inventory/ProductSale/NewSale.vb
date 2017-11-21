@@ -40,6 +40,7 @@ Public Class NewSale
 
         Me.TxtTotalUSD.Text = FormatNumber(USDAmount, 2)
         Me.TxtTotalKHR.Text = FormatNumber(USDAmount * GetExchangeRage(), 0)
+        secondScreen.RefreshOrderList()
     End Sub
     Private Sub RefreshProductList()
 
@@ -616,15 +617,25 @@ Public Class NewSale
     Private Sub ListProduct_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListProduct.Click
         AddProductFrogList()
     End Sub
-
+    Dim secondScreen As New SecondScreen
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'Dim screen1 As Screen
         'screen1 = Screen.AllScreens(1)
-        SecondScreen.StartPosition = FormStartPosition.Manual
-        SecondScreen.Location = Screen.AllScreens(UBound(Screen.AllScreens)).Bounds.Location + New Point(0, 0)
-        SecondScreen.ShowInTaskbar = False
-        SecondScreen.WindowState = FormWindowState.Maximized
-        SecondScreen.Show()
+        secondScreen.StartPosition = FormStartPosition.Manual
+        secondScreen.Location = Screen.AllScreens(UBound(Screen.AllScreens)).Bounds.Location + New Point(0, 0)
+        secondScreen.ShowInTaskbar = False
+        secondScreen.WindowState = FormWindowState.Maximized
+        secondScreen.Show()
 
+    End Sub
+
+    Private Sub OrderList_RowDoubleClick(ByVal sender As System.Object, ByVal e As Janus.Windows.GridEX.RowActionEventArgs) Handles OrderList.RowDoubleClick
+        If MessageBox.Show("Do you want to remove  this item?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            If OrderList.SelectedItems.Count = 0 Then Exit Sub
+            DAPreInvoice.DeleteByID(OrderList.GetRow.Cells("PRE_ID").Value)
+            RefreshOrderList()
+        End If
+        txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
 End Class

@@ -145,11 +145,17 @@
   <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Users-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Users-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Adjust" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adjust.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="History-Icons-1106084718" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icon\History-Icons-1106084718.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ser5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ser5.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,9 +177,6 @@
   </data>
   <data name="html-website-background-color-codes-html-page-background-color-style-918x574" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\html-website-background-color-codes-html-page-background-color-style-918x574.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Checkout-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Checkout-50.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="StoreReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StoreReport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,11 +202,14 @@
   <data name="New" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\New.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AdjustReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AdjustReport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="History-Icons-1106084718" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\History-Icons-1106084718.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="product_clipart_street_sign_new_product_signage_md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product-clipart-street-sign-new-product-signage-md.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cancle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cancle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,11 +217,14 @@
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Preview.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login-24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buttons_PNG71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons_PNG71.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1403851475_printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1403851475_printer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +244,11 @@
   <data name="Suppliers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icon\Suppliers.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="product_clipart_street_sign_new_product_signage_md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\product-clipart-street-sign-new-product-signage-md.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scroll-down-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scroll-down-48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AdjustReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AdjustReport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Item_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Item_New.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,8 +310,8 @@
   <data name="images (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Users-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icon\Users-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Checkout-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checkout-50.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cash Register-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cash Register-100.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,7 +328,7 @@
   <data name="sale-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icon\sale-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pull-down-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pull-down-48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
