@@ -26,14 +26,16 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Panel2 = New System.Windows.Forms.Panel
-        Me.btnLogin = New System.Windows.Forms.Button
         Me.txtPassword = New System.Windows.Forms.TextBox
-        Me.btnCancel = New System.Windows.Forms.Button
         Me.txtUserName = New System.Windows.Forms.TextBox
+        Me.btnLogin = New System.Windows.Forms.Button
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.btnCancel = New System.Windows.Forms.Button
         Me.PictureBox3 = New System.Windows.Forms.PictureBox
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -50,7 +52,7 @@ Partial Class Login
         Me.lblHeader.Name = "lblHeader"
         Me.lblHeader.Size = New System.Drawing.Size(1013, 50)
         Me.lblHeader.TabIndex = 9
-        Me.lblHeader.Text = " Inventory Management System"
+        Me.lblHeader.Text = "P-O-S and Inventory Management System"
         Me.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel1
@@ -67,10 +69,11 @@ Partial Class Login
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(5, 18)
+        Me.Label5.Location = New System.Drawing.Point(5, 11)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(68, 13)
+        Me.Label5.Size = New System.Drawing.Size(96, 20)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "© KTG 2017"
         '
@@ -98,15 +101,37 @@ Partial Class Login
                     Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.btnLogin)
         Me.Panel2.Controls.Add(Me.txtPassword)
         Me.Panel2.Controls.Add(Me.btnCancel)
         Me.Panel2.Controls.Add(Me.txtUserName)
         Me.Panel2.Controls.Add(Me.PictureBox3)
-        Me.Panel2.Location = New System.Drawing.Point(8, 178)
+        Me.Panel2.Location = New System.Drawing.Point(8, 119)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(522, 247)
+        Me.Panel2.Size = New System.Drawing.Size(522, 306)
         Me.Panel2.TabIndex = 20
+        '
+        'txtPassword
+        '
+        Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(38, 169)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(441, 35)
+        Me.txtPassword.TabIndex = 1
+        Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtUserName
+        '
+        Me.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtUserName.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUserName.Location = New System.Drawing.Point(38, 122)
+        Me.txtUserName.Name = "txtUserName"
+        Me.txtUserName.Size = New System.Drawing.Size(441, 35)
+        Me.txtUserName.TabIndex = 0
+        Me.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnLogin
         '
@@ -118,7 +143,7 @@ Partial Class Login
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.Blue
         Me.btnLogin.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.location_48
-        Me.btnLogin.Location = New System.Drawing.Point(35, 164)
+        Me.btnLogin.Location = New System.Drawing.Point(38, 220)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(217, 55)
         Me.btnLogin.TabIndex = 11
@@ -126,16 +151,15 @@ Partial Class Login
         Me.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnLogin.UseVisualStyleBackColor = False
         '
-        'txtPassword
+        'PictureBox1
         '
-        Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(35, 113)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(441, 35)
-        Me.txtPassword.TabIndex = 1
-        Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.PictureBox1.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.profile_green
+        Me.PictureBox1.Location = New System.Drawing.Point(209, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(111, 111)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 22
+        Me.PictureBox1.TabStop = False
         '
         'btnCancel
         '
@@ -147,23 +171,13 @@ Partial Class Login
         Me.btnCancel.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.Red
         Me.btnCancel.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Cancel
-        Me.btnCancel.Location = New System.Drawing.Point(259, 164)
+        Me.btnCancel.Location = New System.Drawing.Point(262, 220)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(217, 55)
         Me.btnCancel.TabIndex = 10
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCancel.UseVisualStyleBackColor = False
-        '
-        'txtUserName
-        '
-        Me.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtUserName.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserName.Location = New System.Drawing.Point(35, 54)
-        Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(441, 35)
-        Me.txtUserName.TabIndex = 0
-        Me.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox3
         '
@@ -172,7 +186,7 @@ Partial Class Login
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(520, 245)
+        Me.PictureBox3.Size = New System.Drawing.Size(520, 304)
         Me.PictureBox3.TabIndex = 16
         Me.PictureBox3.TabStop = False
         '
@@ -192,7 +206,7 @@ Partial Class Login
         Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1013, 566)
         Me.Controls.Add(Me.Panel2)
@@ -211,6 +225,7 @@ Partial Class Login
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -228,4 +243,5 @@ Partial Class Login
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

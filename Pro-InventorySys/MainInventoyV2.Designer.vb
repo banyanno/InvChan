@@ -25,18 +25,18 @@ Partial Class MainInventoyV2
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainInventoyV2))
         Me.Panel1 = New System.Windows.Forms.Panel
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.Panel2 = New System.Windows.Forms.Panel
-        Me.BtnLogout = New System.Windows.Forms.Button
         Me.ImgListDashbord = New System.Windows.Forms.ImageList(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.BtnClosed = New System.Windows.Forms.Button
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.MainPanel = New System.Windows.Forms.Panel
+        Me.BtnLogout = New System.Windows.Forms.Button
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.BtnClosed = New System.Windows.Forms.Button
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -48,17 +48,6 @@ Partial Class MainInventoyV2
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1280, 84)
         Me.Panel1.TabIndex = 1
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(353, 84)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
@@ -72,20 +61,6 @@ Partial Class MainInventoyV2
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1280, 54)
         Me.Panel2.TabIndex = 2
-        '
-        'BtnLogout
-        '
-        Me.BtnLogout.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnLogout.BackColor = System.Drawing.Color.Green
-        Me.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BtnLogout.ImageIndex = 24
-        Me.BtnLogout.ImageList = Me.ImgListDashbord
-        Me.BtnLogout.Location = New System.Drawing.Point(1162, 6)
-        Me.BtnLogout.Name = "BtnLogout"
-        Me.BtnLogout.Size = New System.Drawing.Size(52, 41)
-        Me.BtnLogout.TabIndex = 24
-        Me.BtnLogout.UseVisualStyleBackColor = False
         '
         'ImgListDashbord
         '
@@ -117,33 +92,6 @@ Partial Class MainInventoyV2
         Me.ImgListDashbord.Images.SetKeyName(23, "Cancel.png")
         Me.ImgListDashbord.Images.SetKeyName(24, "logout.png")
         Me.ImgListDashbord.Images.SetKeyName(25, "Return.png")
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Green
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.ImageIndex = 25
-        Me.Button1.ImageList = Me.ImgListDashbord
-        Me.Button1.Location = New System.Drawing.Point(359, 6)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(55, 41)
-        Me.Button1.TabIndex = 23
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'BtnClosed
-        '
-        Me.BtnClosed.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnClosed.BackColor = System.Drawing.Color.Green
-        Me.BtnClosed.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnClosed.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BtnClosed.ImageIndex = 23
-        Me.BtnClosed.ImageList = Me.ImgListDashbord
-        Me.BtnClosed.Location = New System.Drawing.Point(1220, 6)
-        Me.BtnClosed.Name = "BtnClosed"
-        Me.BtnClosed.Size = New System.Drawing.Size(52, 41)
-        Me.BtnClosed.TabIndex = 22
-        Me.BtnClosed.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -181,6 +129,58 @@ Partial Class MainInventoyV2
         Me.MainPanel.Size = New System.Drawing.Size(1280, 717)
         Me.MainPanel.TabIndex = 3
         '
+        'BtnLogout
+        '
+        Me.BtnLogout.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnLogout.BackColor = System.Drawing.Color.Green
+        Me.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnLogout.ImageIndex = 24
+        Me.BtnLogout.ImageList = Me.ImgListDashbord
+        Me.BtnLogout.Location = New System.Drawing.Point(1162, 6)
+        Me.BtnLogout.Name = "BtnLogout"
+        Me.BtnLogout.Size = New System.Drawing.Size(52, 41)
+        Me.BtnLogout.TabIndex = 24
+        Me.BtnLogout.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Green
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.ImageIndex = 25
+        Me.Button1.ImageList = Me.ImgListDashbord
+        Me.Button1.Location = New System.Drawing.Point(359, 6)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(55, 41)
+        Me.Button1.TabIndex = 23
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'BtnClosed
+        '
+        Me.BtnClosed.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnClosed.BackColor = System.Drawing.Color.Green
+        Me.BtnClosed.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnClosed.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnClosed.ImageIndex = 23
+        Me.BtnClosed.ImageList = Me.ImgListDashbord
+        Me.BtnClosed.Location = New System.Drawing.Point(1220, 6)
+        Me.BtnClosed.Name = "BtnClosed"
+        Me.BtnClosed.Size = New System.Drawing.Size(52, 41)
+        Me.BtnClosed.TabIndex = 22
+        Me.BtnClosed.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(353, 84)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'MainInventoyV2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -190,14 +190,15 @@ Partial Class MainInventoyV2
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainInventoyV2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inventory System"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

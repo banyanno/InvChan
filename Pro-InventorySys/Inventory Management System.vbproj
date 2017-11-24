@@ -682,6 +682,12 @@
     <Compile Include="Inventory\Supplier\NewSupplyer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inventory\Tables\MainTable.Designer.vb">
+      <DependentUpon>MainTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Tables\MainTable.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -1256,6 +1262,9 @@
       <DependentUpon>NewSupplyer.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Tables\MainTable.resx">
+      <DependentUpon>MainTable.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <SubType>Designer</SubType>
       <DependentUpon>main.vb</DependentUpon>
@@ -1594,6 +1603,7 @@
     <None Include="Resources\images %281%291.jpg" />
     <None Include="Resources\inventorySliderBG.jpg" />
     <Content Include="Resources\Inventory_Management.png" />
+    <None Include="Resources\profile-green.png" />
     <None Include="Resources\pull-down-48.png" />
     <None Include="Resources\scroll-down-48.png" />
     <None Include="Resources\location-48.png" />

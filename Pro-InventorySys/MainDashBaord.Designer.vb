@@ -44,6 +44,7 @@ Partial Class MainDashBaord
         Me.Label1 = New System.Windows.Forms.Label
         Me.BtnProductOrder = New System.Windows.Forms.Button
         Me.BtnSale = New System.Windows.Forms.Button
+        Me.BtnCreateTable = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -102,6 +103,7 @@ Partial Class MainDashBaord
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.BtnCreateTable)
         Me.GroupBox1.Controls.Add(Me.BtnComProfile)
         Me.GroupBox1.Controls.Add(Me.BtnPayAble)
         Me.GroupBox1.Controls.Add(Me.BtnCustomer)
@@ -311,7 +313,7 @@ Partial Class MainDashBaord
         Me.BtnClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.BtnClose.ImageIndex = 6
         Me.BtnClose.ImageList = Me.ImgListDashbord
-        Me.BtnClose.Location = New System.Drawing.Point(714, 129)
+        Me.BtnClose.Location = New System.Drawing.Point(720, 32)
         Me.BtnClose.Name = "BtnClose"
         Me.BtnClose.Size = New System.Drawing.Size(178, 77)
         Me.BtnClose.TabIndex = 11
@@ -404,6 +406,24 @@ Partial Class MainDashBaord
         Me.BtnSale.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BtnSale.UseVisualStyleBackColor = True
         '
+        'BtnCreateTable
+        '
+        Me.BtnCreateTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnCreateTable.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnCreateTable.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCreateTable.ForeColor = System.Drawing.Color.Green
+        Me.BtnCreateTable.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BtnCreateTable.ImageIndex = 6
+        Me.BtnCreateTable.ImageList = Me.ImgListDashbord
+        Me.BtnCreateTable.Location = New System.Drawing.Point(720, 129)
+        Me.BtnCreateTable.Name = "BtnCreateTable"
+        Me.BtnCreateTable.Size = New System.Drawing.Size(178, 77)
+        Me.BtnCreateTable.TabIndex = 13
+        Me.BtnCreateTable.Text = "Table Setup"
+        Me.BtnCreateTable.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BtnCreateTable.UseVisualStyleBackColor = True
+        Me.BtnCreateTable.Visible = False
+        '
         'MainDashBaord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -442,5 +462,6 @@ Partial Class MainDashBaord
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BtnPayAble As System.Windows.Forms.Button
     Friend WithEvents BtnComProfile As System.Windows.Forms.Button
+    Friend WithEvents BtnCreateTable As System.Windows.Forms.Button
 
 End Class

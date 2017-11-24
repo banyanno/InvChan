@@ -410,6 +410,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property profile_green() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("profile-green", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property pull_down_48() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pull-down-48", resourceCulture)
