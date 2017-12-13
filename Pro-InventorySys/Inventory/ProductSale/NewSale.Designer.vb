@@ -45,7 +45,6 @@ Partial Class NewSale
         Me.ErrSale = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.LinkCalculation = New System.Windows.Forms.LinkLabel
         Me.Panel2 = New System.Windows.Forms.Panel
-        Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.Label11 = New System.Windows.Forms.Label
         Me.Label10 = New System.Windows.Forms.Label
         Me.LinkLabel6 = New System.Windows.Forms.LinkLabel
@@ -60,7 +59,6 @@ Partial Class NewSale
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
         Me.txtInvoiceNo = New System.Windows.Forms.TextBox
         Me.Panel4 = New System.Windows.Forms.Panel
-        Me.Button1 = New System.Windows.Forms.Button
         Me.SplitContainer3.Panel1.SuspendLayout()
         Me.SplitContainer3.SuspendLayout()
         Me.SplitContainer2.Panel1.SuspendLayout()
@@ -79,7 +77,7 @@ Partial Class NewSale
         Me.SplitContainer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
-        Me.SplitContainer3.Location = New System.Drawing.Point(0, 86)
+        Me.SplitContainer3.Location = New System.Drawing.Point(0, 72)
         Me.SplitContainer3.Name = "SplitContainer3"
         Me.SplitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -92,7 +90,7 @@ Partial Class NewSale
         Me.SplitContainer3.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SplitContainer3.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SplitContainer3.Panel2Collapsed = True
-        Me.SplitContainer3.Size = New System.Drawing.Size(1438, 644)
+        Me.SplitContainer3.Size = New System.Drawing.Size(1454, 777)
         Me.SplitContainer3.SplitterDistance = 370
         Me.SplitContainer3.SplitterWidth = 1
         Me.SplitContainer3.TabIndex = 1
@@ -111,11 +109,12 @@ Partial Class NewSale
         Me.SplitContainer2.Panel1.Controls.Add(Me.ListProduct)
         Me.SplitContainer2.Panel1.Controls.Add(Me.Label6)
         Me.SplitContainer2.Panel1.Controls.Add(Me.Panel1)
+        Me.SplitContainer2.Panel1Collapsed = True
         '
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.OrderList)
-        Me.SplitContainer2.Size = New System.Drawing.Size(1436, 642)
+        Me.SplitContainer2.Size = New System.Drawing.Size(1452, 775)
         Me.SplitContainer2.SplitterDistance = 276
         Me.SplitContainer2.SplitterWidth = 1
         Me.SplitContainer2.TabIndex = 1
@@ -254,7 +253,7 @@ Partial Class NewSale
         Me.OrderList.Office2007CustomColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.OrderList.RowFormatStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.OrderList.SelectOnExpand = False
-        Me.OrderList.Size = New System.Drawing.Size(1159, 642)
+        Me.OrderList.Size = New System.Drawing.Size(1452, 775)
         Me.OrderList.TabIndex = 2
         Me.OrderList.TableViewHorizontalScrollIncrement = 4
         Me.OrderList.View = Janus.Windows.GridEX.View.CardView
@@ -269,11 +268,11 @@ Partial Class NewSale
         '
         Me.lblUser.AutoSize = True
         Me.lblUser.BackColor = System.Drawing.Color.Transparent
-        Me.lblUser.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUser.Font = New System.Drawing.Font("Khmer OS Battambang", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUser.ForeColor = System.Drawing.Color.White
-        Me.lblUser.Location = New System.Drawing.Point(3, 57)
+        Me.lblUser.Location = New System.Drawing.Point(5, 40)
         Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(157, 25)
+        Me.lblUser.Size = New System.Drawing.Size(120, 19)
         Me.lblUser.TabIndex = 48
         Me.lblUser.Text = "អត្រាប្តូប្រាក់:​ 1$ = 4100៛"
         Me.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -282,11 +281,11 @@ Partial Class NewSale
         '
         Me.LblRate.AutoSize = True
         Me.LblRate.BackColor = System.Drawing.Color.Transparent
-        Me.LblRate.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblRate.Font = New System.Drawing.Font("Khmer OS Battambang", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblRate.ForeColor = System.Drawing.Color.White
-        Me.LblRate.Location = New System.Drawing.Point(3, 27)
+        Me.LblRate.Location = New System.Drawing.Point(5, 12)
         Me.LblRate.Name = "LblRate"
-        Me.LblRate.Size = New System.Drawing.Size(157, 25)
+        Me.LblRate.Size = New System.Drawing.Size(120, 19)
         Me.LblRate.TabIndex = 47
         Me.LblRate.Text = "អត្រាប្តូប្រាក់:​ 1$ = 4100៛"
         Me.LblRate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -297,7 +296,7 @@ Partial Class NewSale
         Me.dtInvoice.CustomFormat = "dd/MM/yyyy"
         Me.dtInvoice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtInvoice.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtInvoice.Location = New System.Drawing.Point(26, 41)
+        Me.dtInvoice.Location = New System.Drawing.Point(26, 9)
         Me.dtInvoice.Name = "dtInvoice"
         Me.dtInvoice.ShowCheckBox = True
         Me.dtInvoice.Size = New System.Drawing.Size(133, 26)
@@ -311,7 +310,7 @@ Partial Class NewSale
         Me.TxtTotalKHR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.TxtTotalKHR.Font = New System.Drawing.Font("Khmer OS Battambang", 14.0!)
         Me.TxtTotalKHR.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TxtTotalKHR.Location = New System.Drawing.Point(1137, 7)
+        Me.TxtTotalKHR.Location = New System.Drawing.Point(402, 10)
         Me.TxtTotalKHR.Name = "TxtTotalKHR"
         Me.TxtTotalKHR.Size = New System.Drawing.Size(299, 34)
         Me.TxtTotalKHR.TabIndex = 5
@@ -325,7 +324,7 @@ Partial Class NewSale
         Me.TxtTotalUSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.TxtTotalUSD.Font = New System.Drawing.Font("Khmer OS Battambang", 14.0!)
         Me.TxtTotalUSD.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TxtTotalUSD.Location = New System.Drawing.Point(1137, 44)
+        Me.TxtTotalUSD.Location = New System.Drawing.Point(812, 11)
         Me.TxtTotalUSD.Name = "TxtTotalUSD"
         Me.TxtTotalUSD.Size = New System.Drawing.Size(299, 34)
         Me.TxtTotalUSD.TabIndex = 4
@@ -339,7 +338,7 @@ Partial Class NewSale
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(1037, 16)
+        Me.Label5.Location = New System.Drawing.Point(302, 19)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(94, 25)
         Me.Label5.TabIndex = 1
@@ -352,7 +351,7 @@ Partial Class NewSale
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(1034, 53)
+        Me.Label4.Location = New System.Drawing.Point(709, 20)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(97, 25)
         Me.Label4.TabIndex = 0
@@ -371,9 +370,9 @@ Partial Class NewSale
         Me.LinkCalculation.ImageList = Me.ImgListDashbord
         Me.LinkCalculation.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkCalculation.LinkColor = System.Drawing.Color.White
-        Me.LinkCalculation.Location = New System.Drawing.Point(346, 4)
+        Me.LinkCalculation.Location = New System.Drawing.Point(3, 4)
         Me.LinkCalculation.Name = "LinkCalculation"
-        Me.LinkCalculation.Size = New System.Drawing.Size(140, 63)
+        Me.LinkCalculation.Size = New System.Drawing.Size(140, 62)
         Me.LinkCalculation.TabIndex = 45
         Me.LinkCalculation.TabStop = True
         Me.LinkCalculation.Text = "គិតលុយ F1"
@@ -382,7 +381,6 @@ Partial Class NewSale
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.TextBox1)
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.LinkLabel6)
@@ -399,33 +397,23 @@ Partial Class NewSale
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1438, 86)
+        Me.Panel2.Size = New System.Drawing.Size(1454, 72)
         Me.Panel2.TabIndex = 2
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Khmer OS Battambang", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(4, 27)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(274, 50)
-        Me.TextBox1.TabIndex = 58
-        Me.TextBox1.Visible = False
         '
         'Label11
         '
         Me.Label11.BackColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(1292, 3)
+        Me.Label11.Location = New System.Drawing.Point(942, 1)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(1, 76)
+        Me.Label11.Size = New System.Drawing.Size(1, 68)
         Me.Label11.TabIndex = 57
         '
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(1134, 2)
+        Me.Label10.Location = New System.Drawing.Point(781, 2)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(1, 76)
+        Me.Label10.Size = New System.Drawing.Size(1, 69)
         Me.Label10.TabIndex = 56
         '
         'LinkLabel6
@@ -437,9 +425,9 @@ Partial Class NewSale
         Me.LinkLabel6.ImageList = Me.ImgListDashbord
         Me.LinkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel6.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel6.Location = New System.Drawing.Point(1296, 4)
+        Me.LinkLabel6.Location = New System.Drawing.Point(946, 4)
         Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(140, 63)
+        Me.LinkLabel6.Size = New System.Drawing.Size(140, 62)
         Me.LinkLabel6.TabIndex = 55
         Me.LinkLabel6.TabStop = True
         Me.LinkLabel6.Text = " បិត Esc"
@@ -454,9 +442,9 @@ Partial Class NewSale
         Me.LinkLabel7.ImageList = Me.ImgListDashbord
         Me.LinkLabel7.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel7.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel7.Location = New System.Drawing.Point(1149, 4)
+        Me.LinkLabel7.Location = New System.Drawing.Point(789, 2)
         Me.LinkLabel7.Name = "LinkLabel7"
-        Me.LinkLabel7.Size = New System.Drawing.Size(140, 63)
+        Me.LinkLabel7.Size = New System.Drawing.Size(140, 62)
         Me.LinkLabel7.TabIndex = 54
         Me.LinkLabel7.TabStop = True
         Me.LinkLabel7.Text = "កែប្រែរ ចំនួនលក់"
@@ -465,9 +453,9 @@ Partial Class NewSale
         'Label9
         '
         Me.Label9.BackColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(986, 3)
+        Me.Label9.Location = New System.Drawing.Point(643, 3)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(1, 76)
+        Me.Label9.Size = New System.Drawing.Size(1, 67)
         Me.Label9.TabIndex = 53
         '
         'LinkLabel5
@@ -479,9 +467,9 @@ Partial Class NewSale
         Me.LinkLabel5.ImageList = Me.ImgListDashbord
         Me.LinkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(990, 4)
+        Me.LinkLabel5.Location = New System.Drawing.Point(644, 4)
         Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(140, 63)
+        Me.LinkLabel5.Size = New System.Drawing.Size(131, 62)
         Me.LinkLabel5.TabIndex = 52
         Me.LinkLabel5.TabStop = True
         Me.LinkLabel5.Text = "លុបចោល F12"
@@ -490,17 +478,17 @@ Partial Class NewSale
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(650, 3)
+        Me.Label8.Location = New System.Drawing.Point(307, 3)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(1, 76)
+        Me.Label8.Size = New System.Drawing.Size(1, 67)
         Me.Label8.TabIndex = 51
         '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(839, 3)
+        Me.Label7.Location = New System.Drawing.Point(496, 3)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(1, 76)
+        Me.Label7.Size = New System.Drawing.Size(1, 67)
         Me.Label7.TabIndex = 50
         '
         'LinkLabel3
@@ -512,9 +500,9 @@ Partial Class NewSale
         Me.LinkLabel3.ImageList = Me.ImgListDashbord
         Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel3.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel3.Location = New System.Drawing.Point(843, 4)
+        Me.LinkLabel3.Location = New System.Drawing.Point(500, 4)
         Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(140, 63)
+        Me.LinkLabel3.Size = New System.Drawing.Size(140, 62)
         Me.LinkLabel3.TabIndex = 49
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "បង្ហាញ ទំនិញ F4"
@@ -529,9 +517,9 @@ Partial Class NewSale
         Me.LinkLabel4.ImageList = Me.ImgListDashbord
         Me.LinkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(658, 4)
+        Me.LinkLabel4.Location = New System.Drawing.Point(315, 4)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(178, 63)
+        Me.LinkLabel4.Size = New System.Drawing.Size(178, 62)
         Me.LinkLabel4.TabIndex = 48
         Me.LinkLabel4.TabStop = True
         Me.LinkLabel4.Text = "ស្វែងរកមុខ ទំនិញ F3"
@@ -540,9 +528,9 @@ Partial Class NewSale
         'Label1
         '
         Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(491, 2)
+        Me.Label1.Location = New System.Drawing.Point(148, 2)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1, 76)
+        Me.Label1.Size = New System.Drawing.Size(1, 67)
         Me.Label1.TabIndex = 47
         '
         'LinkLabel2
@@ -554,9 +542,9 @@ Partial Class NewSale
         Me.LinkLabel2.ImageList = Me.ImgListDashbord
         Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(501, 4)
+        Me.LinkLabel2.Location = New System.Drawing.Point(158, 4)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(140, 63)
+        Me.LinkLabel2.Size = New System.Drawing.Size(140, 62)
         Me.LinkLabel2.TabIndex = 46
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Barcode F2"
@@ -567,7 +555,7 @@ Partial Class NewSale
         Me.txtInvoiceNo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtInvoiceNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtInvoiceNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtInvoiceNo.Location = New System.Drawing.Point(26, 7)
+        Me.txtInvoiceNo.Location = New System.Drawing.Point(191, 33)
         Me.txtInvoiceNo.Name = "txtInvoiceNo"
         Me.txtInvoiceNo.ReadOnly = True
         Me.txtInvoiceNo.Size = New System.Drawing.Size(133, 26)
@@ -578,7 +566,6 @@ Partial Class NewSale
         '
         Me.Panel4.AutoScroll = True
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Button1)
         Me.Panel4.Controls.Add(Me.TxtTotalKHR)
         Me.Panel4.Controls.Add(Me.lblUser)
         Me.Panel4.Controls.Add(Me.txtInvoiceNo)
@@ -588,26 +575,17 @@ Partial Class NewSale
         Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(0, 730)
+        Me.Panel4.Location = New System.Drawing.Point(0, 849)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1438, 86)
+        Me.Panel4.Size = New System.Drawing.Size(1454, 65)
         Me.Panel4.TabIndex = 3
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(230, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 49
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'NewSale
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1438, 816)
+        Me.ClientSize = New System.Drawing.Size(1454, 914)
         Me.Controls.Add(Me.SplitContainer3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
@@ -629,7 +607,6 @@ Partial Class NewSale
         CType(Me.OrderList, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrSale, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
@@ -667,8 +644,6 @@ Partial Class NewSale
     Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents txtInvoiceNo As System.Windows.Forms.TextBox
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

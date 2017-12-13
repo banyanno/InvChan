@@ -259,9 +259,15 @@ Public Class NewSale
             txtBarcode.Focus()
             txtBarcode.SelectAll()
         ElseIf e.KeyCode = Keys.F4 Then
-            RefreshProductList()
-            txtBarcode.SelectAll()
+            If SplitContainer2.Panel1Collapsed = True Then
+                SplitContainer2.Panel1Collapsed = False
+                RefreshProductList()
+            Else
+                SplitContainer2.Panel1Collapsed = True
+            End If
+
             txtBarcode.Focus()
+            txtBarcode.SelectAll()
         ElseIf e.KeyCode = Keys.Escape Then
             If MessageBox.Show("Do you want to close sale?", "Sale", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 DAPreInvoice.DeleteByUserID(getCurrentUserID)
@@ -443,7 +449,7 @@ Public Class NewSale
                 Application.DoEvents()
                 myReportObj.SetDataSource(DS, "ViewInvoice")
                 myReportObj.PrintToPrinter()
-                myReportObj.PrintToPrinter()
+                'myReportObj.PrintToPrinter()
                 cnn.Close()
                 myReportObj.Close()
             End If
@@ -577,12 +583,14 @@ Public Class NewSale
     Private Sub LinkLabel3_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         If SplitContainer2.Panel1Collapsed = True Then
             SplitContainer2.Panel1Collapsed = False
+            RefreshProductList()
         Else
             SplitContainer2.Panel1Collapsed = True
         End If
-        RefreshProductList()
+
         txtBarcode.Focus()
         txtBarcode.SelectAll()
+       
     End Sub
 
     Private Sub LinkLabel5_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
@@ -618,7 +626,7 @@ Public Class NewSale
         AddProductFrogList()
     End Sub
     Dim secondScreen As New SecondScreen
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Dim screen1 As Screen
         'screen1 = Screen.AllScreens(1)
         secondScreen.StartPosition = FormStartPosition.Manual
@@ -637,5 +645,53 @@ Public Class NewSale
         End If
         txtBarcode.Focus()
         txtBarcode.SelectAll()
+    End Sub
+
+    Private Sub LinkCalculation_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkCalculation.LinkClicked
+        If OrderList.SelectedItems.Count = 0 Then Exit Sub
+        Dim IssueInvoice As New ISSUE_INVOICE
+        Try
+            If TxtTotalUSD.Text = "0" Then
+                MessageBox.Show("You can not issue bill. Please select product to sale!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Sub
+            End If
+
+            IssueInvoice.TxtTotalUSD.Text = FormatNumber(EmptyString(TxtTotalUSD.Text), 2) 'EmptyString(TxtTotalUSD.Text, 2) '
+            IssueInvoice.TxtTotalKHR.Text = FormatNumber(EmptyString(TxtTotalKHR.Text), 0) 'EmptyString(TxtTotalKHR.Text, 2) ' 
+            If IssueInvoice.ShowDialog() = Windows.Forms.DialogResult.Yes Then
+                SaveNewInvoice(GetExchangeRage, EmptyString(IssueInvoice.TxtReceivedR.Text), EmptyString(IssueInvoice.TxtReceiveDollar.Text), EmptyString(IssueInvoice.TxtExchangeKHR.Text), EmptyString(IssueInvoice.TxtExchangeUSD.Text))
+                IssueInvoice.Close()
+                IssueInvoice.Dispose()
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+        txtBarcode.Focus()
+        txtBarcode.SelectAll()
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        Dim FEnterBarcode As New EnterBarcode(Me)
+        If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
+            InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
+        End If
+        txtBarcode.SelectAll()
+        txtBarcode.Focus()
+    End Sub
+
+    Private Sub LinkLabel4_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        Dim FEnterProduct As New EnterProductName(Me)
+        FEnterProduct.ShowDialog()
+        txtBarcode.Focus()
+        txtBarcode.SelectAll()
+        'If FEnterProduct.ShowDialog = Windows.Forms.DialogResult.OK Then
+        '    SearchByProductName(FEnterProduct.TxtBarProductName.Text)
+        'End If
+        'txtBarcode.SelectAll()
+        'txtBarcode.Focus()
+    End Sub
+
+    Private Sub Panel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
+
     End Sub
 End Class

@@ -105,7 +105,7 @@
         Main.Panel1.Visible = False
     End Sub
 
-    Private Sub BtnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnClose.Click
+    Private Sub BtnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         DAUser.UpdateLockUser(0, getCurrentUserID)
         Application.Exit()

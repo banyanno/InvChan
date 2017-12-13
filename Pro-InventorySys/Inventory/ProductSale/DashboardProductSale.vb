@@ -109,7 +109,7 @@ Public Class DashboardProductSale
             myReportObj.SetDataSource(DS, "ViewInvoice")
 
             myReportObj.PrintToPrinter()
-            myReportObj.PrintToPrinter()
+            ' myReportObj.PrintToPrinter()
             cnn.Close()
         Catch ex As Exception
 
