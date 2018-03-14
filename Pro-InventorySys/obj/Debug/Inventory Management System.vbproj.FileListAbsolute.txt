@@ -665,3 +665,4 @@ C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\RdlCompile.cache
 C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\RdlCompile.compiled
 C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\Asia_Garden_Inventory_Management_System.SecondScreen.resources
 C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\Asia_Garden_Inventory_Management_System.MainTable.resources
+C:\BanYanno\SoftProject\InvChan\Pro-InventorySys\obj\Debug\Asia_Garden_Inventory_Management_System.Discount.resources

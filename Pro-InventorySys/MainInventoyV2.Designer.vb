@@ -25,18 +25,20 @@ Partial Class MainInventoyV2
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainInventoyV2))
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.Panel2 = New System.Windows.Forms.Panel
+        Me.BtnLogout = New System.Windows.Forms.Button
         Me.ImgListDashbord = New System.Windows.Forms.ImageList(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.BtnClosed = New System.Windows.Forms.Button
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
         Me.MainPanel = New System.Windows.Forms.Panel
-        Me.BtnLogout = New System.Windows.Forms.Button
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.BtnClosed = New System.Windows.Forms.Button
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.LblRate = New System.Windows.Forms.Label
+        Me.lblUser = New System.Windows.Forms.Label
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -49,8 +51,21 @@ Partial Class MainInventoyV2
         Me.Panel1.Size = New System.Drawing.Size(1280, 84)
         Me.Panel1.TabIndex = 1
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(353, 84)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.lblUser)
+        Me.Panel2.Controls.Add(Me.LblRate)
         Me.Panel2.Controls.Add(Me.BtnLogout)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.BtnClosed)
@@ -61,6 +76,20 @@ Partial Class MainInventoyV2
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1280, 54)
         Me.Panel2.TabIndex = 2
+        '
+        'BtnLogout
+        '
+        Me.BtnLogout.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnLogout.BackColor = System.Drawing.Color.Green
+        Me.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnLogout.ImageIndex = 24
+        Me.BtnLogout.ImageList = Me.ImgListDashbord
+        Me.BtnLogout.Location = New System.Drawing.Point(1162, 6)
+        Me.BtnLogout.Name = "BtnLogout"
+        Me.BtnLogout.Size = New System.Drawing.Size(52, 41)
+        Me.BtnLogout.TabIndex = 24
+        Me.BtnLogout.UseVisualStyleBackColor = False
         '
         'ImgListDashbord
         '
@@ -93,56 +122,6 @@ Partial Class MainInventoyV2
         Me.ImgListDashbord.Images.SetKeyName(24, "logout.png")
         Me.ImgListDashbord.Images.SetKeyName(25, "Return.png")
         '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.Green
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Khmer OS Battambang", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(353, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(927, 54)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "ប្រព័ន្ធ គ្រប់គ្រង STOCK"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label1.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(353, 54)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Dev By : បាន យ៉ាណូ Tel: 012 238 738" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Email    : ban.yanno@gmail.com"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'MainPanel
-        '
-        Me.MainPanel.BackColor = System.Drawing.Color.Transparent
-        Me.MainPanel.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Bk2
-        Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainPanel.Location = New System.Drawing.Point(0, 138)
-        Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(1280, 717)
-        Me.MainPanel.TabIndex = 3
-        '
-        'BtnLogout
-        '
-        Me.BtnLogout.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnLogout.BackColor = System.Drawing.Color.Green
-        Me.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BtnLogout.ImageIndex = 24
-        Me.BtnLogout.ImageList = Me.ImgListDashbord
-        Me.BtnLogout.Location = New System.Drawing.Point(1162, 6)
-        Me.BtnLogout.Name = "BtnLogout"
-        Me.BtnLogout.Size = New System.Drawing.Size(52, 41)
-        Me.BtnLogout.TabIndex = 24
-        Me.BtnLogout.UseVisualStyleBackColor = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Green
@@ -170,16 +149,67 @@ Partial Class MainInventoyV2
         Me.BtnClosed.TabIndex = 22
         Me.BtnClosed.UseVisualStyleBackColor = False
         '
-        'PictureBox1
+        'Label2
         '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(353, 84)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.Label2.BackColor = System.Drawing.Color.Green
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label2.Font = New System.Drawing.Font("Khmer OS Battambang", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(353, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(927, 54)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "ប្រព័ន្ធ POS Mini Mart"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label1.Font = New System.Drawing.Font("Khmer OS Battambang", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(353, 54)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Dev By : បាន យ៉ាណូ Tel: 012 238 738" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Email    : ban.yanno@gmail.com"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'MainPanel
+        '
+        Me.MainPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainPanel.BackgroundImage = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources.Bk2
+        Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MainPanel.Location = New System.Drawing.Point(0, 138)
+        Me.MainPanel.Name = "MainPanel"
+        Me.MainPanel.Size = New System.Drawing.Size(1280, 717)
+        Me.MainPanel.TabIndex = 3
+        '
+        'LblRate
+        '
+        Me.LblRate.AutoSize = True
+        Me.LblRate.BackColor = System.Drawing.Color.Green
+        Me.LblRate.Font = New System.Drawing.Font("Khmer OS Battambang", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblRate.ForeColor = System.Drawing.Color.White
+        Me.LblRate.Location = New System.Drawing.Point(432, 7)
+        Me.LblRate.Name = "LblRate"
+        Me.LblRate.Size = New System.Drawing.Size(120, 19)
+        Me.LblRate.TabIndex = 48
+        Me.LblRate.Text = "អត្រាប្តូប្រាក់:​ 1$ = 4100៛"
+        Me.LblRate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblUser
+        '
+        Me.lblUser.AutoSize = True
+        Me.lblUser.BackColor = System.Drawing.Color.Green
+        Me.lblUser.Font = New System.Drawing.Font("Khmer OS Battambang", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUser.ForeColor = System.Drawing.Color.White
+        Me.lblUser.Location = New System.Drawing.Point(432, 30)
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Size = New System.Drawing.Size(36, 19)
+        Me.lblUser.TabIndex = 49
+        Me.lblUser.Text = "user:"
+        Me.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'MainInventoyV2
         '
@@ -197,8 +227,9 @@ Partial Class MainInventoyV2
         Me.Text = "Inventory System"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -212,4 +243,6 @@ Partial Class MainInventoyV2
     Friend WithEvents BtnClosed As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents BtnLogout As System.Windows.Forms.Button
+    Friend WithEvents LblRate As System.Windows.Forms.Label
+    Friend WithEvents lblUser As System.Windows.Forms.Label
 End Class

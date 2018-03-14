@@ -41,11 +41,17 @@ Public Class NewSale
         Me.TxtTotalUSD.Text = FormatNumber(USDAmount, 2)
         Me.TxtTotalKHR.Text = FormatNumber(USDAmount * GetExchangeRage(), 0)
         secondScreen.RefreshOrderList()
+        txtBarcode.Select()
+        txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
     Private Sub RefreshProductList()
 
         Dim tbl As DataTable = DAItem.GetData
         PopulateNodesFloor(tbl, ListProduct)
+        txtBarcode.Select()
+        txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
     Public Sub SearchByProductName(ByVal Product As String)
         Dim tbl As DataTable = DAItem.SelectFullName(Product)
@@ -107,12 +113,14 @@ Public Class NewSale
     End Sub
 
     Private Sub NewSale_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Timer1.Start()
         'LblProfile.Text = GetComName() & vbCrLf & GetComAddress()
         LblRate.Text = "អត្រាប្តូប្រាក់:​ 1$ = " & FormatNumber(GetExchangeRage(), 2) & "៛"
         ''SplitContainer2.SplitterDistance = (Me.Width / 2) + 30
         lblUser.Text = "អ្នកប្រើប្រាស់: " & GetCurrentUserName()
         txtInvoiceNo.Text = GetSaleNo()
         'RefreshProductList()
+        txtBarcode.Select()
         txtBarcode.Focus()
         txtBarcode.SelectAll()
     End Sub
@@ -243,6 +251,10 @@ Public Class NewSale
             'End If
             'txtBarcode.SelectAll()
             'txtBarcode.Focus()
+        ElseIf e.KeyCode = Keys.F5 Then
+            EditeItemDiscount()
+        ElseIf e.KeyCode = Keys.F5 Then
+            EditQTY()
         ElseIf e.KeyCode = Keys.F12 Then
             If MsgBox("Do you want to cancel this invoice?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
                 DAPreInvoice.DeleteByUserID(getCurrentUserID)
@@ -256,6 +268,7 @@ Public Class NewSale
                 DAPreInvoice.DeleteByID(OrderList.GetRow.Cells("PRE_ID").Value)
                 RefreshOrderList()
             End If
+            txtBarcode.Select()
             txtBarcode.Focus()
             txtBarcode.SelectAll()
         ElseIf e.KeyCode = Keys.F4 Then
@@ -465,31 +478,8 @@ Public Class NewSale
     End Sub
 
     
-    Private Sub txtBarcod_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBarcode.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            ''MsgBox(txtBarcode.Text.Trim)
-            'Dim tbl As DataTable = DAItem.SelectByBarCode(txtBarcode.Text)
-            'Dim FEnterBarcode As New EnterBarcode(Me)
-            'For Each rows As DataRow In tbl.Rows
-            '    FEnterBarcode.TxtProducName.Text = rows("ITEM_NAME")
-            '    FEnterBarcode.TxtPrice.Text = CDbl(rows("RETAIL_PRICE"))
-            'Next
+    Private Sub txtBarcod_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs)
 
-            'FEnterBarcode.TxtBarCode.Text = Me.txtBarcode.Text
-            'FEnterBarcode.txtQTY.Focus()
-            'FEnterBarcode.txtQTY.SelectAll()
-            'FEnterBarcode.ShowDialog()
-            'FEnterBarcode.Close()
-            '' If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
-            ''    InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
-            ''End If
-
-            'txtBarcode.Focus()
-            'txtBarcode.SelectAll()
-            InsertPreInvoice(txtBarcode.Text.Trim)
-            txtBarcode.SelectAll()
-            txtBarcode.Focus()
-        End If
     End Sub
 
     Private Sub SplitContainer1_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs)
@@ -555,7 +545,7 @@ Public Class NewSale
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
-
+        txtBarcode.Select()
         txtBarcode.Focus()
         txtBarcode.SelectAll()
     End Sub
@@ -566,8 +556,9 @@ Public Class NewSale
         ' If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
         '    InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
         'End If
-        txtBarcode.SelectAll()
+        txtBarcode.Select()
         txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
 
     Private Sub LinkLabel4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LinkLabel4.Click
@@ -576,8 +567,9 @@ Public Class NewSale
         If FEnterProduct.ShowDialog = Windows.Forms.DialogResult.OK Then
             SearchByProductName(FEnterProduct.TxtBarProductName.Text)
         End If
-        txtBarcode.SelectAll()
+        txtBarcode.Select()
         txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
@@ -588,6 +580,7 @@ Public Class NewSale
             SplitContainer2.Panel1Collapsed = True
         End If
 
+        txtBarcode.Select()
         txtBarcode.Focus()
         txtBarcode.SelectAll()
        
@@ -598,22 +591,30 @@ Public Class NewSale
             DAPreInvoice.DeleteByUserID(getCurrentUserID)
             RefreshOrderList()
         End If
+        txtBarcode.Select()
         txtBarcode.Focus()
         txtBarcode.SelectAll()
     End Sub
 
     Private Sub LinkLabel7_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel7.LinkClicked
-        If OrderList.SelectedItems.Count = 0 Then Exit Sub
+        EditQTY()
+    End Sub
+    Private Sub EditQTY()
+        If OrderList.SelectedItems.Count = 0 Then
+            MessageBox.Show("សុំជ្រើសរើសមុខទំនិញដើម្បីកែប្រែរ ចំនួនលក់", "QTY", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
+
         Dim FExitQTY As New FormEditQTY(Me)
         FExitQTY.LblItemID.Text = OrderList.GetRow.Cells("PRE_ID").Value
         FExitQTY.TxtItemName.Text = OrderList.GetRow.Cells("ITEM_NAME").Value
         FExitQTY.LblPrice.Text = OrderList.GetRow.Cells("ITEM_PRICE").Value
         FExitQTY.TxtQTY.Text = "0"
         FExitQTY.ShowDialog()
-        txtBarcode.SelectAll()
+        txtBarcode.Select()
         txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
-
     Private Sub LinkLabel6_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
         DAPreInvoice.DeleteByUserID(getCurrentUserID)
         Me.Close()
@@ -643,8 +644,9 @@ Public Class NewSale
             DAPreInvoice.DeleteByID(OrderList.GetRow.Cells("PRE_ID").Value)
             RefreshOrderList()
         End If
-        txtBarcode.Focus()
+        txtBarcode.Select()
         txtBarcode.SelectAll()
+        txtBarcode.Focus()
     End Sub
 
     Private Sub LinkCalculation_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkCalculation.LinkClicked
@@ -666,6 +668,7 @@ Public Class NewSale
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+        txtBarcode.Select()
         txtBarcode.Focus()
         txtBarcode.SelectAll()
     End Sub
@@ -675,13 +678,15 @@ Public Class NewSale
         If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
             InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
         End If
-        txtBarcode.SelectAll()
+        txtBarcode.Select()
         txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
         Dim FEnterProduct As New EnterProductName(Me)
         FEnterProduct.ShowDialog()
+        txtBarcode.Select()
         txtBarcode.Focus()
         txtBarcode.SelectAll()
         'If FEnterProduct.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -691,7 +696,59 @@ Public Class NewSale
         'txtBarcode.Focus()
     End Sub
 
-    Private Sub Panel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
+  
+    Private Sub OrderList_PreviewKeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PreviewKeyDownEventArgs)
+        MessageBox.Show("Helloe world")
+    End Sub
 
+    Private Sub txtBarcode_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBarcode.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            ''MsgBox(txtBarcode.Text.Trim)
+            'Dim tbl As DataTable = DAItem.SelectByBarCode(txtBarcode.Text)
+            'Dim FEnterBarcode As New EnterBarcode(Me)
+            'For Each rows As DataRow In tbl.Rows
+            '    FEnterBarcode.TxtProducName.Text = rows("ITEM_NAME")
+            '    FEnterBarcode.TxtPrice.Text = CDbl(rows("RETAIL_PRICE"))
+            'Next
+
+            'FEnterBarcode.TxtBarCode.Text = Me.txtBarcode.Text
+            'FEnterBarcode.txtQTY.Focus()
+            'FEnterBarcode.txtQTY.SelectAll()
+            'FEnterBarcode.ShowDialog()
+            'FEnterBarcode.Close()
+            '' If FEnterBarcode.ShowDialog = Windows.Forms.DialogResult.OK Then
+            ''    InsertPreInvoice(FEnterBarcode.TxtBarCode.Text)
+            ''End If
+
+            'txtBarcode.Focus()
+            'txtBarcode.SelectAll()
+            InsertPreInvoice(txtBarcode.Text.Trim)
+            txtBarcode.Select()
+            txtBarcode.SelectAll()
+            txtBarcode.Focus()
+        End If
+    End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        lblTime.Text = Now
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        EditeItemDiscount()
+    End Sub
+    Private Sub EditeItemDiscount()
+        If OrderList.SelectedItems.Count = 0 Then
+            MessageBox.Show("សុំជ្រើសរើសមុខទំនិញដើម្បីបញ្ចុះតំលៃ", "Discount", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
+        Dim FExitQTY As New Discount(Me)
+        FExitQTY.LblItemID.Text = OrderList.GetRow.Cells("PRE_ID").Value
+        FExitQTY.TxtItemName.Text = OrderList.GetRow.Cells("ITEM_NAME").Value
+        FExitQTY.LblPrice.Text = OrderList.GetRow.Cells("ITEM_PRICE").Value
+        FExitQTY.TxtDiscount.Text = "0"
+        FExitQTY.ShowDialog()
+        txtBarcode.Select()
+        txtBarcode.Focus()
+        txtBarcode.SelectAll()
     End Sub
 End Class

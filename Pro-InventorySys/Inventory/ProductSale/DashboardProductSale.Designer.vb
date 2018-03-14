@@ -113,8 +113,8 @@ Partial Class DashboardProductSale
         Me.BtnSaleWale.Image = Global.Asia_Garden_Inventory_Management_System.My.Resources.Resources._1408110738_sale
         Me.BtnSaleWale.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnSaleWale.Name = "BtnSaleWale"
-        Me.BtnSaleWale.Size = New System.Drawing.Size(117, 63)
-        Me.BtnSaleWale.Text = "ទំនិញ លក់រាយ"
+        Me.BtnSaleWale.Size = New System.Drawing.Size(145, 63)
+        Me.BtnSaleWale.Text = "          លក់​​​          "
         Me.BtnSaleWale.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripSeparator1

@@ -174,6 +174,7 @@
     End Sub
 
     Private Sub MainDashBaord_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Timer1.Start()
         CheckAccessRight()
         LoadingProfile()
     End Sub
@@ -204,5 +205,10 @@ vbCrLf & GetComAddress()
 
     Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
 
+    End Sub
+
+    
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        lblTime.Text = Now
     End Sub
 End Class

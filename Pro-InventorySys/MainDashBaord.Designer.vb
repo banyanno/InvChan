@@ -27,6 +27,7 @@ Partial Class MainDashBaord
         Me.ImgListDashbord = New System.Windows.Forms.ImageList(Me.components)
         Me.LblComProfile = New System.Windows.Forms.Label
         Me.Panel4 = New System.Windows.Forms.Panel
+        Me.lblTime = New System.Windows.Forms.Label
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.BtnComProfile = New System.Windows.Forms.Button
         Me.BtnPayAble = New System.Windows.Forms.Button
@@ -43,6 +44,8 @@ Partial Class MainDashBaord
         Me.Label1 = New System.Windows.Forms.Label
         Me.BtnProductOrder = New System.Windows.Forms.Button
         Me.BtnSale = New System.Windows.Forms.Button
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel4.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,11 +96,22 @@ Partial Class MainDashBaord
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Brown
+        Me.Panel4.Controls.Add(Me.lblTime)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel4.Location = New System.Drawing.Point(0, 768)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1642, 30)
         Me.Panel4.TabIndex = 38
+        '
+        'lblTime
+        '
+        Me.lblTime.AutoSize = True
+        Me.lblTime.ForeColor = System.Drawing.Color.White
+        Me.lblTime.Location = New System.Drawing.Point(10, 9)
+        Me.lblTime.Name = "lblTime"
+        Me.lblTime.Size = New System.Drawing.Size(39, 13)
+        Me.lblTime.TabIndex = 0
+        Me.lblTime.Text = "Label2"
         '
         'GroupBox1
         '
@@ -380,9 +394,13 @@ Partial Class MainDashBaord
         Me.BtnSale.Name = "BtnSale"
         Me.BtnSale.Size = New System.Drawing.Size(147, 76)
         Me.BtnSale.TabIndex = 1
-        Me.BtnSale.Text = "លក់ ដុំ/រាយ"
+        Me.BtnSale.Text = "លក់ប្រចាំថ្ងៃ"
         Me.BtnSale.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BtnSale.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1
         '
         'MainDashBaord
         '
@@ -397,6 +415,8 @@ Partial Class MainDashBaord
         Me.Controls.Add(Me.BtnSale)
         Me.Name = "MainDashBaord"
         Me.Size = New System.Drawing.Size(1642, 798)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -421,5 +441,7 @@ Partial Class MainDashBaord
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BtnPayAble As System.Windows.Forms.Button
     Friend WithEvents BtnComProfile As System.Windows.Forms.Button
+    Friend WithEvents lblTime As System.Windows.Forms.Label
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class

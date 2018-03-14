@@ -35,7 +35,7 @@ Partial Class FormEditQTY
         'LblItemID
         '
         Me.LblItemID.AutoSize = True
-        Me.LblItemID.Location = New System.Drawing.Point(372, 22)
+        Me.LblItemID.Location = New System.Drawing.Point(338, -3)
         Me.LblItemID.Name = "LblItemID"
         Me.LblItemID.Size = New System.Drawing.Size(17, 22)
         Me.LblItemID.TabIndex = 0
@@ -93,7 +93,7 @@ Partial Class FormEditQTY
         'LblPrice
         '
         Me.LblPrice.AutoSize = True
-        Me.LblPrice.Location = New System.Drawing.Point(372, 86)
+        Me.LblPrice.Location = New System.Drawing.Point(332, 126)
         Me.LblPrice.Name = "LblPrice"
         Me.LblPrice.Size = New System.Drawing.Size(17, 22)
         Me.LblPrice.TabIndex = 6

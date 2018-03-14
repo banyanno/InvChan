@@ -36,6 +36,9 @@
     End Sub
 
     Private Sub MainInventoyV2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        LblRate.Text = "អត្រាប្តូប្រាក់:​ 1$ = " & FormatNumber(GetExchangeRage(), 2) & "៛"
+        ''SplitContainer2.SplitterDistance = (Me.Width / 2) + 30
+        lblUser.Text = "អ្នកប្រើប្រាស់: " & GetCurrentUserName()
         DAUser.UpdateLockUser(1, getCurrentUserID)
         AddUserControl(MainPanel, HomeDashBoard, "", True)
     End Sub
